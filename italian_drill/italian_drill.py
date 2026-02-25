@@ -187,28 +187,252 @@ VERB_MAP: Dict[str, Dict[str, Any]] = {v["infinitive"]: v for v in VERBS}
 # Objects and adverbials for sentence variety
 # ---------------------------------------------------------------------------
 
-OBJECTS: List[Dict[str, str]] = [
+# ---------------------------------------------------------------------------
+# Per-verb-category object nouns (semantically plausible pairings)
+# ---------------------------------------------------------------------------
+
+# Fallback / general-purpose objects for verbs without a specific category
+OBJECTS_DEFAULT: List[Dict[str, str]] = [
     {"it": "il libro", "en": "the book"},
-    {"it": "la pizza", "en": "the pizza"},
-    {"it": "il caffè", "en": "the coffee"},
-    {"it": "la macchina", "en": "the car"},
     {"it": "il telefono", "en": "the phone"},
-    {"it": "la musica", "en": "the music"},
+    {"it": "la macchina", "en": "the car"},
     {"it": "il giornale", "en": "the newspaper"},
-    {"it": "la lettera", "en": "the letter"},
-    {"it": "il film", "en": "the film"},
-    {"it": "la cena", "en": "the dinner"},
-    {"it": "il lavoro", "en": "the work"},
     {"it": "la porta", "en": "the door"},
-    {"it": "il problema", "en": "the problem"},
-    {"it": "la risposta", "en": "the answer"},
     {"it": "il treno", "en": "the train"},
     {"it": "la casa", "en": "the house"},
-    {"it": "l'acqua", "en": "the water"},
-    {"it": "il pane", "en": "the bread"},
-    {"it": "la verità", "en": "the truth"},
-    {"it": "il tempo", "en": "the time"},
 ]
+
+# Category → list of plausible objects
+OBJECTS_BY_CATEGORY: Dict[str, List[Dict[str, str]]] = {
+    # Eating/drinking/cooking
+    "food": [
+        {"it": "la pizza", "en": "the pizza"},
+        {"it": "la cena", "en": "the dinner"},
+        {"it": "il caffè", "en": "the coffee"},
+        {"it": "il pane", "en": "the bread"},
+        {"it": "l'acqua", "en": "the water"},
+        {"it": "la pasta", "en": "the pasta"},
+        {"it": "il pranzo", "en": "the lunch"},
+    ],
+    # Reading/writing/studying
+    "text": [
+        {"it": "il libro", "en": "the book"},
+        {"it": "la lettera", "en": "the letter"},
+        {"it": "il giornale", "en": "the newspaper"},
+        {"it": "il messaggio", "en": "the message"},
+        {"it": "l'email", "en": "the email"},
+        {"it": "la poesia", "en": "the poem"},
+    ],
+    # Communication / telling / explaining
+    "communication": [
+        {"it": "la verità", "en": "the truth"},
+        {"it": "la risposta", "en": "the answer"},
+        {"it": "la storia", "en": "the story"},
+        {"it": "il problema", "en": "the problem"},
+        {"it": "la notizia", "en": "the news"},
+        {"it": "la situazione", "en": "the situation"},
+    ],
+    # Watching/listening
+    "media": [
+        {"it": "il film", "en": "the film"},
+        {"it": "la musica", "en": "the music"},
+        {"it": "la partita", "en": "the match"},
+        {"it": "il programma", "en": "the program"},
+        {"it": "la canzone", "en": "the song"},
+    ],
+    # Helping / teaching / people as objects
+    "people": [
+        {"it": "un amico", "en": "a friend"},
+        {"it": "i bambini", "en": "the children"},
+        {"it": "sua sorella", "en": "his/her sister"},
+        {"it": "mia madre", "en": "my mother"},
+        {"it": "gli studenti", "en": "the students"},
+        {"it": "il collega", "en": "the colleague"},
+    ],
+    # Buying/selling/paying/bringing/carrying
+    "commerce": [
+        {"it": "il regalo", "en": "the gift"},
+        {"it": "i biglietti", "en": "the tickets"},
+        {"it": "la macchina", "en": "the car"},
+        {"it": "il vestito", "en": "the dress"},
+        {"it": "il telefono", "en": "the phone"},
+        {"it": "il conto", "en": "the bill"},
+    ],
+    # Finding / looking for / choosing
+    "seeking": [
+        {"it": "il lavoro", "en": "the work"},
+        {"it": "la casa", "en": "the house"},
+        {"it": "la soluzione", "en": "the solution"},
+        {"it": "il ristorante", "en": "the restaurant"},
+        {"it": "le chiavi", "en": "the keys"},
+        {"it": "la strada", "en": "the road"},
+    ],
+    # Playing (instrument)
+    "instrument": [
+        {"it": "la chitarra", "en": "the guitar"},
+        {"it": "il pianoforte", "en": "the piano"},
+        {"it": "il violino", "en": "the violin"},
+    ],
+    # Opening/closing/turning off
+    "physical": [
+        {"it": "la porta", "en": "the door"},
+        {"it": "la finestra", "en": "the window"},
+        {"it": "la luce", "en": "the light"},
+        {"it": "il computer", "en": "the computer"},
+        {"it": "il rubinetto", "en": "the faucet"},
+    ],
+    # Calling (people only)
+    "calling": [
+        {"it": "un amico", "en": "a friend"},
+        {"it": "il dottore", "en": "the doctor"},
+        {"it": "mia madre", "en": "my mother"},
+        {"it": "un taxi", "en": "a taxi"},
+    ],
+    # Remembering / forgetting
+    "memory": [
+        {"it": "il nome", "en": "the name"},
+        {"it": "la password", "en": "the password"},
+        {"it": "l'appuntamento", "en": "the appointment"},
+        {"it": "l'indirizzo", "en": "the address"},
+        {"it": "il numero", "en": "the number"},
+    ],
+    # Preparing
+    "preparing": [
+        {"it": "la valigia", "en": "the suitcase"},
+        {"it": "la cena", "en": "the dinner"},
+        {"it": "la lezione", "en": "the lesson"},
+        {"it": "il pranzo", "en": "the lunch"},
+        {"it": "la festa", "en": "the party"},
+    ],
+    # Changing / trying
+    "change": [
+        {"it": "il programma", "en": "the plan"},
+        {"it": "la strategia", "en": "the strategy"},
+        {"it": "il vestito", "en": "the outfit"},
+        {"it": "le abitudini", "en": "the habits"},
+    ],
+    # Using
+    "using": [
+        {"it": "il computer", "en": "the computer"},
+        {"it": "il telefono", "en": "the phone"},
+        {"it": "la macchina", "en": "the car"},
+        {"it": "internet", "en": "the internet"},
+    ],
+    # Visiting
+    "places": [
+        {"it": "il museo", "en": "the museum"},
+        {"it": "la città", "en": "the city"},
+        {"it": "i nonni", "en": "the grandparents"},
+        {"it": "Roma", "en": "Rome"},
+    ],
+    # Waiting for
+    "waiting": [
+        {"it": "l'autobus", "en": "the bus"},
+        {"it": "un amico", "en": "a friend"},
+        {"it": "il treno", "en": "the train"},
+        {"it": "il risultato", "en": "the result"},
+    ],
+    # Leaving / letting
+    "leaving": [
+        {"it": "il lavoro", "en": "the job"},
+        {"it": "la città", "en": "the city"},
+        {"it": "la casa", "en": "the house"},
+        {"it": "un messaggio", "en": "a message"},
+    ],
+    # Proposing
+    "proposing": [
+        {"it": "un'idea", "en": "an idea"},
+        {"it": "una soluzione", "en": "a solution"},
+        {"it": "un cambiamento", "en": "a change"},
+    ],
+    # Wishing / desiring / wanting
+    "desire": [
+        {"it": "la pace", "en": "peace"},
+        {"it": "un caffè", "en": "a coffee"},
+        {"it": "una vacanza", "en": "a vacation"},
+        {"it": "il successo", "en": "success"},
+    ],
+    # Keeping / holding
+    "keeping": [
+        {"it": "il segreto", "en": "the secret"},
+        {"it": "la promessa", "en": "the promise"},
+        {"it": "le chiavi", "en": "the keys"},
+        {"it": "il libro", "en": "the book"},
+    ],
+}
+
+# Verb → category mapping
+VERB_OBJECT_CATEGORY: Dict[str, str] = {
+    # Food verbs
+    "mangiare": "food", "cucinare": "food", "bere": "food",
+    "preparare": "preparing",
+    # Text verbs
+    "scrivere": "text", "leggere": "text", "studiare": "text",
+    # Communication
+    "dire": "communication", "raccontare": "communication",
+    "spiegare": "communication", "rispondere": "communication",
+    # Media
+    "guardare": "media", "ascoltare": "media",
+    # People
+    "aiutare": "people", "insegnare": "people", "seguire": "people",
+    # Commerce
+    "comprare": "commerce", "vendere": "commerce", "pagare": "commerce",
+    "portare": "commerce",
+    # Seeking
+    "trovare": "seeking", "cercare": "seeking", "scegliere": "seeking",
+    # Instrument
+    "suonare": "instrument",
+    # Physical
+    "aprire": "physical", "chiudere": "physical", "spegnere": "physical",
+    "mettere": "physical", "coprire": "physical",
+    # Calling
+    "chiamare": "calling",
+    # Memory
+    "ricordare": "memory", "dimenticare": "memory",
+    # Change
+    "cambiare": "change", "provare": "change", "correggere": "change",
+    # Using
+    "usare": "using",
+    # Places
+    "visitare": "places",
+    # Waiting
+    "aspettare": "waiting",
+    # Leaving
+    "lasciare": "leaving",
+    # Proposing
+    "proporre": "proposing",
+    # Desire
+    "desiderare": "desire", "amare": "desire",
+    # Keeping
+    "tenere": "keeping",
+    # Communication (receiving/sending)
+    "ricevere": "text", "spedire": "text",
+    # Other transitive
+    "prendere": "food", "servire": "food",
+    "scoprire": "communication", "offrire": "food",
+    "dare": "commerce", "perdere": "seeking",
+    "chiedere": "communication", "conoscere": "people",
+    "costruire": "physical", "pulire": "physical",
+    "unire": "people",
+    # passare can be time-related
+    "passare": "leaving",
+    # Thinking / believing
+    "pensare": "communication", "credere": "communication",
+    # Sending
+    "cominciare": "text",
+}
+
+
+def get_object_for_verb(verb: str) -> Dict[str, str]:
+    """Return a semantically plausible object for the given verb."""
+    category = VERB_OBJECT_CATEGORY.get(verb)
+    if category and category in OBJECTS_BY_CATEGORY:
+        return random.choice(OBJECTS_BY_CATEGORY[category])
+    return random.choice(OBJECTS_DEFAULT)
+
+
+# Legacy alias for any code that references OBJECTS directly
+OBJECTS: List[Dict[str, str]] = OBJECTS_DEFAULT
 
 ADVERBIALS: List[Dict[str, str]] = [
     {"it": "domani", "en": "tomorrow"},
@@ -516,20 +740,14 @@ def conjugate_presente(verb: str, subject: str) -> str:
         if verb.endswith("care") or verb.endswith("gare"):
             if six_idx in (1, 3):  # tu (-i), noi (-iamo)
                 return stem + "h" + endings[six_idx]
-        # Handle -ciare/-giare: drop i before another i
+        # Handle -ciare/-giare: drop stem's trailing i before endings that start with i
+        # mangiare: stem "mangi" + "i" → "mangi" (not "mangii")
+        # mangiare: stem "mangi" + "iamo" → "mangiamo" (not "mangiiamo")
         if verb.endswith("ciare") or verb.endswith("giare"):
-            if six_idx in (1, 3):  # endings start with i
-                return stem + endings[six_idx]  # stem already has ci/gi, ending adds i
-                # Actually: mangiar- + i → mangi (not mangii)
-                # stem = mangi, ending = i → mangii is wrong
-                # Correct: mangiare → stem mangi, presente: mangio, mangi, mangia...
-                # The stem is "mangi" and ending "i" → "mangii"? No — drop the duplicate i
-                # mangiare: io mangio, tu mangi, lui mangia, noi mangiamo, voi mangiate, loro mangiano
-                # So tu: stem "mangi" + "i" → "mangi" (drop duplicate)
-                # noi: stem "mangi" + "iamo" → "mangiamo" (keep — stem i merges with iamo)
-                # Actually these are correct as-is with the regular pattern because
-                # mangiar- stem is "mangi" and -i → "mangi", -iamo → "mangiamo"
-                # The issue was only futuro. For presente, standard works.
+            ending = endings[six_idx]
+            if ending.startswith("i"):
+                return stem[:-1] + ending  # drop the i from stem
+            return stem + ending
         return stem + endings[six_idx]
 
     elif group == "ere":
@@ -895,17 +1113,17 @@ def english_conjugation(
 # ---------------------------------------------------------------------------
 
 def _pick_frame(difficulty_unlocked: bool) -> Dict[str, str]:
-    """Pick a discourse frame (or no frame)."""
+    """Pick a discourse frame. Always returns a frame (never empty)."""
     if not difficulty_unlocked:
         # Simple frames only when locked
-        simple = [NO_FRAME, NO_FRAME, NO_FRAME,
-                  {"it": "Secondo me,", "en": "In my opinion,"},
-                  {"it": "Di solito,", "en": "Usually,"},
-                  {"it": "In realtà,", "en": "Actually,"}]
+        simple = [
+            {"it": "Secondo me,", "en": "In my opinion,"},
+            {"it": "Di solito,", "en": "Usually,"},
+            {"it": "In realtà,", "en": "Actually,"},
+            {"it": "Ogni giorno,", "en": "Every day,"},
+            {"it": "A volte,", "en": "Sometimes,"},
+        ]
         return random.choice(simple)
-    # 40% chance no frame
-    if random.random() < 0.40:
-        return NO_FRAME
     return random.choice(DISCOURSE_FRAMES)
 
 
@@ -1039,14 +1257,18 @@ class SentenceSpec:
         return ""
 
     def build_italian(self) -> str:
-        """Build the expected Italian sentence."""
+        """Build the expected Italian sentence.
+
+        Italian is pro-drop: subject pronouns (io, tu, lui, lei, noi, voi, loro)
+        are omitted in the model answer for templates A/B/C/E/F. They are kept
+        for template D (after "che") and G (noun-phrase subjects).
+        """
         parts: List[str] = []
         if self.frame["it"]:
             parts.append(self.frame["it"])
 
         if self.template == "A":
-            # Frame + subject + verb + object + adverb
-            parts.append(self.subject)
+            # Frame + verb + object + adverb  (subject pronoun dropped)
             parts.append(conjugate(self.verb, self.tense, self.subject, self.gender_io_tu))
             if self.obj:
                 parts.append(self.obj["it"])
@@ -1054,17 +1276,14 @@ class SentenceSpec:
                 parts.append(self.adv["it"])
 
         elif self.template == "B":
-            # Frame + subject + modal(tense) + infinitive + object
-            parts.append(self.subject)
+            # Frame + modal(tense) + infinitive + object  (subject pronoun dropped)
             parts.append(conjugate(self.modal or "potere", self.tense, self.subject, self.gender_io_tu))
             parts.append(self.verb)  # infinitive
             if self.obj:
                 parts.append(self.obj["it"])
 
         elif self.template == "C":
-            # Frame + subject + "vuole che" + subject2 (implied in prompt)
-            # Simplified: subject + volere(tense) + infinitive + object
-            parts.append(self.subject)
+            # Frame + volere(tense) + infinitive + object  (subject pronoun dropped)
             parts.append(conjugate("volere", self.tense, self.subject, self.gender_io_tu))
             parts.append(self.verb)  # infinitive
             if self.obj:
@@ -1092,26 +1311,22 @@ class SentenceSpec:
                 parts[-1] = parts[-1] + "?"
 
         elif self.template == "F":
-            # Pronoun placement template
+            # Pronoun placement template (subject pronoun dropped)
+            pron = self._get_pronoun_it()
             if self.f_modal:
-                # Modal + infinitive with pronoun attached: "Vuole darglielo"
-                # Or pronoun before modal: "Glielo vuole dare"
-                # We'll use the pre-modal form: pronoun + modal + infinitive
-                pron = self._get_pronoun_it()
-                parts.append(self.subject)
+                # Pre-modal form: pronoun + modal + infinitive
                 parts.append(pron)
                 parts.append(conjugate(self.f_modal, self.tense, self.subject, self.gender_io_tu))
                 parts.append(self.verb)
             else:
                 # Simple: pronoun before conjugated verb
-                # e.g., "Io glielo do" / "Lei me lo ha dato"
-                pron = self._get_pronoun_it()
-                parts.append(self.subject)
                 parts.append(pron)
                 parts.append(conjugate(self.verb, self.tense, self.subject, self.gender_io_tu))
+            if self.adv:
+                parts.append(self.adv["it"])
 
         elif self.template == "G":
-            # Agreement template: gendered subject + essere verb + adjective
+            # Agreement template: gendered subject + essere verb + adjective + adverb
             gs = self.gendered_subject
             adj = self.adjective
             if gs and adj:
@@ -1119,20 +1334,19 @@ class SentenceSpec:
                 verb_form = conjugate(self.verb, self.tense, vs, self.gender_io_tu)
                 adj_form = _get_adjective_form(adj, gs["gender"], gs["number"])
                 parts.append(gs["it"])
-                # For passato prossimo, agree participle already handled by conjugate
                 if self.tense == "passato_prossimo":
-                    # Need special agreement: auxiliary + agreed participle + adjective
                     uses_essere = self.verb in ESSERE_VERBS or self.verb == "essere"
                     aux_form = conjugate_presente("essere" if uses_essere else "avere", vs)
                     pp = _past_participle(self.verb)
                     if uses_essere:
-                        # Agree participle with gendered subject
                         pp = _agree_participle_gendered(pp, gs["gender"], gs["number"])
                     parts.append(aux_form)
                     parts.append(pp)
                 else:
                     parts.append(verb_form)
                 parts.append(adj_form)
+                if self.adv:
+                    parts.append(self.adv["it"])
 
         return " ".join(parts)
 
@@ -1191,14 +1405,19 @@ class SentenceSpec:
             pron_en = self._get_pronoun_en()
             bare = verb_info["en"].replace("to ", "")
             subj = SUBJECT_EN[self.subject]
+            adv_en_f = self.adv["en"] if self.adv else ""
             if self.f_modal:
                 modal_info = VERB_MAP.get(self.f_modal, {"en": "to be able to"})
                 modal_en = english_conjugation(modal_info, self.tense, self.subject)
                 s = f"{modal_en} {bare} {pron_en}"
+                if adv_en_f:
+                    s += f" {adv_en_f}"
                 parts.append(s)
             else:
                 verb_en = english_conjugation(verb_info, self.tense, self.subject)
                 s = f"{verb_en} {pron_en}"
+                if adv_en_f:
+                    s += f" {adv_en_f}"
                 parts.append(s)
             parts.append("[use Italian pronoun placement]")
 
@@ -1209,6 +1428,7 @@ class SentenceSpec:
                 bare = verb_info["en"].replace("to ", "")
                 subj_en = gs["en"]
                 adj_en = adj["en"]
+                adv_en_g = self.adv["en"] if self.adv else ""
                 vs = gs["verb_subject"]
                 verb_en = english_conjugation(verb_info, self.tense, vs)
                 # Replace the subject pronoun with the noun phrase
@@ -1217,6 +1437,8 @@ class SentenceSpec:
                         verb_en = verb_en[len(pron) + 1:]
                         break
                 s = f"{subj_en} {verb_en} {adj_en}"
+                if adv_en_g:
+                    s += f" {adv_en_g}"
                 parts.append(s)
 
         return " ".join(parts)
@@ -1237,9 +1459,13 @@ def _generate_template_f(
     # 30% chance of using a modal (pronoun goes before modal)
     f_modal = random.choice(["volere", "potere", "dovere"]) if random.random() < 0.3 else None
 
+    # Always include an adverb for completeness
+    adv = random.choice(ADVERBIALS)
+
     return SentenceSpec(
         verb=verb, tense=tense, subject=subject, frame=frame, template="F",
         gender_io_tu=gender_io_tu,
+        adv=adv,
         direct_pronoun=direct_pron if pronoun_type in ("direct", "combined") else None,
         indirect_pronoun=indirect_pron if pronoun_type in ("indirect", "combined") else None,
         pronoun_type=pronoun_type,
@@ -1256,6 +1482,7 @@ def _generate_template_g(
     """Generate a template G (agreement) sentence."""
     gs = random.choice(GENDERED_SUBJECTS)
     adj = random.choice(ADJECTIVES)
+    adv = random.choice(ADVERBIALS)
     # Use essere verb for agreement drill, prefer passato_prossimo 50% of the time
     if random.random() < 0.5 and tense != "passato_prossimo":
         tense = "passato_prossimo"
@@ -1264,6 +1491,7 @@ def _generate_template_g(
         verb=verb, tense=tense, subject=gs["verb_subject"],
         frame=frame, template="G",
         gender_io_tu=gender_io_tu,
+        adv=adv,
         adjective=adj,
         gendered_subject=gs,
     )
@@ -1307,8 +1535,8 @@ def generate_sentence(
     if _is_modal(verb):
         # Modal verbs always use template A (conjugated directly)
         template = "A"
-        obj = random.choice(OBJECTS) if random.random() < 0.5 else None
-        adv = random.choice(ADVERBIALS) if random.random() < 0.3 else None
+        obj = get_object_for_verb(verb)
+        adv = random.choice(ADVERBIALS)
         return SentenceSpec(verb, tense, subject, frame, template, obj, adv, gender_io_tu=gender_io_tu)
 
     # Weight templates (now including F and G)
@@ -1326,32 +1554,30 @@ def generate_sentence(
         )[0]
 
     obj = None
-    adv = None
+    adv = random.choice(ADVERBIALS)  # Always include an adverb
     modal = None
 
     if template == "A":
-        if _needs_object(verb) and random.random() < 0.6:
-            obj = random.choice(OBJECTS)
-        if random.random() < 0.3:
-            adv = random.choice(ADVERBIALS)
+        if _needs_object(verb):
+            obj = get_object_for_verb(verb)
 
     elif template == "B":
         modal = random.choice(["potere", "volere", "dovere"])
-        if _needs_object(verb) and random.random() < 0.5:
-            obj = random.choice(OBJECTS)
+        if _needs_object(verb):
+            obj = get_object_for_verb(verb)
 
     elif template == "C":
-        if _needs_object(verb) and random.random() < 0.5:
-            obj = random.choice(OBJECTS)
+        if _needs_object(verb):
+            obj = get_object_for_verb(verb)
 
     elif template == "D":
-        if _needs_object(verb) and random.random() < 0.5:
-            obj = random.choice(OBJECTS)
+        if _needs_object(verb):
+            obj = get_object_for_verb(verb)
 
     elif template == "E":
         subject = "tu"  # question directed at tu
-        if _needs_object(verb) and random.random() < 0.6:
-            obj = random.choice(OBJECTS)
+        if _needs_object(verb):
+            obj = get_object_for_verb(verb)
 
     elif template == "F":
         effective_verb = verb if verb in PRONOUN_VERBS else random.choice(PRONOUN_VERBS)
@@ -1377,10 +1603,8 @@ def normalize(text: str) -> str:
     s = s.rstrip(".,;:!?")
     # Collapse multiple spaces
     s = re.sub(r"\s+", " ", s)
-    # Allow optional comma after discourse frames: remove commas for comparison
-    # Actually we keep commas because they're part of the expected answer
-    # But allow missing comma after frame: we strip commas adjacent to spaces
-    s = re.sub(r"\s*,\s*", " , ", s)  # normalize comma spacing
+    # Normalize comma spacing: comma attached to preceding word, space after
+    s = re.sub(r"\s*,\s*", ", ", s)
     s = re.sub(r"\s+", " ", s).strip()
     return s
 
@@ -1393,13 +1617,46 @@ def normalize_flexible(text: str) -> str:
     return normalize(text).replace(",", "").replace("  ", " ").strip()
 
 
+def _strip_leading_pronoun(text: str) -> str:
+    """Strip a leading subject pronoun from normalized text.
+
+    The model answer omits subject pronouns (pro-drop), but if the user
+    includes one we should still accept it.  This helper removes the pronoun
+    so both sides can be compared without it.
+    """
+    pronouns = {"io", "tu", "lui", "lei", "noi", "voi", "loro"}
+    words = text.split()
+    # Try stripping pronoun at position 0 (no frame)
+    if words and words[0] in pronouns:
+        return " ".join(words[1:])
+    # Try stripping pronoun right after a comma (frame present)
+    # After normalize, commas attach to the preceding word: "me, io" → ["me,", "io"]
+    for i, w in enumerate(words):
+        if w.endswith(",") and i + 1 < len(words) and words[i + 1] in pronouns:
+            return " ".join(words[: i + 1] + words[i + 2:])
+    return text
+
+
 def answers_match(user_input: str, expected: str) -> bool:
-    """Check if user input matches expected answer."""
-    # Try exact normalized match
-    if normalize(user_input) == normalize(expected):
+    """Check if user input matches expected answer.
+
+    Accepts the answer with or without the subject pronoun, since
+    Italian is pro-drop and the model answer omits it.
+    """
+    u_norm = normalize(user_input)
+    e_norm = normalize(expected)
+
+    # Exact normalized match
+    if u_norm == e_norm:
         return True
-    # Try flexible match (ignore commas)
+    # Flexible match (ignore commas)
     if normalize_flexible(user_input) == normalize_flexible(expected):
+        return True
+    # User included subject pronoun that the model answer omits — strip it
+    u_stripped = _strip_leading_pronoun(u_norm)
+    if u_stripped == e_norm:
+        return True
+    if normalize_flexible(u_stripped) == normalize_flexible(expected):
         return True
     return False
 
@@ -1904,11 +2161,13 @@ def main() -> None:
             if not user_input:
                 continue
 
-            # --- Commands ---
-            if user_input.lower() == ":quit":
+            # --- Command dispatch (checked BEFORE any answer evaluation) ---
+            cmd = user_input.lower()
+
+            if cmd == ":quit":
                 break
 
-            if user_input.lower() == ":help":
+            if cmd == ":help":
                 print("\nCommands:")
                 print("  :quit   — exit, save, show summary, sync")
                 print("  :stats  — show detailed statistics")
@@ -1919,33 +2178,15 @@ def main() -> None:
                 print()
                 continue
 
-            if user_input.lower() == ":stats":
+            if cmd == ":stats":
                 show_stats(progress, elapsed_min)
                 continue
 
-            if user_input.lower() == ":test":
+            if cmd == ":test":
                 run_self_check()
                 continue
 
-            if user_input.lower() == ":hint":
-                hint_used = True
-                vp["hint_uses"] = vp.get("hint_uses", 0) + 1
-                print(f"\n  Hint: {verb} ({VERB_MAP[verb]['en']}) — {tense_label}")
-                if spec.tense == "passato_prossimo":
-                    aux = "essere" if (verb in ESSERE_VERBS or verb == "essere") else "avere"
-                    print(f"  Auxiliary: {aux}")
-                print()
-                # Re-prompt for answer
-                try:
-                    user_input = input("  IT: ").strip()
-                except EOFError:
-                    break
-                if user_input.lower() in (":quit", ":flag", ":stats", ":help", ":test"):
-                    if user_input.lower() == ":quit":
-                        break
-                    continue
-
-            if user_input.lower() == ":flag":
+            if cmd == ":flag":
                 record = {
                     "timestamp": datetime.now(timezone.utc).isoformat(),
                     "verb": verb,
@@ -1958,6 +2199,42 @@ def main() -> None:
                 append_flagged(record)
                 print("  Flagged. Skipping.\n")
                 continue
+
+            if cmd == ":hint":
+                hint_used = True
+                vp["hint_uses"] = vp.get("hint_uses", 0) + 1
+                print(f"\n  Hint: {verb} ({VERB_MAP[verb]['en']}) — {tense_label}")
+                if spec.tense == "passato_prossimo":
+                    aux = "essere" if (verb in ESSERE_VERBS or verb == "essere") else "avere"
+                    print(f"  Auxiliary: {aux}")
+                print()
+                # Re-prompt for answer after hint
+                try:
+                    user_input = input("  IT: ").strip()
+                except EOFError:
+                    break
+                if not user_input:
+                    continue
+                # Re-check commands on the post-hint input
+                cmd2 = user_input.lower()
+                if cmd2 == ":quit":
+                    break
+                if cmd2 == ":flag":
+                    record = {
+                        "timestamp": datetime.now(timezone.utc).isoformat(),
+                        "verb": verb,
+                        "tense": spec.tense,
+                        "subject": spec.subject,
+                        "frame": spec.frame["it"],
+                        "english_prompt": english_prompt,
+                        "expected": expected_it,
+                    }
+                    append_flagged(record)
+                    print("  Flagged. Skipping.\n")
+                    continue
+                if cmd2 in (":stats", ":help", ":test", ":hint"):
+                    # Non-answer commands after hint — skip this round
+                    continue
 
             # --- Check answer ---
             correct = answers_match(user_input, expected_it)
