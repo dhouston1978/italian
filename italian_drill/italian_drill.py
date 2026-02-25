@@ -423,8 +423,119 @@ VERB_OBJECT_CATEGORY: Dict[str, str] = {
 }
 
 
+# ---------------------------------------------------------------------------
+# Verb semantic categories
+# ---------------------------------------------------------------------------
+
+VERB_SEMANTIC_CATEGORY: Dict[str, str] = {
+    # movement
+    "andare": "movement", "venire": "movement", "arrivare": "movement",
+    "partire": "movement", "entrare": "movement", "uscire": "movement",
+    "tornare": "movement", "salire": "movement", "scendere": "movement",
+    "camminare": "movement", "correre": "movement", "viaggiare": "movement",
+    "nuotare": "movement",
+    # state
+    "essere": "state", "stare": "state", "restare": "state",
+    "rimanere": "state", "diventare": "state",
+    # mental
+    "pensare": "mental", "credere": "mental", "sapere": "mental",
+    "capire": "mental", "ricordare": "mental", "dimenticare": "mental",
+    "volere": "mental", "preferire": "mental", "desiderare": "mental",
+    "potere": "mental", "dovere": "mental", "conoscere": "mental",
+    "imparare": "mental",
+    # communication
+    "dire": "communication", "parlare": "communication",
+    "raccontare": "communication", "spiegare": "communication",
+    "chiedere": "communication", "rispondere": "communication",
+    "chiamare": "communication",
+    # action
+    "fare": "action", "dare": "action", "prendere": "action",
+    "mettere": "action", "portare": "action", "comprare": "action",
+    "vendere": "action", "pagare": "action", "usare": "action",
+    "preparare": "action", "costruire": "action", "pulire": "action",
+    "aprire": "action", "chiudere": "action", "spegnere": "action",
+    "coprire": "action", "cambiare": "action", "provare": "action",
+    "correggere": "action", "lasciare": "action", "tenere": "action",
+    "cercare": "action", "trovare": "action", "passare": "action",
+    "servire": "action", "offrire": "action", "proporre": "action",
+    "spedire": "action", "unire": "action",
+    # food (sub-category of action for object selection)
+    "mangiare": "food", "bere": "food", "cucinare": "food",
+    # perception
+    "vedere": "perception", "guardare": "perception",
+    "ascoltare": "perception", "sentire": "perception",
+    # creative
+    "scrivere": "creative", "leggere": "creative", "cantare": "creative",
+    "suonare": "creative", "ballare": "creative", "studiare": "creative",
+    # social
+    "aiutare": "social", "insegnare": "social", "seguire": "social",
+    "visitare": "social", "incontrare": "social",
+    # other
+    "avere": "action", "abitare": "state", "vivere": "state",
+    "lavorare": "action", "giocare": "action",
+    "dormire": "state", "nascere": "state", "morire": "state",
+    "cadere": "movement", "cominciare": "action", "finire": "action",
+    "amare": "mental", "scoprire": "mental", "aspettare": "action",
+    "ricevere": "action", "perdere": "action", "scegliere": "mental",
+    "guarire": "state",
+}
+
+# Categories that allow predicate adjectives (Template G)
+ADJECTIVE_VERB_CATEGORIES: Set[str] = {"state"}
+
+# Verbs that specifically allow predicate adjectives beyond pure state verbs
+# (essere verbs in passato prossimo can carry a resultative adjective)
+ADJECTIVE_PASSATO_VERBS: Set[str] = {
+    "arrivare", "tornare", "restare", "rimanere",
+}
+
+
+# ---------------------------------------------------------------------------
+# Location objects for movement verbs
+# ---------------------------------------------------------------------------
+
+OBJECTS_LOCATION: List[Dict[str, str]] = [
+    {"it": "a casa", "en": "home"},
+    {"it": "al lavoro", "en": "to work"},
+    {"it": "in Italia", "en": "to/in Italy"},
+    {"it": "a Roma", "en": "to/in Rome"},
+    {"it": "al supermercato", "en": "to the supermarket"},
+    {"it": "in ufficio", "en": "to the office"},
+    {"it": "in centro", "en": "downtown"},
+    {"it": "all'università", "en": "to the university"},
+    {"it": "al ristorante", "en": "to the restaurant"},
+    {"it": "in chiesa", "en": "to church"},
+    {"it": "al cinema", "en": "to the cinema"},
+    {"it": "in biblioteca", "en": "to the library"},
+    {"it": "al parco", "en": "to the park"},
+    {"it": "in ospedale", "en": "to the hospital"},
+]
+
+# Abstract objects for mental verbs
+OBJECTS_MENTAL: List[Dict[str, str]] = [
+    {"it": "la verità", "en": "the truth"},
+    {"it": "il problema", "en": "the problem"},
+    {"it": "una soluzione", "en": "a solution"},
+    {"it": "la situazione", "en": "the situation"},
+    {"it": "la risposta", "en": "the answer"},
+    {"it": "il motivo", "en": "the reason"},
+    {"it": "la differenza", "en": "the difference"},
+]
+
+
 def get_object_for_verb(verb: str) -> Dict[str, str]:
     """Return a semantically plausible object for the given verb."""
+    sem = VERB_SEMANTIC_CATEGORY.get(verb)
+    # Movement verbs get location objects
+    if sem == "movement":
+        return random.choice(OBJECTS_LOCATION)
+    # Mental verbs get abstract objects
+    if sem == "mental":
+        return random.choice(OBJECTS_MENTAL)
+    # Food verbs
+    if sem == "food":
+        return random.choice(OBJECTS_BY_CATEGORY["food"])
+    # Use existing per-verb category mapping
     category = VERB_OBJECT_CATEGORY.get(verb)
     if category and category in OBJECTS_BY_CATEGORY:
         return random.choice(OBJECTS_BY_CATEGORY[category])
@@ -434,23 +545,57 @@ def get_object_for_verb(verb: str) -> Dict[str, str]:
 # Legacy alias for any code that references OBJECTS directly
 OBJECTS: List[Dict[str, str]] = OBJECTS_DEFAULT
 
-ADVERBIALS: List[Dict[str, str]] = [
-    {"it": "domani", "en": "tomorrow"},
-    {"it": "ieri", "en": "yesterday"},
-    {"it": "oggi", "en": "today"},
+# ---------------------------------------------------------------------------
+# Tense-compatible adverbs
+# ---------------------------------------------------------------------------
+
+# Adverbs that work with any tense
+ADVERBS_ANY: List[Dict[str, str]] = [
     {"it": "sempre", "en": "always"},
     {"it": "spesso", "en": "often"},
+    {"it": "di solito", "en": "usually"},
+    {"it": "ogni giorno", "en": "every day"},
+    {"it": "a volte", "en": "sometimes"},
     {"it": "bene", "en": "well"},
     {"it": "male", "en": "badly"},
-    {"it": "subito", "en": "right away"},
     {"it": "insieme", "en": "together"},
-    {"it": "qui", "en": "here"},
-    {"it": "lì", "en": "there"},
     {"it": "molto", "en": "a lot"},
     {"it": "poco", "en": "a little"},
-    {"it": "tardi", "en": "late"},
-    {"it": "presto", "en": "early/soon"},
+    {"it": "qui", "en": "here"},
+    {"it": "lì", "en": "there"},
+    {"it": "subito", "en": "right away"},
 ]
+
+# Present-tense only
+ADVERBS_PRESENT: List[Dict[str, str]] = [
+    {"it": "oggi", "en": "today"},
+    {"it": "adesso", "en": "now"},
+    {"it": "ora", "en": "now"},
+]
+
+# Future-compatible (future and present with future meaning)
+ADVERBS_FUTURE: List[Dict[str, str]] = [
+    {"it": "domani", "en": "tomorrow"},
+    {"it": "presto", "en": "soon"},
+    {"it": "la settimana prossima", "en": "next week"},
+]
+
+# Past-tense only
+ADVERBS_PAST: List[Dict[str, str]] = [
+    {"it": "ieri", "en": "yesterday"},
+    {"it": "stamattina", "en": "this morning"},
+    {"it": "la settimana scorsa", "en": "last week"},
+]
+
+# Keep legacy flat list for any old code that references it
+ADVERBIALS: List[Dict[str, str]] = ADVERBS_ANY + ADVERBS_PRESENT + ADVERBS_FUTURE + ADVERBS_PAST + [
+    {"it": "tardi", "en": "late"},
+]
+
+
+def get_adverb_for_tense(tense: str) -> Dict[str, str]:
+    """Return a semantically compatible adverb for the given tense."""
+    return random.choice(_get_adverb_pool(tense))
 
 # ---------------------------------------------------------------------------
 # Pronouns for template F
@@ -539,11 +684,16 @@ GENDERED_SUBJECTS: List[Dict[str, Any]] = [
     {"it": "le bambine", "en": "the children (f)", "gender": "f", "number": "p", "verb_subject": "loro"},
 ]
 
-# Essere verbs that work well for agreement drills
-AGREEMENT_VERBS: List[str] = [
-    "arrivare", "partire", "tornare", "uscire", "entrare",
-    "restare", "andare", "venire", "cadere", "diventare",
+# Verbs that work for agreement drills (Template G with predicate adjective)
+# ONLY state verbs and a few essere-verbs that take resultative adjectives in passato prossimo
+AGREEMENT_VERBS_STATE: List[str] = [
+    "essere", "stare", "restare", "rimanere", "diventare",
 ]
+AGREEMENT_VERBS_RESULTATIVE: List[str] = [
+    "arrivare", "tornare",
+]
+# Combined list for backward compat and template selection
+AGREEMENT_VERBS: List[str] = AGREEMENT_VERBS_STATE + AGREEMENT_VERBS_RESULTATIVE
 
 # ---------------------------------------------------------------------------
 # Focus modes
@@ -1112,10 +1262,93 @@ def english_conjugation(
 # Sentence generation
 # ---------------------------------------------------------------------------
 
+# ---------------------------------------------------------------------------
+# Temporal coherence: classify frames and adverbs as habitual vs specific
+# ---------------------------------------------------------------------------
+
+# Habitual discourse frames (imply repeated/general action)
+HABITUAL_FRAMES: Set[str] = {
+    "Di solito,", "A volte,", "Ogni giorno,",
+}
+
+# Specific discourse frames (imply a particular occasion)
+SPECIFIC_FRAMES: Set[str] = {
+    "Purtroppo,", "Fortunatamente,", "In realtà,",
+    "Secondo me,", "Secondo lui,", "Secondo lei,", "Secondo noi,",
+    "A mio parere,", "Per quanto mi riguarda,",
+    "Probabilmente,", "Forse,", "Sinceramente,",
+}
+
+# Habitual adverbs (imply repeated/general action)
+HABITUAL_ADVERBS: Set[str] = {
+    "sempre", "spesso", "a volte", "ogni giorno", "di solito",
+}
+
+# Specific-time adverbs (imply a particular moment)
+SPECIFIC_ADVERBS: Set[str] = {
+    "domani", "ieri", "oggi", "stamattina", "adesso", "ora",
+    "la settimana scorsa", "la settimana prossima", "presto", "tardi",
+}
+
+# Manner adverbs that are neutral (compatible with anything)
+NEUTRAL_ADVERBS: Set[str] = {
+    "bene", "male", "insieme", "molto", "poco", "qui", "lì", "subito",
+}
+
+
+def _classify_frame(frame: Dict[str, str]) -> str:
+    """Classify a frame as 'habitual', 'specific', or 'neutral'."""
+    it = frame.get("it", "")
+    if it in HABITUAL_FRAMES:
+        return "habitual"
+    if it in SPECIFIC_FRAMES:
+        return "specific"
+    return "neutral"
+
+
+def _classify_adverb(adv: Dict[str, str]) -> str:
+    """Classify an adverb as 'habitual', 'specific', or 'neutral'."""
+    it = adv.get("it", "")
+    if it in HABITUAL_ADVERBS:
+        return "habitual"
+    if it in SPECIFIC_ADVERBS:
+        return "specific"
+    return "neutral"
+
+
+def _get_adverb_pool(tense: str) -> List[Dict[str, str]]:
+    """Get the full pool of tense-compatible adverbs."""
+    pool = list(ADVERBS_ANY)
+    if tense == "presente":
+        pool += ADVERBS_PRESENT
+    elif tense == "futuro":
+        pool += ADVERBS_FUTURE
+    elif tense == "condizionale":
+        pool += ADVERBS_FUTURE
+    elif tense in ("passato_prossimo", "imperfetto"):
+        pool += ADVERBS_PAST
+    return pool
+
+
+def _get_compatible_adverb(tense: str, frame_class: str) -> Dict[str, str]:
+    """Pick an adverb compatible with both tense and frame temporal class."""
+    pool = _get_adverb_pool(tense)
+    compatible = []
+    for adv in pool:
+        ac = _classify_adverb(adv)
+        if frame_class == "habitual" and ac == "specific":
+            continue  # No specific time with habitual frame
+        if frame_class == "specific" and ac == "habitual":
+            continue  # No habitual adverb with specific frame
+        compatible.append(adv)
+    if not compatible:
+        compatible = [a for a in ADVERBS_ANY if a["it"] in NEUTRAL_ADVERBS]
+    return random.choice(compatible) if compatible else {"it": "bene", "en": "well"}
+
+
 def _pick_frame(difficulty_unlocked: bool) -> Dict[str, str]:
     """Pick a discourse frame. Always returns a frame (never empty)."""
     if not difficulty_unlocked:
-        # Simple frames only when locked
         simple = [
             {"it": "Secondo me,", "en": "In my opinion,"},
             {"it": "Di solito,", "en": "Usually,"},
@@ -1162,12 +1395,19 @@ def _pick_tense(difficulty_unlocked: bool, allowed_tenses: List[str]) -> str:
 
 
 def _needs_object(verb: str) -> bool:
-    """Does this verb typically take an object?"""
-    # Intransitive / essere verbs usually don't take objects in our drills
-    no_obj = ESSERE_VERBS | {
-        "essere", "dormire", "camminare", "nuotare", "ballare",
-        "cantare", "lavorare", "studiare", "abitare", "viaggiare",
-        "vivere", "correre", "stare",
+    """Does this verb typically take a direct/indirect object (not location)?
+
+    Movement verbs DO get objects (locations), but that's handled separately.
+    """
+    sem = VERB_SEMANTIC_CATEGORY.get(verb, "")
+    # Movement verbs get location objects — handled via get_object_for_verb
+    if sem == "movement":
+        return True
+    # State verbs and intransitive verbs don't take objects
+    no_obj = {
+        "essere", "stare", "restare", "rimanere", "diventare",
+        "dormire", "nuotare", "ballare", "cantare", "lavorare",
+        "abitare", "vivere", "nascere", "morire", "guarire",
     }
     return verb not in no_obj
 
@@ -1459,8 +1699,9 @@ def _generate_template_f(
     # 30% chance of using a modal (pronoun goes before modal)
     f_modal = random.choice(["volere", "potere", "dovere"]) if random.random() < 0.3 else None
 
-    # Always include an adverb for completeness
-    adv = random.choice(ADVERBIALS)
+    # Temporally coherent adverb
+    frame_class = _classify_frame(frame)
+    adv = _get_compatible_adverb(tense, frame_class)
 
     return SentenceSpec(
         verb=verb, tense=tense, subject=subject, frame=frame, template="F",
@@ -1479,13 +1720,31 @@ def _generate_template_g(
     frame: Dict[str, str],
     gender_io_tu: str,
 ) -> SentenceSpec:
-    """Generate a template G (agreement) sentence."""
+    """Generate a template G (agreement) sentence.
+
+    Adjective rules:
+    - State verbs (essere, stare, restare, rimanere, diventare) can take
+      predicate adjectives in any tense.
+    - Resultative verbs (arrivare, tornare) can only take adjectives in
+      passato_prossimo ("è arrivata stanca").
+    """
     gs = random.choice(GENDERED_SUBJECTS)
     adj = random.choice(ADJECTIVES)
-    adv = random.choice(ADVERBIALS)
-    # Use essere verb for agreement drill, prefer passato_prossimo 50% of the time
-    if random.random() < 0.5 and tense != "passato_prossimo":
+
+    # Enforce tense compatibility with adjective usage
+    if verb in AGREEMENT_VERBS_RESULTATIVE:
+        # Resultative adjective only works in passato prossimo
         tense = "passato_prossimo"
+    elif verb in AGREEMENT_VERBS_STATE:
+        # State verbs: prefer passato_prossimo 50% for agreement practice
+        if random.random() < 0.5 and tense != "passato_prossimo":
+            tense = "passato_prossimo"
+    else:
+        # Verb not suitable for adjective — fall back to a state verb
+        verb = random.choice(AGREEMENT_VERBS_STATE)
+
+    frame_class = _classify_frame(frame)
+    adv = _get_compatible_adverb(tense, frame_class)
 
     return SentenceSpec(
         verb=verb, tense=tense, subject=gs["verb_subject"],
@@ -1497,6 +1756,57 @@ def _generate_template_g(
     )
 
 
+def _validate_sentence(spec: SentenceSpec) -> bool:
+    """Validate that a generated sentence is semantically coherent.
+
+    Checks:
+    1. Verb category + adjective usage
+    2. Verb category + object category
+    3. Tense + adverb compatibility
+    4. Frame + adverb temporal coherence
+    """
+    sem = VERB_SEMANTIC_CATEGORY.get(spec.verb, "action")
+
+    # 1. Adjective should only appear with state verbs (or resultative in pp)
+    if spec.adjective:
+        if sem == "state":
+            pass  # always OK
+        elif spec.verb in ADJECTIVE_PASSATO_VERBS and spec.tense == "passato_prossimo":
+            pass  # resultative OK in passato prossimo
+        else:
+            return False
+
+    # 2. Movement verbs must have location objects (not random nouns)
+    if sem == "movement" and spec.obj:
+        location_its = {loc["it"] for loc in OBJECTS_LOCATION}
+        if spec.obj["it"] not in location_its:
+            return False
+
+    # 3. Tense + adverb compatibility
+    if spec.adv:
+        adv_it = spec.adv["it"]
+        if adv_it in {"domani", "la settimana prossima"}:
+            if spec.tense in ("passato_prossimo", "imperfetto"):
+                return False
+        elif adv_it in {"ieri", "stamattina", "la settimana scorsa"}:
+            if spec.tense in ("futuro", "presente"):
+                return False
+        elif adv_it in {"oggi", "adesso", "ora"}:
+            if spec.tense in ("futuro", "imperfetto"):
+                return False
+
+    # 4. Frame + adverb temporal coherence
+    frame_class = _classify_frame(spec.frame)
+    if spec.adv:
+        adv_class = _classify_adverb(spec.adv)
+        if frame_class == "habitual" and adv_class == "specific":
+            return False
+        if frame_class == "specific" and adv_class == "habitual":
+            return False
+
+    return True
+
+
 def generate_sentence(
     verb: str,
     allowed_tenses: List[str],
@@ -1504,9 +1814,39 @@ def generate_sentence(
     gender_io_tu: str,
     focus_mode: str = "all",
 ) -> SentenceSpec:
-    """Generate a random sentence specification for a given verb."""
+    """Generate a random sentence specification for a given verb.
+
+    Includes semantic validation with retry (up to 5 attempts) and
+    fallback to a simple template A sentence.
+    """
+    for _attempt in range(5):
+        spec = _generate_sentence_inner(
+            verb, allowed_tenses, difficulty_unlocked, gender_io_tu, focus_mode
+        )
+        if _validate_sentence(spec):
+            return spec
+
+    # Fallback: simple template A with safe defaults
     tense = _pick_tense(difficulty_unlocked, allowed_tenses)
     frame = _pick_frame(difficulty_unlocked)
+    frame_class = _classify_frame(frame)
+    subject = random.choice(SUBJECTS)
+    obj = get_object_for_verb(verb) if _needs_object(verb) else None
+    adv = _get_compatible_adverb(tense, frame_class)
+    return SentenceSpec(verb, tense, subject, frame, "A", obj, adv, gender_io_tu=gender_io_tu)
+
+
+def _generate_sentence_inner(
+    verb: str,
+    allowed_tenses: List[str],
+    difficulty_unlocked: bool,
+    gender_io_tu: str,
+    focus_mode: str = "all",
+) -> SentenceSpec:
+    """Inner sentence generation (may produce invalid combos, validated by caller)."""
+    tense = _pick_tense(difficulty_unlocked, allowed_tenses)
+    frame = _pick_frame(difficulty_unlocked)
+    frame_class = _classify_frame(frame)
 
     # Focus mode: conjugation-endings biases toward voi/loro
     if focus_mode == "conjugation-endings":
@@ -1520,26 +1860,22 @@ def generate_sentence(
 
     # Focus mode overrides template selection
     if focus_mode == "pronouns":
-        # Heavily weight template F
         if verb in PRONOUN_VERBS or random.random() < 0.7:
             effective_verb = verb if verb in PRONOUN_VERBS else random.choice(PRONOUN_VERBS)
             return _generate_template_f(effective_verb, tense, subject, frame, gender_io_tu)
 
     if focus_mode == "agreement":
-        # Heavily weight template G
         if verb in AGREEMENT_VERBS or random.random() < 0.7:
             effective_verb = verb if verb in AGREEMENT_VERBS else random.choice(AGREEMENT_VERBS)
             return _generate_template_g(effective_verb, tense, frame, gender_io_tu)
 
     # Choose template
     if _is_modal(verb):
-        # Modal verbs always use template A (conjugated directly)
         template = "A"
         obj = get_object_for_verb(verb)
-        adv = random.choice(ADVERBIALS)
+        adv = _get_compatible_adverb(tense, frame_class)
         return SentenceSpec(verb, tense, subject, frame, template, obj, adv, gender_io_tu=gender_io_tu)
 
-    # Weight templates (now including F and G)
     if difficulty_unlocked:
         template = random.choices(
             ["A", "B", "C", "D", "E", "F", "G"],
@@ -1554,7 +1890,7 @@ def generate_sentence(
         )[0]
 
     obj = None
-    adv = random.choice(ADVERBIALS)  # Always include an adverb
+    adv = _get_compatible_adverb(tense, frame_class)
     modal = None
 
     if template == "A":
@@ -1575,7 +1911,7 @@ def generate_sentence(
             obj = get_object_for_verb(verb)
 
     elif template == "E":
-        subject = "tu"  # question directed at tu
+        subject = "tu"
         if _needs_object(verb):
             obj = get_object_for_verb(verb)
 
