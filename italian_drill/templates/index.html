@@ -145,9 +145,24 @@ body {
 /* ---- Stats page ---- */
 #stats-screen { overflow-y: auto; }
 #stats-screen h2 { font-size: 18px; margin: 16px 0 8px; color: var(--gold); }
+#stats-screen h3 { font-size: 14px; margin: 8px 0 4px; color: var(--muted); }
 #stats-screen table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 8px; }
 #stats-screen th { text-align: left; color: var(--muted); font-weight: 500; padding: 4px 6px; border-bottom: 1px solid var(--accent); }
 #stats-screen td { padding: 4px 6px; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.stats-section-header {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--gold);
+  padding: 10px 0 4px;
+  margin-top: 12px;
+  border-bottom: 2px solid var(--gold);
+}
+.stats-divider {
+  border: none;
+  border-top: 1px solid var(--accent);
+  margin: 18px 0 6px;
+}
 #btn-back-stats {
   margin-top: 16px;
   padding: 12px;
@@ -254,24 +269,33 @@ body {
 
 <!-- ========== STATS SCREEN ========== -->
 <div id="stats-screen" class="screen hidden">
-  <h2>Session</h2>
-  <div id="stats-session"></div>
 
-  <h2>Weakest Verbs</h2>
-  <table id="stats-weakest"><thead><tr><th>Verb</th><th>Acc</th><th>Attempts</th></tr></thead><tbody></tbody></table>
+  <!-- ---- This Session ---- -->
+  <div class="stats-section-header">This Session</div>
+  <div id="stats-session-summary" style="font-size:14px; margin:8px 0;"></div>
 
-  <h2>Mastered Verbs</h2>
-  <table id="stats-mastered"><thead><tr><th>Verb</th><th>Attempts</th><th>Mastery</th></tr></thead><tbody></tbody></table>
+  <h3>Verbs This Session</h3>
+  <table id="stats-session-verbs"><thead><tr><th>Verb</th><th>Acc</th><th>Attempts</th></tr></thead><tbody></tbody></table>
 
-  <h2>Tense Accuracy</h2>
-  <table id="stats-tense"><thead><tr><th>Tense</th><th>Acc</th><th>Attempts</th></tr></thead><tbody></tbody></table>
+  <h3>Tenses This Session</h3>
+  <table id="stats-session-tenses"><thead><tr><th>Tense</th><th>Acc</th><th>Attempts</th></tr></thead><tbody></tbody></table>
 
-  <h2>Weakest Combos</h2>
-  <table id="stats-combo"><thead><tr><th>Combo</th><th>Acc</th><th>Attempts</th></tr></thead><tbody></tbody></table>
+  <!-- ---- All Time ---- -->
+  <hr class="stats-divider">
+  <div class="stats-section-header">All Time</div>
+  <div id="stats-lifetime-summary" style="font-size:14px; margin:8px 0;"></div>
 
-  <div style="margin-top:8px; font-size:13px; color:var(--muted);">
-    Lifetime: <span id="stats-lifetime"></span> | Session: <span id="stats-session-time"></span>
-  </div>
+  <h3>Weakest Verbs</h3>
+  <table id="stats-lt-weakest"><thead><tr><th>Verb</th><th>Acc</th><th>Attempts</th></tr></thead><tbody></tbody></table>
+
+  <h3>Mastered Verbs</h3>
+  <table id="stats-lt-mastered"><thead><tr><th>Verb</th><th>Attempts</th><th>Mastery</th></tr></thead><tbody></tbody></table>
+
+  <h3>Tense Accuracy</h3>
+  <table id="stats-lt-tense"><thead><tr><th>Tense</th><th>Acc</th><th>Attempts</th></tr></thead><tbody></tbody></table>
+
+  <h3>Weakest Combos</h3>
+  <table id="stats-lt-combo"><thead><tr><th>Combo</th><th>Acc</th><th>Attempts</th></tr></thead><tbody></tbody></table>
 
   <button id="btn-back-stats">Back to Drill</button>
 </div>
@@ -507,45 +531,64 @@ body {
 
     updateStatsBar(data.session_stats);
 
-    // Session summary
+    // ---- This Session ----
     var s = data.session_stats;
-    $("#stats-session").innerHTML =
-      "Questions: " + s.total + " | Correct: " + s.correct + " | Accuracy: " + s.accuracy + "%";
+    $("#stats-session-summary").innerHTML =
+      "Questions: <b>" + s.total + "</b> &middot; Correct: <b>" + s.correct +
+      "</b> &middot; Accuracy: <b>" + s.accuracy + "%</b> &middot; Time: <b>" + esc(data.session_time) + "</b>";
 
-    // Weakest
-    var tb = $("#stats-weakest tbody");
+    var tb = $("#stats-session-verbs tbody");
     tb.innerHTML = "";
-    (data.weakest || []).forEach(function(v) {
+    (data.session_weakest || []).forEach(function(v) {
+      tb.innerHTML += "<tr><td>" + esc(v.verb) + " (" + esc(v.en) + ")</td><td>" +
+        v.accuracy + "%</td><td>" + v.total + "</td></tr>";
+    });
+    if (!(data.session_weakest || []).length) {
+      tb.innerHTML = "<tr><td colspan='3' style='color:var(--muted)'>No attempts yet</td></tr>";
+    }
+
+    tb = $("#stats-session-tenses tbody");
+    tb.innerHTML = "";
+    (data.session_tense || []).forEach(function(t) {
+      tb.innerHTML += "<tr><td>" + esc(t.tense) + "</td><td>" +
+        t.accuracy + "%</td><td>" + t.attempts + "</td></tr>";
+    });
+    if (!(data.session_tense || []).length) {
+      tb.innerHTML = "<tr><td colspan='3' style='color:var(--muted)'>No attempts yet</td></tr>";
+    }
+
+    // ---- All Time ----
+    $("#stats-lifetime-summary").innerHTML =
+      "Questions: <b>" + data.lifetime_total + "</b> &middot; Accuracy: <b>" +
+      data.lifetime_accuracy + "%</b> &middot; Time: <b>" + esc(data.lifetime_time) + "</b>";
+
+    tb = $("#stats-lt-weakest tbody");
+    tb.innerHTML = "";
+    (data.lifetime_weakest || []).forEach(function(v) {
       tb.innerHTML += "<tr><td>" + esc(v.verb) + " (" + esc(v.en) + ")</td><td>" +
         (v.accuracy !== null ? v.accuracy + "%" : "-") + "</td><td>" + v.total + "</td></tr>";
     });
 
-    // Mastered
-    tb = $("#stats-mastered tbody");
+    tb = $("#stats-lt-mastered tbody");
     tb.innerHTML = "";
-    (data.mastered || []).forEach(function(v) {
+    (data.lifetime_mastered || []).forEach(function(v) {
       tb.innerHTML += "<tr><td>" + esc(v.verb) + " (" + esc(v.en) + ")</td><td>" +
         v.total + "</td><td>" + v.mastery_count + "</td></tr>";
     });
 
-    // Tense
-    tb = $("#stats-tense tbody");
+    tb = $("#stats-lt-tense tbody");
     tb.innerHTML = "";
-    (data.tense_stats || []).forEach(function(t) {
+    (data.lifetime_tense || []).forEach(function(t) {
       tb.innerHTML += "<tr><td>" + esc(t.tense) + "</td><td>" +
         t.accuracy + "%</td><td>" + t.attempts + "</td></tr>";
     });
 
-    // Combos
-    tb = $("#stats-combo tbody");
+    tb = $("#stats-lt-combo tbody");
     tb.innerHTML = "";
-    (data.combo_stats || []).forEach(function(c) {
+    (data.lifetime_combos || []).forEach(function(c) {
       tb.innerHTML += "<tr><td>" + esc(c.combo) + "</td><td>" +
         c.accuracy + "%</td><td>" + c.attempts + "</td></tr>";
     });
-
-    $("#stats-lifetime").textContent = data.lifetime;
-    $("#stats-session-time").textContent = data.session;
 
     showScreen(statsScr);
   });

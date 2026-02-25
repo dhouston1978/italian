@@ -71,6 +71,8 @@ def _load_or_init_session() -> Dict[str, Any]:
         session["session_start"] = time.time()
         session["session_total"] = 0
         session["session_correct"] = 0
+        session["session_verb_stats"] = {}   # verb -> {total, correct}
+        session["session_tense_stats"] = {}  # tense -> {total, correct}
         session["mode"] = "all"
         session["gender_io_tu"] = "m"
         session["allowed_tenses"] = list(TENSES)
@@ -165,6 +167,8 @@ def settings():
     session["session_start"] = time.time()
     session["session_total"] = 0
     session["session_correct"] = 0
+    session["session_verb_stats"] = {}
+    session["session_tense_stats"] = {}
     session["correction_reps"] = 0
     session["correction_expected"] = None
 
@@ -236,9 +240,28 @@ def answer():
     if correct:
         session["session_correct"] = session.get("session_correct", 0) + 1
 
+    # Track per-verb and per-tense stats for this session
+    verb = spec_dict["verb"]
+    tense = spec_dict["tense"]
+
+    sv = session.get("session_verb_stats", {})
+    vs_entry = sv.get(verb, {"total": 0, "correct": 0})
+    vs_entry["total"] += 1
+    if correct:
+        vs_entry["correct"] += 1
+    sv[verb] = vs_entry
+    session["session_verb_stats"] = sv
+
+    st = session.get("session_tense_stats", {})
+    ts_entry = st.get(tense, {"total": 0, "correct": 0})
+    ts_entry["total"] += 1
+    if correct:
+        ts_entry["correct"] += 1
+    st[tense] = ts_entry
+    session["session_tense_stats"] = st
+
     # Persist
     progress = load_progress()
-    verb = spec_dict["verb"]
 
     if correct and not hint_used:
         update_verb_progress(progress, verb, True, False)
@@ -383,13 +406,48 @@ def flag():
 
 @app.route("/stats")
 def stats():
-    """Return detailed statistics as JSON."""
+    """Return detailed statistics as JSON.
+
+    Returns two top-level sections:
+      - session: verb/tense stats for the current session only
+      - lifetime: verb/tense/combo stats from progress.json (all sessions)
+    """
     _load_or_init_session()
     progress = load_progress()
     elapsed = (time.time() - session.get("session_start", time.time())) / 60
-    lifetime = progress.get("lifetime_minutes", 0.0) + elapsed
+    lifetime_min = progress.get("lifetime_minutes", 0.0) + elapsed
 
-    # Verb stats
+    # --- Session-level stats ---
+    sv = session.get("session_verb_stats", {})
+    session_verb_list = []
+    verb_map_local = {v["infinitive"]: v for v in VERBS}
+    for verb, d in sv.items():
+        t = d["total"]
+        c = d["correct"]
+        en = verb_map_local.get(verb, {}).get("en", verb)
+        session_verb_list.append({
+            "verb": verb,
+            "en": en,
+            "accuracy": round(c / t * 100, 1) if t > 0 else 0,
+            "total": t,
+        })
+    session_weakest = sorted(
+        session_verb_list, key=lambda x: (x["accuracy"], -x["total"])
+    )[:10]
+
+    st = session.get("session_tense_stats", {})
+    session_tense_list = []
+    for tense in TENSES:
+        if tense in st:
+            t = st[tense]["total"]
+            c = st[tense]["correct"]
+            session_tense_list.append({
+                "tense": TENSE_EN.get(tense, tense),
+                "accuracy": round(c / t * 100, 1) if t > 0 else 0,
+                "attempts": t,
+            })
+
+    # --- Lifetime stats ---
     verb_stats = []
     for v in VERBS:
         vp = progress.get("verbs", {}).get(v["infinitive"], {})
@@ -407,46 +465,53 @@ def stats():
         })
 
     attempted = [v for v in verb_stats if v["total"] > 0]
-    weakest = sorted(attempted, key=lambda x: (x["accuracy"] or 100, -x["total"]))[:10]
-    mastered_list = sorted(
+    lt_weakest = sorted(attempted, key=lambda x: (x["accuracy"] or 100, -x["total"]))[:10]
+    lt_mastered = sorted(
         [v for v in verb_stats if v["mastered"]], key=lambda x: -x["total"]
     )[:10]
 
-    # Tense accuracy
     ta = progress.get("tense_accuracy", {})
-    tense_stats = []
+    lt_tense_stats = []
     for t in TENSES:
         if t in ta:
             a = ta[t]["attempts"]
             c = ta[t]["correct"]
-            tense_stats.append({
+            lt_tense_stats.append({
                 "tense": TENSE_EN.get(t, t),
                 "accuracy": round(c / a * 100, 1) if a > 0 else 0,
                 "attempts": a,
             })
 
-    # Person/tense combos
     tpa = progress.get("tense_person_accuracy", {})
-    combo_stats = []
+    lt_combo_stats = []
     for key, data in sorted(tpa.items()):
         a = data["attempts"]
         c = data["correct"]
         if a > 0:
-            combo_stats.append({
+            lt_combo_stats.append({
                 "combo": key,
                 "accuracy": round(c / a * 100, 1),
                 "attempts": a,
             })
-    combo_stats.sort(key=lambda x: (x["accuracy"], -x["attempts"]))
+    lt_combo_stats.sort(key=lambda x: (x["accuracy"], -x["attempts"]))
+
+    # Lifetime totals
+    lt_total = sum(vp.get("total_attempts", 0) for vp in progress.get("verbs", {}).values())
+    lt_correct = sum(vp.get("correct_attempts", 0) for vp in progress.get("verbs", {}).values())
 
     return jsonify({
-        "lifetime": format_duration(lifetime),
-        "session": format_duration(elapsed),
-        "weakest": weakest,
-        "mastered": mastered_list,
-        "tense_stats": tense_stats,
-        "combo_stats": combo_stats[:10],
         "session_stats": _session_stats(),
+        "session_time": format_duration(elapsed),
+        "session_weakest": session_weakest,
+        "session_tense": session_tense_list,
+        "lifetime_time": format_duration(lifetime_min),
+        "lifetime_total": lt_total,
+        "lifetime_correct": lt_correct,
+        "lifetime_accuracy": round(lt_correct / lt_total * 100, 1) if lt_total > 0 else 0,
+        "lifetime_weakest": lt_weakest,
+        "lifetime_mastered": lt_mastered,
+        "lifetime_tense": lt_tense_stats,
+        "lifetime_combos": lt_combo_stats[:10],
     })
 
 
