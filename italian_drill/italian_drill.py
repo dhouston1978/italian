@@ -22,7 +22,7 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 # Constants / paths
 # ---------------------------------------------------------------------------
 
-DATA_DIR = Path(__file__).resolve().parent / "italian_drill_data"
+DATA_DIR = Path(os.environ["ITALIAN_DRILL_DATA_DIR"]) if "ITALIAN_DRILL_DATA_DIR" in os.environ else Path(__file__).resolve().parent / "italian_drill_data"
 PROGRESS_FILE = DATA_DIR / "progress.json"
 ATTEMPTS_FILE = DATA_DIR / "attempts.jsonl"
 FLAGGED_FILE = DATA_DIR / "flagged.jsonl"
@@ -2006,31 +2006,69 @@ def show_session_summary(
 # Sync helper
 # ---------------------------------------------------------------------------
 
+def _find_sync_script() -> Optional[Path]:
+    """Locate sync_to_sheets.py, checking Colab paths first.
+
+    Search order:
+      1. /content/sync_to_sheets.py          (Colab working dir)
+      2. /content/drive/MyDrive/sync_to_sheets.py  (Google Drive)
+         — if found here but not in /content/, copy it there first
+      3. Same directory as italian_drill.py   (local / fallback)
+    """
+    import shutil
+
+    colab_content = Path("/content/sync_to_sheets.py")
+    colab_drive = Path("/content/drive/MyDrive/sync_to_sheets.py")
+    local = Path(__file__).resolve().parent / "sync_to_sheets.py"
+
+    if colab_content.exists():
+        return colab_content
+
+    if colab_drive.exists():
+        try:
+            shutil.copy2(str(colab_drive), str(colab_content))
+            print(f"  Copied sync_to_sheets.py from Drive to {colab_content}")
+            return colab_content
+        except OSError:
+            return colab_drive
+
+    if local.exists():
+        return local
+
+    return None
+
+
 def run_sync() -> None:
     """Run sync_to_sheets.py after loading .env."""
     script_dir = Path(__file__).resolve().parent
-    env_file = script_dir / ".env"
-    sync_script = script_dir / "sync_to_sheets.py"
 
-    if not sync_script.exists():
+    sync_script = _find_sync_script()
+    if sync_script is None:
         print("Warning: sync_to_sheets.py not found, skipping sync.")
         return
 
-    # Load .env
+    # Load .env — check Colab paths, then local
     env = os.environ.copy()
-    if env_file.exists():
-        with open(env_file, "r", encoding="utf-8") as f:
-            for line in f:
-                line = line.strip()
-                if line and not line.startswith("#") and "=" in line:
-                    key, _, value = line.partition("=")
-                    env[key.strip()] = value.strip()
+    env_candidates = [
+        Path("/content/.env"),
+        Path("/content/drive/MyDrive/.env"),
+        script_dir / ".env",
+    ]
+    for env_file in env_candidates:
+        if env_file.exists():
+            with open(env_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    line = line.strip()
+                    if line and not line.startswith("#") and "=" in line:
+                        key, _, value = line.partition("=")
+                        env[key.strip()] = value.strip()
+            break
 
     try:
         result = subprocess.run(
             [sys.executable, str(sync_script)],
             env=env,
-            cwd=str(script_dir),
+            cwd=str(sync_script.parent),
             timeout=60,
         )
         if result.returncode != 0:
@@ -2312,5 +2350,5 @@ def main() -> None:
     run_sync()
 
 
-if __name__ == "__main__":
+if __name__ in ("__main__", "<run_path>"):
     main()
