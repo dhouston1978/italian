@@ -1330,14 +1330,19 @@ def _get_adverb_pool(tense: str) -> List[Dict[str, str]]:
     return pool
 
 
-def _get_compatible_adverb(tense: str, frame_class: str) -> Dict[str, str]:
-    """Pick an adverb compatible with both tense and frame temporal class."""
+def _get_compatible_adverb(tense: str, frame_class: str) -> Optional[Dict[str, str]]:
+    """Pick an adverb compatible with both tense and frame temporal class.
+
+    Returns None when the frame is habitual (Di solito, A volte, Ogni giorno)
+    because the frame itself already provides the frequency context — adding
+    an adverb would create redundant sentences like "Di solito ... di solito".
+    """
+    if frame_class == "habitual":
+        return None
     pool = _get_adverb_pool(tense)
     compatible = []
     for adv in pool:
         ac = _classify_adverb(adv)
-        if frame_class == "habitual" and ac == "specific":
-            continue  # No specific time with habitual frame
         if frame_class == "specific" and ac == "habitual":
             continue  # No habitual adverb with specific frame
         compatible.append(adv)
@@ -1795,12 +1800,14 @@ def _validate_sentence(spec: SentenceSpec) -> bool:
             if spec.tense in ("futuro", "imperfetto"):
                 return False
 
-    # 4. Frame + adverb temporal coherence
+    # 4. Habitual frames should have no adverb (frame provides the context)
     frame_class = _classify_frame(spec.frame)
+    if frame_class == "habitual" and spec.adv is not None:
+        return False
+
+    # 5. Specific frames should not pair with habitual adverbs
     if spec.adv:
         adv_class = _classify_adverb(spec.adv)
-        if frame_class == "habitual" and adv_class == "specific":
-            return False
         if frame_class == "specific" and adv_class == "habitual":
             return False
 
