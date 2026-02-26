@@ -597,6 +597,113 @@ def get_adverb_for_tense(tense: str) -> Dict[str, str]:
     """Return a semantically compatible adverb for the given tense."""
     return random.choice(_get_adverb_pool(tense))
 
+
+# ---------------------------------------------------------------------------
+# Location adverbs (simple single-word) — for movement and state verbs
+# ---------------------------------------------------------------------------
+
+LOCATION_ADVERBS: List[Dict[str, str]] = [
+    {"it": "qui", "en": "here"},
+    {"it": "qua", "en": "here"},
+    {"it": "lì", "en": "there"},
+    {"it": "là", "en": "there"},
+    {"it": "lassù", "en": "up there"},
+    {"it": "laggiù", "en": "down there"},
+    {"it": "vicino", "en": "nearby"},
+    {"it": "lontano", "en": "far away"},
+    {"it": "fuori", "en": "outside"},
+    {"it": "dentro", "en": "inside"},
+    {"it": "sopra", "en": "above/upstairs"},
+    {"it": "sotto", "en": "below/downstairs"},
+    {"it": "davanti", "en": "in front"},
+    {"it": "dietro", "en": "behind"},
+]
+
+# ---------------------------------------------------------------------------
+# Prepositional location phrases — richer location details
+# ---------------------------------------------------------------------------
+
+# Prepositional phrases that imply traversal — movement verbs only
+PREP_LOCATIONS_MOVEMENT: List[Dict[str, str]] = [
+    # attraverso (across/through)
+    {"it": "attraverso il parco", "en": "through the park"},
+    {"it": "attraverso la città", "en": "through the city"},
+    {"it": "attraverso il ponte", "en": "across the bridge"},
+    # lungo (along)
+    {"it": "lungo il fiume", "en": "along the river"},
+    {"it": "lungo la strada", "en": "along the road"},
+    {"it": "lungo la costa", "en": "along the coast"},
+    # fino a (as far as)
+    {"it": "fino alla stazione", "en": "as far as the station"},
+    {"it": "fino al mare", "en": "all the way to the sea"},
+    {"it": "fino in centro", "en": "all the way to the center"},
+]
+
+# Prepositional phrases for static position — movement and state verbs
+PREP_LOCATIONS_ANY: List[Dict[str, str]] = [
+    # sul/sulla (on)
+    {"it": "sul ponte", "en": "over the bridge"},
+    {"it": "sulla collina", "en": "on the hill"},
+    {"it": "sul marciapiede", "en": "on the sidewalk"},
+    {"it": "sul treno", "en": "on the train"},
+    {"it": "sull'autobus", "en": "on the bus"},
+    # nel/nella (in/into)
+    {"it": "nel parco", "en": "in the park"},
+    {"it": "nella piazza", "en": "in the square"},
+    {"it": "nella foresta", "en": "in the forest"},
+    {"it": "nell'ufficio", "en": "in the office"},
+    # vicino a (near)
+    {"it": "vicino al fiume", "en": "near the river"},
+    {"it": "vicino alla stazione", "en": "near the station"},
+    {"it": "vicino al mare", "en": "near the sea"},
+    {"it": "vicino alla scuola", "en": "near the school"},
+    # davanti a (in front of)
+    {"it": "davanti alla chiesa", "en": "in front of the church"},
+    {"it": "davanti al cinema", "en": "in front of the cinema"},
+    {"it": "davanti alla scuola", "en": "in front of the school"},
+    # dietro (behind)
+    {"it": "dietro la casa", "en": "behind the house"},
+    {"it": "dietro l'angolo", "en": "around the corner"},
+    {"it": "dietro al negozio", "en": "behind the shop"},
+    # in cima a (at the top of)
+    {"it": "in cima alla collina", "en": "at the top of the hill"},
+    {"it": "in cima alle scale", "en": "at the top of the stairs"},
+    # in fondo a (at the bottom/end of)
+    {"it": "in fondo alla strada", "en": "at the end of the street"},
+    {"it": "in fondo al corridoio", "en": "at the end of the corridor"},
+]
+
+# Combined flat list for backward compat
+PREPOSITIONAL_LOCATIONS: List[Dict[str, str]] = PREP_LOCATIONS_MOVEMENT + PREP_LOCATIONS_ANY
+
+# Verb categories eligible for location elements
+LOCATION_ELIGIBLE_CATEGORIES: Set[str] = {"movement", "state"}
+
+
+def _pick_location_element(verb: str) -> Optional[Dict[str, str]]:
+    """Optionally pick a location adverb or prepositional phrase.
+
+    Returns None most of the time.  For eligible verbs:
+    - ~20% chance of a simple location adverb
+    - ~30% chance of a prepositional location phrase
+    - ~50% nothing (use time adverb / no location)
+
+    Movement verbs get the full pool (traversal + static phrases).
+    State verbs only get static position phrases.
+    """
+    sem = VERB_SEMANTIC_CATEGORY.get(verb, "")
+    if sem not in LOCATION_ELIGIBLE_CATEGORIES:
+        return None
+    r = random.random()
+    if r < 0.20:
+        return random.choice(LOCATION_ADVERBS)
+    elif r < 0.50:
+        if sem == "movement":
+            return random.choice(PREPOSITIONAL_LOCATIONS)
+        else:
+            return random.choice(PREP_LOCATIONS_ANY)
+    return None
+
 # ---------------------------------------------------------------------------
 # Pronouns for template F
 # ---------------------------------------------------------------------------
@@ -1464,6 +1571,8 @@ class SentenceSpec:
         # Template G extras
         adjective: Optional[Dict[str, str]] = None,
         gendered_subject: Optional[Dict[str, Any]] = None,
+        # Location element (simple adverb or prepositional phrase)
+        location: Optional[Dict[str, str]] = None,
     ):
         self.verb = verb
         self.tense = tense
@@ -1480,6 +1589,7 @@ class SentenceSpec:
         self.f_modal = f_modal
         self.adjective = adjective
         self.gendered_subject = gendered_subject
+        self.location = location
 
     def _get_pronoun_it(self) -> str:
         """Get the Italian pronoun string for template F."""
@@ -1513,26 +1623,32 @@ class SentenceSpec:
             parts.append(self.frame["it"])
 
         if self.template == "A":
-            # Frame + verb + object + adverb  (subject pronoun dropped)
+            # Frame + verb + object + location/adverb  (subject pronoun dropped)
             parts.append(conjugate(self.verb, self.tense, self.subject, self.gender_io_tu))
             if self.obj:
                 parts.append(self.obj["it"])
-            if self.adv:
+            if self.location:
+                parts.append(self.location["it"])
+            elif self.adv:
                 parts.append(self.adv["it"])
 
         elif self.template == "B":
-            # Frame + modal(tense) + infinitive + object  (subject pronoun dropped)
+            # Frame + modal(tense) + infinitive + object/location  (subject pronoun dropped)
             parts.append(conjugate(self.modal or "potere", self.tense, self.subject, self.gender_io_tu))
             parts.append(self.verb)  # infinitive
             if self.obj:
                 parts.append(self.obj["it"])
+            if self.location:
+                parts.append(self.location["it"])
 
         elif self.template == "C":
-            # Frame + volere(tense) + infinitive + object  (subject pronoun dropped)
+            # Frame + volere(tense) + infinitive + object/location  (subject pronoun dropped)
             parts.append(conjugate("volere", self.tense, self.subject, self.gender_io_tu))
             parts.append(self.verb)  # infinitive
             if self.obj:
                 parts.append(self.obj["it"])
+            if self.location:
+                parts.append(self.location["it"])
 
         elif self.template == "D":
             # "è possibile che" + subject + verb (presente/indicative)
@@ -1590,7 +1706,9 @@ class SentenceSpec:
                 else:
                     parts.append(verb_form)
                 parts.append(adj_form)
-                if self.adv:
+                if self.location:
+                    parts.append(self.location["it"])
+                elif self.adv:
                     parts.append(self.adv["it"])
 
         return " ".join(parts)
@@ -1603,16 +1721,25 @@ class SentenceSpec:
             parts.append(self.frame["en"])
 
         obj_en = self.obj["en"] if self.obj else ""
-        adv_en = self.adv["en"] if self.adv else ""
+        # Location element takes the adverb slot in English prompt
+        if self.location:
+            adv_en = self.location["en"]
+        elif self.adv:
+            adv_en = self.adv["en"]
+        else:
+            adv_en = ""
 
         if self.template == "A":
             parts.append(english_conjugation(verb_info, self.tense, self.subject, obj_en, adv_en))
         elif self.template == "B":
             modal_info = VERB_MAP.get(self.modal or "potere", {"en": "to be able to"})
             modal_en = english_conjugation(modal_info, self.tense, self.subject)
-            parts.append(f"{modal_en} {verb_info['en'].replace('to ', '')}")
+            s = f"{modal_en} {verb_info['en'].replace('to ', '')}"
             if obj_en:
-                parts[-1] += f" {obj_en}"
+                s += f" {obj_en}"
+            if self.location:
+                s += f" {self.location['en']}"
+            parts.append(s)
         elif self.template == "C":
             subj = SUBJECT_EN[self.subject]
             want_form = english_conjugation(VERB_MAP["volere"], self.tense, self.subject)
@@ -1620,6 +1747,8 @@ class SentenceSpec:
             s = f"{want_form} {bare}"
             if obj_en:
                 s += f" {obj_en}"
+            if self.location:
+                s += f" {self.location['en']}"
             parts.append(s)
         elif self.template == "D":
             subj = SUBJECT_EN[self.subject]
@@ -1673,7 +1802,7 @@ class SentenceSpec:
                 bare = verb_info["en"].replace("to ", "")
                 subj_en = gs["en"]
                 adj_en = adj["en"]
-                adv_en_g = self.adv["en"] if self.adv else ""
+                adv_en_g = self.location["en"] if self.location else (self.adv["en"] if self.adv else "")
                 vs = gs["verb_subject"]
                 verb_en = english_conjugation(verb_info, self.tense, vs)
                 # Replace the subject pronoun with the noun phrase
@@ -1749,7 +1878,13 @@ def _generate_template_g(
         verb = random.choice(AGREEMENT_VERBS_STATE)
 
     frame_class = _classify_frame(frame)
-    adv = _get_compatible_adverb(tense, frame_class)
+
+    # Try a location element; if picked, skip the time adverb
+    location = _pick_location_element(verb)
+    if location:
+        adv = None
+    else:
+        adv = _get_compatible_adverb(tense, frame_class)
 
     return SentenceSpec(
         verb=verb, tense=tense, subject=gs["verb_subject"],
@@ -1758,6 +1893,7 @@ def _generate_template_g(
         adv=adv,
         adjective=adj,
         gendered_subject=gs,
+        location=location,
     )
 
 
@@ -1769,6 +1905,7 @@ def _validate_sentence(spec: SentenceSpec) -> bool:
     2. Verb category + object category
     3. Tense + adverb compatibility
     4. Frame + adverb temporal coherence
+    5. Location element compatibility
     """
     sem = VERB_SEMANTIC_CATEGORY.get(spec.verb, "action")
 
@@ -1809,6 +1946,18 @@ def _validate_sentence(spec: SentenceSpec) -> bool:
     if spec.adv:
         adv_class = _classify_adverb(spec.adv)
         if frame_class == "specific" and adv_class == "habitual":
+            return False
+
+    # 6. Location element checks
+    if spec.location:
+        # Location only for movement and state verbs
+        if sem not in LOCATION_ELIGIBLE_CATEGORIES:
+            return False
+        # Never combine location with a location object
+        if spec.obj:
+            return False
+        # Never combine location with a time adverb
+        if spec.adv:
             return False
 
     return True
@@ -1899,18 +2048,36 @@ def _generate_sentence_inner(
     obj = None
     adv = _get_compatible_adverb(tense, frame_class)
     modal = None
+    location = None
+
+    # For templates A/B/C: try a location element for eligible verbs
+    # Location replaces both the location-object and the time adverb
+    loc_candidate = _pick_location_element(verb) if template in ("A", "B", "C") else None
 
     if template == "A":
-        if _needs_object(verb):
+        if loc_candidate:
+            # Location element replaces obj and adverb
+            location = loc_candidate
+            obj = None
+            adv = None
+        elif _needs_object(verb):
             obj = get_object_for_verb(verb)
 
     elif template == "B":
         modal = random.choice(["potere", "volere", "dovere"])
-        if _needs_object(verb):
+        if loc_candidate:
+            location = loc_candidate
+            obj = None
+            adv = None
+        elif _needs_object(verb):
             obj = get_object_for_verb(verb)
 
     elif template == "C":
-        if _needs_object(verb):
+        if loc_candidate:
+            location = loc_candidate
+            obj = None
+            adv = None
+        elif _needs_object(verb):
             obj = get_object_for_verb(verb)
 
     elif template == "D":
@@ -1930,7 +2097,7 @@ def _generate_sentence_inner(
         effective_verb = verb if verb in AGREEMENT_VERBS else random.choice(AGREEMENT_VERBS)
         return _generate_template_g(effective_verb, tense, frame, gender_io_tu)
 
-    return SentenceSpec(verb, tense, subject, frame, template, obj, adv, modal, gender_io_tu)
+    return SentenceSpec(verb, tense, subject, frame, template, obj, adv, modal, gender_io_tu, location=location)
 
 
 # ---------------------------------------------------------------------------
