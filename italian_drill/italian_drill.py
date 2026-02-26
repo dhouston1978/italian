@@ -2092,6 +2092,19 @@ def _is_modal(verb: str) -> bool:
     return verb in ("potere", "volere", "dovere")
 
 
+def _modal_plus_infinitive_en(modal: str, modal_en: str, bare_inf: str) -> str:
+    """Build 'modal + infinitive' in English with correct 'to' handling.
+
+    - volere: always needs 'to' → 'wants to read', 'wanted to read'
+    - dovere/potere present: 'must read', 'can read' (no extra 'to')
+    - dovere/potere other tenses: 'had to read', 'was able to read'
+      (the 'to' is already part of modal_en)
+    """
+    if modal == "volere":
+        return f"{modal_en} to {bare_inf}"
+    return f"{modal_en} {bare_inf}"
+
+
 def _get_adjective_form(adj: Dict[str, str], gender: str, number: str) -> str:
     """Get the correctly agreed adjective form."""
     key = gender + ("s" if number == "s" else "p")
@@ -2424,15 +2437,7 @@ class SentenceSpec:
             modal_info = VERB_MAP.get(self.modal or "potere", {"en": "to be able to"})
             modal_en = english_conjugation(modal_info, self.tense, self.subject)
             bare = verb_info["en"][3:] if verb_info["en"].startswith("to ") else verb_info["en"]
-            # potere → "can/could/was able to" (no "to" needed before bare verb)
-            # dovere → "must/had to" ("to" already present for past)
-            # volere → "wants/wanted/will want" (needs "to" before bare verb)
-            if self.modal == "volere":
-                s = f"{modal_en} to {bare}"
-            elif modal_en.rstrip().endswith("to"):
-                s = f"{modal_en} {bare}"
-            else:
-                s = f"{modal_en} {bare}"
+            s = _modal_plus_infinitive_en(self.modal or "potere", modal_en, bare)
             if obj_en:
                 s += f" {obj_en}"
             if self.location:
@@ -2474,15 +2479,12 @@ class SentenceSpec:
             if self.f_modal:
                 modal_info = VERB_MAP.get(self.f_modal, {"en": "to be able to"})
                 modal_en = english_conjugation(modal_info, self.tense, self.subject)
-                # volere needs "to" before infinitive: "wants to read"
-                inf_to = "to " if self.f_modal == "volere" else ""
-                s = f"{modal_en} {inf_to}{bare} {pron_en}"
+                modal_inf = _modal_plus_infinitive_en(self.f_modal, modal_en, bare)
+                s = f"{modal_inf} {pron_en}"
                 if adv_en_f:
                     s += f" {adv_en_f}"
                 parts.append(s)
-                # Tag only with modals — pronoun can go before modal
-                # or attached to infinitive
-                parts.append("[pronoun before modal]")
+                parts.append("(Hint: pronoun goes before the modal verb)")
             else:
                 verb_en = english_conjugation(verb_info, self.tense, self.subject)
                 s = f"{verb_en} {pron_en}"
@@ -2579,8 +2581,7 @@ class SentenceSpec:
                 if self.reflexive_modal:
                     modal_info = VERB_MAP.get(self.reflexive_modal, {"en": "to be able to"})
                     modal_en = english_conjugation(modal_info, self.tense, self.subject)
-                    inf_to = "to " if self.reflexive_modal == "volere" else ""
-                    s = f"{modal_en} {inf_to}{bare}"
+                    s = _modal_plus_infinitive_en(self.reflexive_modal, modal_en, bare)
                 else:
                     # Simple tense-based English
                     third = self.subject in ("lui", "lei")
@@ -2722,7 +2723,7 @@ class SentenceSpec:
                 if self.adv:
                     s += f" {self.adv['en']}"
                 parts.append(s)
-                parts.append("[combine indirect + direct pronouns]")
+                parts.append("(Hint: combine the indirect and direct pronouns)")
 
         elif self.template == "K":
             # Idiomatic expression — fully built by helper

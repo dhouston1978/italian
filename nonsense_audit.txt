@@ -39,7 +39,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
  10. [J] [present] [voi]
      IT: Per me, ce li chiedete
-     EN: For me, you all ask for them (m) to us [combine indirect + direct pronouns]
+     EN: For me, you all ask for them (m) to us (Hint: combine the indirect and direct pronouns)
 
  11. [K] [present] [lei]
      IT: Non si ricorda più
@@ -83,7 +83,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
  21. [F] [present] [loro]
      IT: Francamente, lo vogliono portare lì
-     EN: Frankly, they want to bring it (m) there [pronoun before modal]
+     EN: Frankly, they want to bring it (m) there (Hint: pronoun goes before the modal verb)
 
  22. [B] [present] [io]
      IT: Voglio mangiare la cena
@@ -95,7 +95,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
  24. [J] [present] [lui]
      IT: Raramente, te la mostra
-     EN: Rarely, he shows it (f) to you [combine indirect + direct pronouns]
+     EN: Rarely, he shows it (f) to you (Hint: combine the indirect and direct pronouns)
 
  25. [K] [present] [tu]
      IT: Che cosa ne pensi?
@@ -207,7 +207,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
  52. [J] [passato prossimo] [voi]
      IT: Nel frattempo, te li avete dati lì
-     EN: Meanwhile, you all gave them (m) to you there [combine indirect + direct pronouns]
+     EN: Meanwhile, you all gave them (m) to you there (Hint: combine the indirect and direct pronouns)
 
  53. [A] [conditional] [loro]
      IT: Onestamente, viverebbero in fondo al corridoio
@@ -235,7 +235,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
  59. [J] [passato prossimo] [lui]
      IT: D'altra parte, ce li ha spiegati male
-     EN: On the other hand, he explained them (m) to us badly [combine indirect + direct pronouns]
+     EN: On the other hand, he explained them (m) to us badly (Hint: combine the indirect and direct pronouns)
 
  60. [A] [imperfect] [tu]
      IT: Guarivi vicino
@@ -243,7 +243,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
  61. [J] [imperfect] [voi]
      IT: Sinceramente, gliela cucinavate
-     EN: Sincerely, you all used to cook it (f) to him [combine indirect + direct pronouns]
+     EN: Sincerely, you all used to cook it (f) to him (Hint: combine the indirect and direct pronouns)
 
  62. [I] [imperfect] [tu]
      IT: Stranamente, ti addormentavi
@@ -251,7 +251,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
  63. [F] [conditional] [lei]
      IT: Francamente, ci vorrebbe dire molto
-     EN: Frankly, she would want to say to us a lot [pronoun before modal]
+     EN: Frankly, she would want to say to us a lot (Hint: pronoun goes before the modal verb)
 
  64. [H] [passato prossimo] [lui]
      IT: Quando ha finito il nonno il progetto?
@@ -279,7 +279,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
  70. [J] [imperfect] [tu]
      IT: Francamente, gliela scrivevi
-     EN: Frankly, you used to write it (f) to him [combine indirect + direct pronouns]
+     EN: Frankly, you used to write it (f) to him (Hint: combine the indirect and direct pronouns)
 
  71. [F] [imperfect] [voi]
      IT: Fortunatamente, gliele insegnavate ieri
@@ -291,7 +291,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
  73. [F] [present] [tu]
      IT: Fortunatamente, glieli puoi raccontare male
-     EN: Fortunately, you can recount them (m) to them badly [pronoun before modal]
+     EN: Fortunately, you can recount them (m) to them badly (Hint: pronoun goes before the modal verb)
 
  74. [A] [imperfect] [tu]
      IT: Purtroppo, perdevi la soluzione poco
@@ -447,7 +447,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 112. [F] [future] [io]
      IT: Sinceramente, ci vorrò preparare subito
-     EN: Sincerely, I will want to prepare to us right away [pronoun before modal]
+     EN: Sincerely, I will want to prepare to us right away (Hint: pronoun goes before the modal verb)
 
 113. [A] [passato prossimo] [voi]
      IT: Siete usciti all'università insieme
@@ -599,7 +599,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 150. [F] [future] [lei]
      IT: Di solito, li potrà mandare
-     EN: Usually, she will be able to send them (m) [pronoun before modal]
+     EN: Usually, she will be able to send them (m) (Hint: pronoun goes before the modal verb)
 
 151. [B] [present] [io]
      IT: Voglio dormire
@@ -675,7 +675,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 169. [F] [present] [loro]
      IT: D'altra parte, le vogliono vendere subito
-     EN: On the other hand, they want to sell them (f) right away [pronoun before modal]
+     EN: On the other hand, they want to sell them (f) right away (Hint: pronoun goes before the modal verb)
 
 170. [A] [present] [loro]
      IT: Restano dietro al negozio
@@ -683,11 +683,11 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 171. [F] [conditional] [io]
      IT: Ve li potrei offrire lì
-     EN: I would be able to offer them (m) to you all there [pronoun before modal]
+     EN: I would be able to offer them (m) to you all there (Hint: pronoun goes before the modal verb)
 
 172. [F] [future] [lui]
      IT: Prima di tutto, gliela dovrà vendere male
-     EN: First of all, he will have to sell it (f) to them badly [pronoun before modal]
+     EN: First of all, he will have to sell it (f) to them badly (Hint: pronoun goes before the modal verb)
 
 173. [K] [present] [noi]
      IT: Non ci crediamo
@@ -727,7 +727,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 182. [J] [present] [noi]
      IT: Di solito, glielo portiamo
-     EN: Usually, we bring it (m) to her [combine indirect + direct pronouns]
+     EN: Usually, we bring it (m) to her (Hint: combine the indirect and direct pronouns)
 
 183. [B] [future] [lei]
      IT: Vorrà usare il telefono
@@ -735,7 +735,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 184. [F] [passato prossimo] [loro]
      IT: Sinceramente, le hanno voluto lasciare qui
-     EN: Sincerely, they wanted to leave behind to her here [pronoun before modal]
+     EN: Sincerely, they wanted to leave behind to her here (Hint: pronoun goes before the modal verb)
 
 185. [I] [passato prossimo] [lei]
      IT: Si è rasa
@@ -811,7 +811,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 203. [F] [conditional] [lui]
      IT: Raramente, la potrebbe insegnare
-     EN: Rarely, he would be able to teach it (f) [pronoun before modal]
+     EN: Rarely, he would be able to teach it (f) (Hint: pronoun goes before the modal verb)
 
 204. [F] [present] [voi]
      IT: Ti prendete subito
@@ -835,7 +835,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 209. [F] [conditional] [noi]
      IT: Di solito, ce le potremmo offrire
-     EN: Usually, we would be able to offer them (f) to us [pronoun before modal]
+     EN: Usually, we would be able to offer them (f) to us (Hint: pronoun goes before the modal verb)
 
 210. [B] [present] [voi]
      IT: Dovete mandare il regalo
@@ -867,7 +867,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 217. [J] [imperfect] [voi]
      IT: Ogni giorno, ce la chiedevate
-     EN: Every day, you all used to ask for it (f) to us [combine indirect + direct pronouns]
+     EN: Every day, you all used to ask for it (f) to us (Hint: combine the indirect and direct pronouns)
 
 218. [H] [imperfect] [lui]
      IT: Chi spiegava?
@@ -1051,7 +1051,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 263. [F] [present] [lui]
      IT: A volte, la può raccontare
-     EN: Sometimes, he can recount it (f) [pronoun before modal]
+     EN: Sometimes, he can recount it (f) (Hint: pronoun goes before the modal verb)
 
 264. [H] [imperfect] [lui]
      IT: Come conosceva mio fratello?
@@ -1095,7 +1095,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 274. [F] [present] [io]
      IT: Di solito, vi devo portare
-     EN: Usually, I must bring to you all [pronoun before modal]
+     EN: Usually, I must bring to you all (Hint: pronoun goes before the modal verb)
 
 275. [K] [present] [voi]
      IT: Che cosa ne pensate?
@@ -1139,7 +1139,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 285. [J] [conditional] [lei]
      IT: Secondo mia madre, me la leggerebbe
-     EN: According to my mother, she would read it (f) to me [combine indirect + direct pronouns]
+     EN: According to my mother, she would read it (f) to me (Hint: combine the indirect and direct pronouns)
 
 286. [F] [present] [loro]
      IT: Di solito, la spiegano
@@ -1271,7 +1271,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 318. [J] [present] [io]
      IT: Secondo lei, ce la restituisco
-     EN: In her opinion, I return it (f) to us [combine indirect + direct pronouns]
+     EN: In her opinion, I return it (f) to us (Hint: combine the indirect and direct pronouns)
 
 319. [B] [present] [voi]
      IT: Francamente, potete dormire
@@ -1371,7 +1371,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 343. [J] [conditional] [tu]
      IT: Finalmente, ce le manderesti
-     EN: Finally, you would send them (f) to us [combine indirect + direct pronouns]
+     EN: Finally, you would send them (f) to us (Hint: combine the indirect and direct pronouns)
 
 344. [H] [imperfect] [loro]
      IT: Dove costruivano gli amici la porta?
@@ -1471,7 +1471,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 368. [F] [passato prossimo] [loro]
      IT: A mio parere, glielo hanno potuto mettere molto
-     EN: In my view, they were able to put it (m) to her a lot [pronoun before modal]
+     EN: In my view, they were able to put it (m) to her a lot (Hint: pronoun goes before the modal verb)
 
 369. [B] [imperfect] [voi]
      IT: Dovevate correggere il programma
@@ -1515,7 +1515,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 379. [J] [passato prossimo] [lei]
      IT: Per me, gliela ha restituita la settimana scorsa
-     EN: For me, she returned it (f) to him last week [combine indirect + direct pronouns]
+     EN: For me, she returned it (f) to him last week (Hint: combine the indirect and direct pronouns)
 
 380. [A] [future] [noi]
      IT: A volte, morremo
@@ -1523,7 +1523,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 381. [F] [conditional] [tu]
      IT: Di solito, ci dovresti insegnare
-     EN: Usually, you would have to teach to us [pronoun before modal]
+     EN: Usually, you would have to teach to us (Hint: pronoun goes before the modal verb)
 
 382. [A] [present] [voi]
      IT: Preferite la situazione molto
@@ -1535,11 +1535,11 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 384. [F] [conditional] [lui]
      IT: Li dovrebbe vendere a volte
-     EN: he would have to sell them (m) sometimes [pronoun before modal]
+     EN: he would have to sell them (m) sometimes (Hint: pronoun goes before the modal verb)
 
 385. [J] [future] [lei]
      IT: Francamente, ve la restituirà
-     EN: Frankly, she will return it (f) to you all [combine indirect + direct pronouns]
+     EN: Frankly, she will return it (f) to you all (Hint: combine the indirect and direct pronouns)
 
 386. [G] [passato prossimo] [lui]
      IT: Ogni giorno, il nonno è restato preoccupato
@@ -1547,7 +1547,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 387. [J] [imperfect] [lui]
      IT: Incredibilmente, ce li restituiva stamattina
-     EN: Incredibly, he used to return them (m) to us this morning [combine indirect + direct pronouns]
+     EN: Incredibly, he used to return them (m) to us this morning (Hint: combine the indirect and direct pronouns)
 
 388. [E] [conditional] [tu]
      IT: Purtroppo, potresti preferire una soluzione?
@@ -1627,7 +1627,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 407. [J] [imperfect] [io]
      IT: A volte, te la mostravo
-     EN: Sometimes, I used to show it (f) to you [combine indirect + direct pronouns]
+     EN: Sometimes, I used to show it (f) to you (Hint: combine the indirect and direct pronouns)
 
 408. [G] [passato prossimo] [loro]
      IT: Spesso, i vicini sono restati arrabbiati lì
@@ -1771,7 +1771,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 443. [J] [passato prossimo] [lei]
      IT: Glielo ha letto
-     EN: she read it (m) to them [combine indirect + direct pronouns]
+     EN: she read it (m) to them (Hint: combine the indirect and direct pronouns)
 
 444. [G] [conditional] [lui]
      IT: Sinceramente, il genero diventerebbe sicuro subito
@@ -1791,7 +1791,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 448. [J] [present] [tu]
      IT: Sinceramente, ve lo spieghi
-     EN: Sincerely, you explain it (m) to you all [combine indirect + direct pronouns]
+     EN: Sincerely, you explain it (m) to you all (Hint: combine the indirect and direct pronouns)
 
 449. [F] [present] [io]
      IT: Secondo me, mi compro qui
@@ -1823,7 +1823,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 456. [J] [imperfect] [voi]
      IT: Ce lo chiedevate male
-     EN: you all used to ask for it (m) to us badly [combine indirect + direct pronouns]
+     EN: you all used to ask for it (m) to us badly (Hint: combine the indirect and direct pronouns)
 
 457. [C] [future] [voi]
      IT: In ogni caso, vorrete sentire il podcast
@@ -1839,7 +1839,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 460. [F] [passato prossimo] [voi]
      IT: Infatti, gliela avete potuto dire ieri
-     EN: In fact, you all were able to say it (f) to her yesterday [pronoun before modal]
+     EN: In fact, you all were able to say it (f) to her yesterday (Hint: pronoun goes before the modal verb)
 
 461. [C] [passato prossimo] [noi]
      IT: Abbiamo voluto diventare
