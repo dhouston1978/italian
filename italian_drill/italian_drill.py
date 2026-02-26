@@ -519,26 +519,68 @@ OBJECTS_LOCATION: List[Dict[str, str]] = [
 ]
 
 # Abstract objects for mental verbs
+# Each entry has bare forms (for direct-object verbs like capire) and
+# prepositional forms for verbs that require a/di prepositions.
+# Contractions: a+il=al, a+la=alla, a+l'=all', a+i=ai, a+le=alle
+#               di+il=del, di+la=della, di+l'=dell', di+i=dei, di+le=delle
 OBJECTS_MENTAL: List[Dict[str, str]] = [
-    {"it": "la verità", "en": "the truth"},
-    {"it": "il problema", "en": "the problem"},
-    {"it": "una soluzione", "en": "a solution"},
-    {"it": "la situazione", "en": "the situation"},
-    {"it": "la risposta", "en": "the answer"},
-    {"it": "il motivo", "en": "the reason"},
-    {"it": "la differenza", "en": "the difference"},
+    {"it": "la verità", "en": "the truth",
+     "a": "alla verità", "di": "della verità"},
+    {"it": "il problema", "en": "the problem",
+     "a": "al problema", "di": "del problema"},
+    {"it": "una soluzione", "en": "a solution",
+     "a": "a una soluzione", "di": "di una soluzione"},
+    {"it": "la situazione", "en": "the situation",
+     "a": "alla situazione", "di": "della situazione"},
+    {"it": "la risposta", "en": "the answer",
+     "a": "alla risposta", "di": "della risposta"},
+    {"it": "il motivo", "en": "the reason",
+     "a": "al motivo", "di": "del motivo"},
+    {"it": "la differenza", "en": "the difference",
+     "a": "alla differenza", "di": "della differenza"},
+    {"it": "il futuro", "en": "the future",
+     "a": "al futuro", "di": "del futuro"},
+    {"it": "il risultato", "en": "the result",
+     "a": "al risultato", "di": "del risultato"},
+    {"it": "l'esame", "en": "the exam",
+     "a": "all'esame", "di": "dell'esame"},
 ]
+
+# Mental verbs that require a preposition before a noun object.
+# Verbs NOT listed here take direct objects (capire il problema, etc.)
+# "prep": IT preposition key used to look up contracted form in OBJECTS_MENTAL
+# "en_prep": English preposition for the prompt ("about", "in", etc.)
+MENTAL_VERB_PREPOSITION: Dict[str, Dict[str, str]] = {
+    "pensare": {"prep": "a", "en_prep": "about"},     # pensare a qualcosa
+    "credere": {"prep": "a", "en_prep": "in"},         # credere a qualcosa
+}
+
+# Mental verbs that take direct objects normally — no preposition needed
+# (capire, conoscere, sapere, ricordare, dimenticare, scoprire,
+#  scegliere, preferire, desiderare, amare, imparare)
 
 
 def get_object_for_verb(verb: str) -> Dict[str, str]:
-    """Return a semantically plausible object for the given verb."""
+    """Return a semantically plausible object for the given verb.
+
+    Mental verbs that require a preposition (pensare a, credere a)
+    return the prepositional form baked into the object string.
+    """
     sem = VERB_SEMANTIC_CATEGORY.get(verb)
     # Movement verbs get location objects
     if sem == "movement":
         return random.choice(OBJECTS_LOCATION)
-    # Mental verbs get abstract objects
+    # Mental verbs get abstract objects, with preposition if needed
     if sem == "mental":
-        return random.choice(OBJECTS_MENTAL)
+        obj = random.choice(OBJECTS_MENTAL)
+        prep_info = MENTAL_VERB_PREPOSITION.get(verb)
+        if prep_info:
+            prep_key = prep_info["prep"]       # "a" or "di"
+            en_prep = prep_info["en_prep"]     # "about" or "in"
+            if prep_key in obj:
+                return {"it": obj[prep_key], "en": f"{en_prep} {obj['en']}"}
+        # Direct object form
+        return {"it": obj["it"], "en": obj["en"]}
     # Food verbs
     if sem == "food":
         return random.choice(OBJECTS_BY_CATEGORY["food"])
@@ -1835,11 +1877,15 @@ def _needs_object(verb: str) -> bool:
     """Does this verb typically take a direct/indirect object (not location)?
 
     Movement verbs DO get objects (locations), but that's handled separately.
+    Modal verbs (potere/dovere/volere) take infinitives, not noun objects.
     """
     sem = VERB_SEMANTIC_CATEGORY.get(verb, "")
     # Movement verbs get location objects — handled via get_object_for_verb
     if sem == "movement":
         return True
+    # Modal verbs take infinitives, not noun objects
+    if verb in ("potere", "dovere", "volere"):
+        return False
     # State verbs and intransitive verbs don't take objects
     no_obj = {
         "essere", "stare", "restare", "rimanere", "diventare",
