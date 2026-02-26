@@ -107,7 +107,7 @@ VERBS: List[Dict[str, Any]] = [
     {"infinitive": "potere", "en": "to be able to", "conjugation": "irregular", "group": "irreg"},
     {"infinitive": "volere", "en": "to want", "conjugation": "irregular", "group": "irreg"},
     {"infinitive": "dovere", "en": "to have to", "conjugation": "irregular", "group": "irreg"},
-    {"infinitive": "sapere", "en": "to know a fact", "conjugation": "irregular", "group": "irreg"},
+    {"infinitive": "sapere", "en": "to know", "conjugation": "irregular", "group": "irreg"},
     {"infinitive": "vedere", "en": "to see", "conjugation": "irregular", "group": "irreg"},
     {"infinitive": "uscire", "en": "to go out", "conjugation": "irregular", "group": "irreg"},
     # --- Regular -are ---
@@ -140,7 +140,7 @@ VERBS: List[Dict[str, Any]] = [
     {"infinitive": "entrare", "en": "to enter", "conjugation": "regular", "group": "are"},
     {"infinitive": "restare", "en": "to remain", "conjugation": "regular", "group": "are"},
     {"infinitive": "diventare", "en": "to become", "conjugation": "regular", "group": "are"},
-    {"infinitive": "passare", "en": "to spend time", "conjugation": "regular", "group": "are"},
+    {"infinitive": "passare", "en": "to spend", "conjugation": "regular", "group": "are"},
     {"infinitive": "usare", "en": "to use", "conjugation": "regular", "group": "are"},
     {"infinitive": "amare", "en": "to love", "conjugation": "regular", "group": "are"},
     {"infinitive": "preparare", "en": "to prepare", "conjugation": "regular", "group": "are"},
@@ -151,7 +151,7 @@ VERBS: List[Dict[str, Any]] = [
     {"infinitive": "cominciare", "en": "to begin", "conjugation": "regular", "group": "are"},
     {"infinitive": "abitare", "en": "to reside", "conjugation": "regular", "group": "are"},
     {"infinitive": "viaggiare", "en": "to travel", "conjugation": "regular", "group": "are"},
-    {"infinitive": "suonare", "en": "to play music", "conjugation": "regular", "group": "are"},
+    {"infinitive": "suonare", "en": "to play", "conjugation": "regular", "group": "are"},
     {"infinitive": "raccontare", "en": "to recount", "conjugation": "regular", "group": "are"},
     {"infinitive": "desiderare", "en": "to desire", "conjugation": "regular", "group": "are"},
     {"infinitive": "visitare", "en": "to visit", "conjugation": "regular", "group": "are"},
@@ -189,6 +189,11 @@ VERBS: List[Dict[str, Any]] = [
     {"infinitive": "finire", "en": "to finish", "conjugation": "regular", "group": "ire_isc"},
     {"infinitive": "preferire", "en": "to prefer", "conjugation": "regular", "group": "ire_isc"},
     {"infinitive": "spedire", "en": "to send", "conjugation": "regular", "group": "ire_isc"},
+    {"infinitive": "mandare", "en": "to send", "conjugation": "regular", "group": "are"},
+    {"infinitive": "restituire", "en": "to return", "conjugation": "regular", "group": "ire_isc"},
+    {"infinitive": "regalare", "en": "to give as a gift", "conjugation": "regular", "group": "are"},
+    {"infinitive": "mostrare", "en": "to show", "conjugation": "regular", "group": "are"},
+    {"infinitive": "prestare", "en": "to lend", "conjugation": "regular", "group": "are"},
     {"infinitive": "costruire", "en": "to build", "conjugation": "regular", "group": "ire_isc"},
     {"infinitive": "pulire", "en": "to clean", "conjugation": "regular", "group": "ire_isc"},
     {"infinitive": "unire", "en": "to unite", "conjugation": "regular", "group": "ire_isc"},
@@ -222,9 +227,8 @@ OBJECTS_DEFAULT: List[Dict[str, str]] = [
     {"it": "il telefono", "en": "the phone"},
     {"it": "la macchina", "en": "the car"},
     {"it": "il giornale", "en": "the newspaper"},
-    {"it": "la porta", "en": "the door"},
-    {"it": "il treno", "en": "the train"},
-    {"it": "la casa", "en": "the house"},
+    {"it": "la borsa", "en": "the bag"},
+    {"it": "il regalo", "en": "the gift"},
 ]
 
 # Category → list of plausible objects
@@ -233,11 +237,17 @@ OBJECTS_BY_CATEGORY: Dict[str, List[Dict[str, str]]] = {
     "food": [
         {"it": "la pizza", "en": "the pizza"},
         {"it": "la cena", "en": "the dinner"},
-        {"it": "il caffè", "en": "the coffee"},
         {"it": "il pane", "en": "the bread"},
-        {"it": "l'acqua", "en": "the water"},
         {"it": "la pasta", "en": "the pasta"},
         {"it": "il pranzo", "en": "the lunch"},
+        {"it": "la torta", "en": "the cake"},
+    ],
+    "cooking": [
+        {"it": "la cena", "en": "the dinner"},
+        {"it": "la pasta", "en": "the pasta"},
+        {"it": "il pranzo", "en": "the lunch"},
+        {"it": "la torta", "en": "the cake"},
+        {"it": "la pizza", "en": "the pizza"},
     ],
     # Reading/writing/studying
     "text": [
@@ -257,13 +267,21 @@ OBJECTS_BY_CATEGORY: Dict[str, List[Dict[str, str]]] = {
         {"it": "la notizia", "en": "the news"},
         {"it": "la situazione", "en": "the situation"},
     ],
-    # Watching/listening
-    "media": [
+    # Watching/viewing
+    "visual": [
         {"it": "il film", "en": "the film"},
-        {"it": "la musica", "en": "the music"},
         {"it": "la partita", "en": "the match"},
         {"it": "il programma", "en": "the program"},
+        {"it": "lo spettacolo", "en": "the show"},
+        {"it": "il documentario", "en": "the documentary"},
+    ],
+    # Listening/hearing
+    "audio": [
+        {"it": "la musica", "en": "the music"},
         {"it": "la canzone", "en": "the song"},
+        {"it": "il podcast", "en": "the podcast"},
+        {"it": "la radio", "en": "the radio"},
+        {"it": "la notizia", "en": "the news"},
     ],
     # Helping / teaching / people as objects
     "people": [
@@ -285,7 +303,7 @@ OBJECTS_BY_CATEGORY: Dict[str, List[Dict[str, str]]] = {
         {"it": "la macchina", "en": "the car"},
         {"it": "il vestito", "en": "the dress"},
         {"it": "il telefono", "en": "the phone"},
-        {"it": "il conto", "en": "the bill"},
+        {"it": "le scarpe", "en": "the shoes"},
     ],
     # Finding / looking for / choosing
     "seeking": [
@@ -309,6 +327,12 @@ OBJECTS_BY_CATEGORY: Dict[str, List[Dict[str, str]]] = {
         {"it": "la luce", "en": "the light"},
         {"it": "il computer", "en": "the computer"},
         {"it": "il rubinetto", "en": "the faucet"},
+    ],
+    "switchable": [
+        {"it": "la luce", "en": "the light"},
+        {"it": "il computer", "en": "the computer"},
+        {"it": "la televisione", "en": "the television"},
+        {"it": "il telefono", "en": "the phone"},
     ],
     # Calling (people only)
     "calling": [
@@ -391,32 +415,90 @@ OBJECTS_BY_CATEGORY: Dict[str, List[Dict[str, str]]] = {
         {"it": "le chiavi", "en": "the keys"},
         {"it": "il libro", "en": "the book"},
     ],
+    # Starting / finishing
+    "start_finish": [
+        {"it": "il lavoro", "en": "the work"},
+        {"it": "il progetto", "en": "the project"},
+        {"it": "la lezione", "en": "the lesson"},
+        {"it": "il libro", "en": "the book"},
+        {"it": "il compito", "en": "the assignment"},
+        {"it": "il corso", "en": "the course"},
+    ],
+    # Passing / spending time
+    "passing": [
+        {"it": "il tempo", "en": "time"},
+        {"it": "il weekend", "en": "the weekend"},
+        {"it": "le vacanze", "en": "the holidays"},
+        {"it": "la serata", "en": "the evening"},
+    ],
+    # Loving
+    "loving": [
+        {"it": "la musica", "en": "music"},
+        {"it": "i viaggi", "en": "traveling"},
+        {"it": "la natura", "en": "nature"},
+        {"it": "il mare", "en": "the sea"},
+        {"it": "la cucina italiana", "en": "Italian cuisine"},
+    ],
+    # Paying
+    "paying": [
+        {"it": "il conto", "en": "the bill"},
+        {"it": "l'affitto", "en": "the rent"},
+        {"it": "le bollette", "en": "the bills"},
+        {"it": "i biglietti", "en": "the tickets"},
+    ],
+    # Drinking (separate from food for bere)
+    "drink": [
+        {"it": "il caffè", "en": "the coffee"},
+        {"it": "l'acqua", "en": "the water"},
+        {"it": "il vino", "en": "the wine"},
+        {"it": "la birra", "en": "the beer"},
+        {"it": "il tè", "en": "the tea"},
+        {"it": "il succo", "en": "the juice"},
+    ],
+    # Doing / making (fare)
+    "doing": [
+        {"it": "la spesa", "en": "the shopping"},
+        {"it": "colazione", "en": "breakfast"},
+        {"it": "una passeggiata", "en": "a walk"},
+        {"it": "i compiti", "en": "the homework"},
+        {"it": "una domanda", "en": "a question"},
+        {"it": "un favore", "en": "a favor"},
+    ],
 }
 
 # Verb → category mapping
 VERB_OBJECT_CATEGORY: Dict[str, str] = {
     # Food verbs
-    "mangiare": "food", "cucinare": "food", "bere": "food",
+    "mangiare": "food", "cucinare": "cooking",
+    # Drink
+    "bere": "drink",
+    # Doing / making
+    "fare": "doing",
     "preparare": "preparing",
     # Text verbs
     "scrivere": "text", "leggere": "text", "studiare": "text",
     # Communication
     "dire": "communication", "raccontare": "communication",
     "spiegare": "communication", "rispondere": "communication",
-    # Media
-    "guardare": "media", "ascoltare": "media",
+    # Visual
+    "guardare": "visual", "vedere": "visual",
+    # Audio
+    "ascoltare": "audio", "sentire": "audio",
     # People
     "aiutare": "people", "insegnare": "people", "seguire": "people",
     # Commerce
-    "comprare": "commerce", "vendere": "commerce", "pagare": "commerce",
-    "portare": "commerce",
+    "comprare": "commerce", "vendere": "commerce", "portare": "commerce",
+    # Paying
+    "pagare": "paying",
     # Seeking
     "trovare": "seeking", "cercare": "seeking", "scegliere": "seeking",
     # Instrument
     "suonare": "instrument",
-    # Physical
-    "aprire": "physical", "chiudere": "physical", "spegnere": "physical",
+    # Physical (things with doors/covers)
+    "aprire": "physical", "chiudere": "physical",
     "mettere": "physical", "coprire": "physical",
+    # Switchable (things you turn on/off)
+    "spegnere": "switchable",
     # Calling
     "chiamare": "calling",
     # Memory
@@ -434,7 +516,9 @@ VERB_OBJECT_CATEGORY: Dict[str, str] = {
     # Proposing
     "proporre": "proposing",
     # Desire
-    "desiderare": "desire", "amare": "desire",
+    "desiderare": "desire",
+    # Loving
+    "amare": "loving",
     # Keeping
     "tenere": "keeping",
     # Communication (receiving/sending)
@@ -446,12 +530,12 @@ VERB_OBJECT_CATEGORY: Dict[str, str] = {
     "chiedere": "communication", "conoscere": "people",
     "costruire": "physical", "pulire": "physical",
     "unire": "people",
-    # passare can be time-related
-    "passare": "leaving",
+    # Passing time
+    "passare": "passing",
     # Thinking / believing
     "pensare": "communication", "credere": "communication",
-    # Sending
-    "cominciare": "text",
+    # Starting / finishing
+    "cominciare": "start_finish", "finire": "start_finish",
 }
 
 
@@ -588,14 +672,25 @@ MENTAL_VERB_PREPOSITION: Dict[str, Dict[str, str]] = {
 def get_object_for_verb(verb: str) -> Dict[str, str]:
     """Return a semantically plausible object for the given verb.
 
-    Mental verbs that require a preposition (pensare a, credere a)
-    return the prepositional form baked into the object string.
+    Priority:
+    1. Explicit per-verb category mapping (VERB_OBJECT_CATEGORY)
+    2. Movement verbs → location objects
+    3. Mental verbs with prepositions (pensare a, credere a)
+    4. Mental verbs → abstract objects
+    5. Food verbs → food objects
+    6. Default objects
     """
     sem = VERB_SEMANTIC_CATEGORY.get(verb)
-    # Movement verbs get location objects
+
+    # 1. Check explicit per-verb category FIRST (overrides semantic fallback)
+    category = VERB_OBJECT_CATEGORY.get(verb)
+    if category and category in OBJECTS_BY_CATEGORY:
+        return random.choice(OBJECTS_BY_CATEGORY[category])
+
+    # 2. Movement verbs get location objects
     if sem == "movement":
         return random.choice(OBJECTS_LOCATION)
-    # Mental verbs get abstract objects, with preposition if needed
+    # 3-4. Mental verbs get abstract objects, with preposition if needed
     if sem == "mental":
         obj = random.choice(OBJECTS_MENTAL)
         prep_info = MENTAL_VERB_PREPOSITION.get(verb)
@@ -606,7 +701,7 @@ def get_object_for_verb(verb: str) -> Dict[str, str]:
                 return {"it": obj[prep_key], "en": f"{en_prep} {obj['en']}"}
         # Direct object form
         return {"it": obj["it"], "en": obj["en"]}
-    # Food verbs
+    # 5. Food verbs
     if sem == "food":
         return random.choice(OBJECTS_BY_CATEGORY["food"])
     # Use existing per-verb category mapping
@@ -1143,6 +1238,9 @@ QUESTION_WORDS: List[Dict[str, Any]] = [
     {"it": "per quanto tempo", "en": "for how long", "weight": 3, "needs_subj": True,
      "verb_filter": ["restare", "rimanere", "aspettare", "studiare", "lavorare",
                       "dormire", "vivere"]},
+    {"it": "a che ora", "en": "at what time", "weight": 5, "needs_subj": True,
+     "verb_filter": ["arrivare", "partire", "tornare", "uscire", "cominciare",
+                      "finire", "mangiare", "dormire"]},
 ]
 
 # Nouns for "quale" questions
@@ -1161,32 +1259,45 @@ TRANSFER_VERBS: List[Dict[str, Any]] = [
     {"infinitive": "mandare", "en": "to send", "en_past": "sent"},
     {"infinitive": "portare", "en": "to bring", "en_past": "brought"},
     {"infinitive": "mostrare", "en": "to show", "en_past": "showed"},
-    {"infinitive": "spiegare", "en": "to explain", "en_past": "explained"},
+    {"infinitive": "spiegare", "en": "to explain", "en_past": "explained",
+     "obj_tags": {"text"}},
     {"infinitive": "regalare", "en": "to give as a gift", "en_past": "gave as a gift"},
     {"infinitive": "prestare", "en": "to lend", "en_past": "lent"},
     {"infinitive": "restituire", "en": "to return", "en_past": "returned"},
-    {"infinitive": "dire", "en": "to tell", "en_past": "told"},
     {"infinitive": "chiedere", "en": "to ask for", "en_past": "asked for"},
     {"infinitive": "comprare", "en": "to buy", "en_past": "bought"},
-    {"infinitive": "cucinare", "en": "to cook", "en_past": "cooked"},
-    {"infinitive": "leggere", "en": "to read", "en_past": "read"},
-    {"infinitive": "scrivere", "en": "to write", "en_past": "wrote"},
+    {"infinitive": "cucinare", "en": "to cook", "en_past": "cooked",
+     "obj_tags": {"food"}},
+    {"infinitive": "leggere", "en": "to read", "en_past": "read",
+     "obj_tags": {"text"}},
+    {"infinitive": "scrivere", "en": "to write", "en_past": "wrote",
+     "obj_tags": {"text"}},
 ]
 
 TRANSFER_VERB_MAP: Dict[str, Dict[str, Any]] = {v["infinitive"]: v for v in TRANSFER_VERBS}
 
 # Objects that can be transferred (with gender/number for pronoun selection)
-TRANSFER_OBJECTS: List[Dict[str, str]] = [
-    {"it": "il libro", "en": "the book", "gender": "m", "number": "s", "pron": "lo"},
-    {"it": "la chiave", "en": "the key", "gender": "f", "number": "s", "pron": "la"},
-    {"it": "i soldi", "en": "the money", "gender": "m", "number": "p", "pron": "li"},
-    {"it": "le foto", "en": "the photos", "gender": "f", "number": "p", "pron": "le"},
-    {"it": "il regalo", "en": "the gift", "gender": "m", "number": "s", "pron": "lo"},
-    {"it": "la lettera", "en": "the letter", "gender": "f", "number": "s", "pron": "la"},
-    {"it": "il messaggio", "en": "the message", "gender": "m", "number": "s", "pron": "lo"},
-    {"it": "la ricetta", "en": "the recipe", "gender": "f", "number": "s", "pron": "la"},
-    {"it": "i documenti", "en": "the documents", "gender": "m", "number": "p", "pron": "li"},
-    {"it": "la torta", "en": "the cake", "gender": "f", "number": "s", "pron": "la"},
+TRANSFER_OBJECTS: List[Dict[str, Any]] = [
+    {"it": "il libro", "en": "the book", "gender": "m", "number": "s", "pron": "lo",
+     "tags": {"text", "general"}},
+    {"it": "la chiave", "en": "the key", "gender": "f", "number": "s", "pron": "la",
+     "tags": {"general"}},
+    {"it": "i soldi", "en": "the money", "gender": "m", "number": "p", "pron": "li",
+     "tags": {"general"}},
+    {"it": "le foto", "en": "the photos", "gender": "f", "number": "p", "pron": "le",
+     "tags": {"general"}},
+    {"it": "il regalo", "en": "the gift", "gender": "m", "number": "s", "pron": "lo",
+     "tags": {"general"}},
+    {"it": "la lettera", "en": "the letter", "gender": "f", "number": "s", "pron": "la",
+     "tags": {"text", "general"}},
+    {"it": "il messaggio", "en": "the message", "gender": "m", "number": "s", "pron": "lo",
+     "tags": {"text", "general"}},
+    {"it": "la ricetta", "en": "the recipe", "gender": "f", "number": "s", "pron": "la",
+     "tags": {"text", "food"}},
+    {"it": "i documenti", "en": "the documents", "gender": "m", "number": "p", "pron": "li",
+     "tags": {"text", "general"}},
+    {"it": "la torta", "en": "the cake", "gender": "f", "number": "s", "pron": "la",
+     "tags": {"food", "general"}},
 ]
 
 # Recipients for indirect pronoun context in English
@@ -1266,6 +1377,8 @@ IRREGULAR_IMPERFETTO: Dict[str, List[str]] = {
     "dire": ["dicevo", "dicevi", "diceva", "dicevamo", "dicevate", "dicevano"],
     "bere": ["bevevo", "bevevi", "beveva", "bevevamo", "bevevate", "bevevano"],
     "proporre": ["proponevo", "proponevi", "proponeva", "proponevamo", "proponevate", "proponevano"],
+    "dare": ["davo", "davi", "dava", "davamo", "davate", "davano"],
+    "stare": ["stavo", "stavi", "stava", "stavamo", "stavate", "stavano"],
 }
 
 # Irregular futuro stems (stem only — endings are -ò, -ai, -à, -emo, -ete, -anno)
@@ -1328,6 +1441,13 @@ IRREGULAR_PAST_PARTICIPLES: Dict[str, str] = {
     "offrire": "offerto",
     "coprire": "coperto",
     "correggere": "corretto",
+    "conoscere": "conosciuto",
+    "crescere": "cresciuto",
+    "tenere": "tenuto",
+    "diventare": "diventato",
+    "scendere": "sceso",
+    "cadere": "caduto",
+    "succedere": "successo",
 }
 
 FUTURO_ENDINGS: List[str] = ["ò", "ai", "à", "emo", "ete", "anno"]
@@ -1389,10 +1509,10 @@ def conjugate_presente(verb: str, subject: str) -> str:
         if verb.endswith("care") or verb.endswith("gare"):
             if six_idx in (1, 3):  # tu (-i), noi (-iamo)
                 return stem + "h" + endings[six_idx]
-        # Handle -ciare/-giare: drop stem's trailing i before endings that start with i
+        # Handle -iare verbs: drop stem's trailing i before endings that start with i
         # mangiare: stem "mangi" + "i" → "mangi" (not "mangii")
-        # mangiare: stem "mangi" + "iamo" → "mangiamo" (not "mangiiamo")
-        if verb.endswith("ciare") or verb.endswith("giare"):
+        # annoiare: stem "annoi" + "iamo" → "annoiamo" (not "annoiiamo")
+        if verb.endswith("iare"):
             ending = endings[six_idx]
             if ending.startswith("i"):
                 return stem[:-1] + ending  # drop the i from stem
@@ -1429,11 +1549,21 @@ def conjugate_imperfetto(verb: str, subject: str) -> str:
 
     stem, group = _get_stem_and_group(verb)
 
-    if group in ("are",):
+    # For "irreg" group, infer conjugation pattern from verb ending
+    effective_group = group
+    if group == "irreg":
+        if verb.endswith("are"):
+            effective_group = "are"
+        elif verb.endswith("ire"):
+            effective_group = "ire"
+        else:
+            effective_group = "ere"
+
+    if effective_group in ("are",):
         endings = ["avo", "avi", "ava", "avamo", "avate", "avano"]
-    elif group in ("ere",):
+    elif effective_group in ("ere",):
         endings = ["evo", "evi", "eva", "evamo", "evate", "evano"]
-    elif group in ("ire", "ire_isc"):
+    elif effective_group in ("ire", "ire_isc"):
         endings = ["ivo", "ivi", "iva", "ivamo", "ivate", "ivano"]
     else:
         endings = ["evo", "evi", "eva", "evamo", "evate", "evano"]
@@ -1610,7 +1740,7 @@ def english_conjugation(
     """
     en = verb_info["en"]
     # Strip "to " prefix
-    bare = en.replace("to ", "") if en.startswith("to ") else en
+    bare = en[3:] if en.startswith("to ") else en
     # Handle "to do/make" → "do/make"
     subj = SUBJECT_EN[subject]
 
@@ -1642,18 +1772,37 @@ def english_conjugation(
         "fall": "fell", "be born": "", "die": "died", "hold": "held",
         "choose": "chose", "be able to": "",
         "want": "wanted", "have to": "had to",
-        "know a fact": "knew", "give": "gave", "stay": "stayed",
+        "know": "knew", "give": "gave", "stay": "stayed",
         "remain": "remained", "go out": "went out",
         "go up": "went up", "go down": "went down",
         "send": "sent", "turn off": "turned off",
         "propose": "proposed", "sell": "sold", "receive": "received",
-        "spend time": "spent time", "search for": "searched for",
+        "spend": "spent", "search for": "searched for",
         "bring": "brought", "begin": "began", "reside": "resided",
-        "play music": "played music", "recount": "recounted",
+        "play": "played", "recount": "recounted",
         "desire": "desired", "leave behind": "left behind",
         "hear": "heard", "serve": "served", "recover": "recovered",
         "unite": "united", "depart": "departed",
         "discover": "discovered", "understand": "understood",
+        # Additional verbs that had past tense errors
+        "become": "became", "stop": "stopped", "speak": "spoke",
+        "open": "opened", "cover": "covered", "build": "built",
+        "clean": "cleaned", "finish": "finished", "prefer": "preferred",
+        "follow": "followed", "offer": "offered", "correct": "corrected",
+        "cook": "cooked", "eat": "ate", "listen to": "listened to",
+        "watch": "watched", "wait for": "waited for", "pay": "paid",
+        "teach": "taught", "learn": "learned", "sing": "sang",
+        "swim": "swam", "dance": "danced", "play": "played",
+        "help": "helped", "change": "changed", "try": "tried",
+        "use": "used", "prepare": "prepared", "explain": "explained",
+        "think": "thought", "believe": "believed", "call": "called",
+        "buy": "bought", "find": "found",
+        "forget": "forgot", "remember": "remembered",
+        "show": "showed", "lend": "lent",
+        "give as a gift": "gave as a gift",
+        "walk": "walked", "travel": "traveled",
+        "enter": "entered", "arrive": "arrived",
+        "return": "returned",
     }
 
     if tense == "presente":
@@ -1667,8 +1816,8 @@ def english_conjugation(
             vf = "can"
         elif bare in ("have to",):
             vf = "must"
-        elif bare in ("know a fact",):
-            vf = "knows a fact" if third else "know a fact"
+        elif bare in ("know",):
+            vf = "knows" if third else "know"
         elif bare in ("be acquainted with",):
             vf = "is acquainted with" if third else "are acquainted with" if subject != "io" else "am acquainted with"
         else:
@@ -1780,6 +1929,44 @@ def _classify_adverb(adv: Dict[str, str]) -> str:
     if it in SPECIFIC_ADVERBS:
         return "specific"
     return "neutral"
+
+
+# ---------------------------------------------------------------------------
+# Frame-content semantic compatibility
+# ---------------------------------------------------------------------------
+
+# Verbs describing routine daily activities — incompatible with strong emotional frames.
+# "Purtroppo, mangio la pasta" sounds wrong. "Purtroppo, ho perso le chiavi" sounds right.
+ROUTINE_MUNDANE_VERBS: Set[str] = {
+    "mangiare", "bere", "cucinare", "dormire", "camminare",
+    "nuotare", "ballare", "cantare", "lavorare", "studiare",
+    "parlare", "giocare", "guardare", "ascoltare", "pagare",
+    "usare", "pulire", "comprare", "suonare", "preparare",
+    "spedire", "vendere", "visitare", "mettere", "aprire",
+    "chiudere", "spegnere", "coprire", "costruire", "servire",
+    "offrire", "portare", "lasciare", "entrare", "uscire",
+    "andare", "venire", "tornare", "stare", "leggere",
+    "scrivere", "prendere", "ricevere", "tenere",
+}
+
+# Frames that require emotionally significant content.
+# These sound wrong with mundane everyday activities.
+STRONG_EMOTIONAL_FRAMES: Set[str] = {
+    "Purtroppo,",          # requires negative/unfortunate content
+    "Fortunatamente,",     # requires positive/fortunate content
+    "Incredibilmente,",    # requires surprising content
+    "Stranamente,",        # requires unusual content
+    "Finalmente,",         # requires long-awaited content
+}
+
+# Subjects that represent elderly people — restrict vigorous physical activity
+ELDERLY_SUBJECTS_IT: Set[str] = {
+    "il nonno", "la nonna", "mio nonno", "mia nonna", "i nonni",
+    "il suocero", "la suocera",
+}
+
+# Verbs implying vigorous physical exertion
+VIGOROUS_PHYSICAL_VERBS: Set[str] = {"correre", "nuotare"}
 
 
 def _get_adverb_pool(tense: str) -> List[Dict[str, str]]:
@@ -1895,6 +2082,8 @@ def _needs_object(verb: str) -> bool:
         "essere", "stare", "restare", "rimanere", "diventare",
         "dormire", "nuotare", "ballare", "cantare", "lavorare",
         "abitare", "vivere", "nascere", "morire", "guarire",
+        "parlare", "giocare",  # intransitive in Italian (use prepositions)
+        "rispondere",  # rispondere a qualcuno/qualcosa (takes indirect object with a)
     }
     return verb not in no_obj
 
@@ -1960,6 +2149,8 @@ class SentenceSpec:
         transfer_recipient: Optional[Dict[str, str]] = None,
         # Alternate accepted answers
         alt_italian: Optional[str] = None,
+        # Template K extras (idiomatic)
+        idiomatic_id: Optional[str] = None,
     ):
         self.verb = verb
         self.tense = tense
@@ -1985,6 +2176,7 @@ class SentenceSpec:
         self.transfer_object = transfer_object
         self.transfer_recipient = transfer_recipient
         self.alt_italian = alt_italian
+        self.idiomatic_id = idiomatic_id
 
     def _get_pronoun_it(self) -> str:
         """Get the Italian pronoun string for template F."""
@@ -2046,10 +2238,10 @@ class SentenceSpec:
                 parts.append(self.location["it"])
 
         elif self.template == "D":
-            # "è possibile che" + subject + verb (presente/indicative)
-            parts.append("è possibile che")
-            parts.append(self.subject)
-            parts.append(conjugate(self.verb, "presente", self.subject, self.gender_io_tu))
+            # "Forse" + verb (conjugated in spec's tense) + object
+            # (Uses indicative — avoids needing subjunctive)
+            parts.append("forse")
+            parts.append(conjugate(self.verb, self.tense, self.subject, self.gender_io_tu))
             if self.obj:
                 parts.append(self.obj["it"])
 
@@ -2076,8 +2268,19 @@ class SentenceSpec:
                 parts.append(self.verb)
             else:
                 # Simple: pronoun before conjugated verb
-                parts.append(pron)
-                parts.append(conjugate(self.verb, self.tense, self.subject, self.gender_io_tu))
+                # In passato prossimo with a direct object pronoun, agree the participle
+                if self.tense == "passato_prossimo" and self.direct_pronoun:
+                    dp_gender = self.direct_pronoun.get("gender", "m")
+                    dp_number = self.direct_pronoun.get("number", "s")
+                    parts.append(pron)
+                    aux_form = conjugate_presente("avere", self.subject)
+                    parts.append(aux_form)
+                    pp = _past_participle(self.verb)
+                    pp = _agree_participle_gendered(pp, dp_gender, dp_number)
+                    parts.append(pp)
+                else:
+                    parts.append(pron)
+                    parts.append(conjugate(self.verb, self.tense, self.subject, self.gender_io_tu))
             if self.adv:
                 parts.append(self.adv["it"])
 
@@ -2132,13 +2335,16 @@ class SentenceSpec:
             rv = self.reflexive_verb
             if rv:
                 if self.reflexive_modal:
-                    # Pre-modal form: pronoun + modal + infinitive(si)
+                    # Pre-modal form: pronoun + modal + bare infinitive
+                    # e.g., "mi devo alzare" (NOT "mi devo alzarsi")
                     pron = REFLEXIVE_PRONOUNS[self.subject]
                     modal_form = conjugate(self.reflexive_modal, self.tense,
                                            self.subject, self.gender_io_tu)
                     parts.append(pron)
                     parts.append(modal_form)
-                    parts.append(rv["stem_verb"] + "si" if not rv["infinitive"].endswith("si") else rv["infinitive"])
+                    # Use bare infinitive (stem_verb is already the non-si form)
+                    # e.g. dimenticarsi → stem_verb="dimenticare"
+                    parts.append(rv["stem_verb"])
                 elif self.gendered_subject:
                     # Noun-phrase subject
                     gs = self.gendered_subject
@@ -2165,13 +2371,36 @@ class SentenceSpec:
                 actual_ind = "le" if ind_key == "le_ind" else ind_key
                 combined = _get_combined_pronoun(ind_key, dir_pron)
                 parts.append(combined)
-                parts.append(conjugate(self.verb, self.tense, self.subject,
-                                       self.gender_io_tu))
+                # In passato prossimo, past participle agrees with preceding direct object pronoun
+                if self.tense == "passato_prossimo":
+                    aux_form = conjugate_presente("avere", self.subject)
+                    pp = _past_participle(self.verb)
+                    obj_gender = self.transfer_object.get("gender", "m")
+                    obj_number = self.transfer_object.get("number", "s")
+                    pp = _agree_participle_gendered(pp, obj_gender, obj_number)
+                    parts.append(f"{aux_form} {pp}")
+                else:
+                    parts.append(conjugate(self.verb, self.tense, self.subject,
+                                           self.gender_io_tu))
                 if self.adv:
                     parts.append(self.adv["it"])
                 # No question mark for J
 
-        return " ".join(parts)
+        elif self.template == "K":
+            # Idiomatic expression — fully built by helper
+            if self.idiomatic_id:
+                k_result = _build_idiomatic_italian(
+                    self.idiomatic_id, self.subject, self.tense, self.gender_io_tu
+                )
+                if k_result:
+                    k_result = k_result[0].upper() + k_result[1:]
+                return k_result
+
+        result = " ".join(parts)
+        # Capitalize first letter of the sentence
+        if result:
+            result = result[0].upper() + result[1:]
+        return result
 
     def build_english(self) -> str:
         """Build the English prompt."""
@@ -2194,7 +2423,16 @@ class SentenceSpec:
         elif self.template == "B":
             modal_info = VERB_MAP.get(self.modal or "potere", {"en": "to be able to"})
             modal_en = english_conjugation(modal_info, self.tense, self.subject)
-            s = f"{modal_en} {verb_info['en'].replace('to ', '')}"
+            bare = verb_info["en"][3:] if verb_info["en"].startswith("to ") else verb_info["en"]
+            # potere → "can/could/was able to" (no "to" needed before bare verb)
+            # dovere → "must/had to" ("to" already present for past)
+            # volere → "wants/wanted/will want" (needs "to" before bare verb)
+            if self.modal == "volere":
+                s = f"{modal_en} to {bare}"
+            elif modal_en.rstrip().endswith("to"):
+                s = f"{modal_en} {bare}"
+            else:
+                s = f"{modal_en} {bare}"
             if obj_en:
                 s += f" {obj_en}"
             if self.location:
@@ -2203,29 +2441,22 @@ class SentenceSpec:
         elif self.template == "C":
             subj = SUBJECT_EN[self.subject]
             want_form = english_conjugation(VERB_MAP["volere"], self.tense, self.subject)
-            bare = verb_info["en"].replace("to ", "")
-            s = f"{want_form} {bare}"
+            bare = verb_info["en"][3:] if verb_info["en"].startswith("to ") else verb_info["en"]
+            s = f"{want_form} to {bare}"
             if obj_en:
                 s += f" {obj_en}"
             if self.location:
                 s += f" {self.location['en']}"
             parts.append(s)
         elif self.template == "D":
-            subj = SUBJECT_EN[self.subject]
-            bare = verb_info["en"].replace("to ", "")
-            third = self.subject in ("lui", "lei")
-            if bare in ("be",):
-                vf = "is" if third else "are" if self.subject != "io" else "am"
-            elif bare in ("have",):
-                vf = "has" if third else "have"
-            else:
-                vf = bare + "s" if third else bare
-            s = f"it's possible that {subj} {vf}"
-            if obj_en:
-                s += f" {obj_en}"
-            parts.append(s)
+            # "maybe" + full English sentence (matching tense, no adverb — matches Italian)
+            en_sentence = english_conjugation(verb_info, self.tense, self.subject, obj_en)
+            parts.append(f"maybe {en_sentence}")
+            # obj_en already included via english_conjugation; no adverb in template D
+            obj_en = ""
+            adv_en = ""
         elif self.template == "E":
-            bare = verb_info["en"].replace("to ", "")
+            bare = verb_info["en"][3:] if verb_info["en"].startswith("to ") else verb_info["en"]
             if self.tense == "condizionale":
                 s = f"could you {bare}"
             else:
@@ -2237,13 +2468,15 @@ class SentenceSpec:
 
         elif self.template == "F":
             pron_en = self._get_pronoun_en()
-            bare = verb_info["en"].replace("to ", "")
+            bare = verb_info["en"][3:] if verb_info["en"].startswith("to ") else verb_info["en"]
             subj = SUBJECT_EN[self.subject]
             adv_en_f = self.adv["en"] if self.adv else ""
             if self.f_modal:
                 modal_info = VERB_MAP.get(self.f_modal, {"en": "to be able to"})
                 modal_en = english_conjugation(modal_info, self.tense, self.subject)
-                s = f"{modal_en} {bare} {pron_en}"
+                # volere needs "to" before infinitive: "wants to read"
+                inf_to = "to " if self.f_modal == "volere" else ""
+                s = f"{modal_en} {inf_to}{bare} {pron_en}"
                 if adv_en_f:
                     s += f" {adv_en_f}"
                 parts.append(s)
@@ -2261,7 +2494,7 @@ class SentenceSpec:
             gs = self.gendered_subject
             adj = self.adjective
             if gs and adj:
-                bare = verb_info["en"].replace("to ", "")
+                bare = verb_info["en"][3:] if verb_info["en"].startswith("to ") else verb_info["en"]
                 subj_en = gs["en"]
                 adj_en = adj["en"]
                 adv_en_g = self.location["en"] if self.location else (self.adv["en"] if self.adv else "")
@@ -2284,7 +2517,7 @@ class SentenceSpec:
                 qw_en = qw["en"].capitalize()
                 if self.quale_noun:
                     qw_en = f"{qw_en} {self.quale_noun['en']}"
-                bare = verb_info["en"].replace("to ", "")
+                bare = verb_info["en"][3:] if verb_info["en"].startswith("to ") else verb_info["en"]
                 if self.gendered_subject:
                     subj_en = self.gendered_subject["en"]
                 else:
@@ -2321,21 +2554,46 @@ class SentenceSpec:
             # Reflexive English prompt
             rv = self.reflexive_verb
             if rv:
-                bare = rv["en"].replace("to ", "")
+                bare = rv["en"][3:] if rv["en"].startswith("to ") else rv["en"]
                 subj_en = SUBJECT_EN[self.subject]
                 if self.gendered_subject:
                     subj_en = self.gendered_subject["en"]
+                # Replace "oneself" with proper reflexive pronoun
+                _REFL_EN: Dict[str, str] = {
+                    "io": "myself", "tu": "yourself", "lui": "himself",
+                    "lei": "herself", "noi": "ourselves", "voi": "yourselves",
+                    "loro": "themselves",
+                }
+                if "oneself" in bare:
+                    bare = bare.replace("oneself", _REFL_EN.get(self.subject, "oneself"))
+                # Handle "one's" → possessive ("comb one's hair" → "comb my hair")
+                _POSS_EN: Dict[str, str] = {
+                    "io": "my", "tu": "your", "lui": "his",
+                    "lei": "her", "noi": "our", "voi": "your",
+                    "loro": "their",
+                }
+                if "one's" in bare:
+                    bare = bare.replace("one's", _POSS_EN.get(self.subject, "one's"))
                 comp_en = self.reflexive_complement["en"] if self.reflexive_complement else ""
                 adv_en_i = self.adv["en"] if self.adv else ""
                 if self.reflexive_modal:
                     modal_info = VERB_MAP.get(self.reflexive_modal, {"en": "to be able to"})
                     modal_en = english_conjugation(modal_info, self.tense, self.subject)
-                    s = f"{modal_en} {bare}"
+                    inf_to = "to " if self.reflexive_modal == "volere" else ""
+                    s = f"{modal_en} {inf_to}{bare}"
                 else:
                     # Simple tense-based English
                     third = self.subject in ("lui", "lei")
                     if self.tense == "presente":
-                        if third:
+                        # Handle verbs starting with "be " (be called, be mistaken)
+                        if bare.startswith("be "):
+                            if third:
+                                s = f"{subj_en} is {bare[3:]}"
+                            elif self.subject == "io":
+                                s = f"{subj_en} am {bare[3:]}"
+                            else:
+                                s = f"{subj_en} are {bare[3:]}"
+                        elif third:
                             # Simple s_form for first word
                             words = bare.split()
                             w = words[0]
@@ -2381,6 +2639,24 @@ class SentenceSpec:
                             s = f"{subj_en} met each other"
                         elif bare in ("feel",):
                             s = f"{subj_en} felt"
+                        elif bare in ("stop",):
+                            s = f"{subj_en} stopped"
+                        elif bare in ("talk to each other",):
+                            s = f"{subj_en} talked to each other"
+                        elif bare in ("worry",):
+                            s = f"{subj_en} worried"
+                        elif bare in ("remember",):
+                            s = f"{subj_en} remembered"
+                        elif bare in ("forget",):
+                            s = f"{subj_en} forgot"
+                        elif bare in ("approach",):
+                            s = f"{subj_en} approached"
+                        elif bare in ("move away",):
+                            s = f"{subj_en} moved away"
+                        elif bare in ("relax",):
+                            s = f"{subj_en} relaxed"
+                        elif bare in ("rest",):
+                            s = f"{subj_en} rested"
                         else:
                             if bare.endswith("e"):
                                 past = bare + "d"
@@ -2413,7 +2689,8 @@ class SentenceSpec:
 
                 subj_en = SUBJECT_EN[self.subject]
                 tv = TRANSFER_VERB_MAP.get(self.verb, {})
-                bare = tv.get("en", verb_info["en"]).replace("to ", "")
+                _tv_en = tv.get("en", verb_info["en"])
+                bare = _tv_en[3:] if _tv_en.startswith("to ") else _tv_en
 
                 if self.tense == "presente":
                     third = self.subject in ("lui", "lei")
@@ -2446,6 +2723,13 @@ class SentenceSpec:
                     s += f" {self.adv['en']}"
                 parts.append(s)
                 parts.append("[combine indirect + direct pronouns]")
+
+        elif self.template == "K":
+            # Idiomatic expression — fully built by helper
+            if self.idiomatic_id:
+                return _build_idiomatic_english(
+                    self.idiomatic_id, self.subject, self.tense
+                )
 
         return " ".join(parts)
 
@@ -2543,6 +2827,12 @@ def _generate_template_h(
     weights = [qw["weight"] for qw in QUESTION_WORDS]
     qw = random.choices(QUESTION_WORDS, weights=weights, k=1)[0]
 
+    # "cosa" requires a transitive verb — if verb is intransitive, pick a different qw
+    if qw["it"] == "cosa" and not _needs_object(verb):
+        # Fall back to "dove" or "quando" which work with intransitive verbs
+        fallback = [q for q in QUESTION_WORDS if q["it"] in ("dove", "quando", "come", "perché")]
+        qw = random.choice(fallback)
+
     # If question word has a verb filter, choose a compatible verb
     if qw.get("verb_filter"):
         compatible = [v for v in qw["verb_filter"] if v in VERB_MAP]
@@ -2572,11 +2862,16 @@ def _generate_template_h(
     if qw.get("needs_noun"):
         quale_noun = random.choice(QUALE_NOUNS)
 
-    # Object for transitive verbs (not for dove/quando/come/perché/da dove)
+    # Object for transitive verbs
     obj = None
+    # These question words replace the object role, so no separate object needed
     if qw["it"] in ("chi", "cosa", "quale", "a chi", "quante ore", "per quanto tempo"):
-        pass  # These don't need an object in the question
-    elif qw["it"] not in ("dove", "da dove", "come", "perché", "quando", "con chi"):
+        pass
+    # con chi replaces the companion, not the object — but these verbs are intransitive
+    elif qw["it"] in ("con chi",):
+        pass
+    else:
+        # dove/come/quando/perché/da dove/a che ora — add object for transitive verbs
         if _needs_object(verb):
             obj = get_object_for_verb(verb)
 
@@ -2665,7 +2960,14 @@ def _generate_template_j(
 ) -> SentenceSpec:
     """Generate a template J (object transfer with combined pronouns) sentence."""
     tv = random.choice(TRANSFER_VERBS)
-    obj = random.choice(TRANSFER_OBJECTS)
+
+    # Filter objects by verb's obj_tags if present
+    verb_tags = tv.get("obj_tags")
+    if verb_tags:
+        compatible = [o for o in TRANSFER_OBJECTS if o.get("tags", set()) & verb_tags]
+        obj = random.choice(compatible) if compatible else random.choice(TRANSFER_OBJECTS)
+    else:
+        obj = random.choice(TRANSFER_OBJECTS)
     recip = random.choice(TRANSFER_RECIPIENTS)
 
     # Avoid giving something "to yourself" — skip if indirect pronoun matches subject
@@ -2689,6 +2991,242 @@ def _generate_template_j(
         adv=adv,
         transfer_object=obj,
         transfer_recipient=recip,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Idiomatic / pronominal expressions (Template K)
+# ---------------------------------------------------------------------------
+
+# Reflexive pronoun forms before "ne" (mi→me, ti→te, si→se, ci→ce, vi→ve)
+REFLEXIVE_BEFORE_NE: Dict[str, str] = {
+    "io": "me", "tu": "te", "lui": "se", "lei": "se",
+    "noi": "ce", "voi": "ve", "loro": "se",
+}
+
+IDIOMATIC_PATTERNS: List[Dict[str, Any]] = [
+    {
+        "id": "non_ne_avere_idea",
+        "en_base": "to have no idea",
+        "subjects": SUBJECTS,
+        "tenses": ["presente", "imperfetto", "passato_prossimo", "condizionale"],
+        "verb_for_progress": "avere",
+    },
+    {
+        "id": "pensarci_su",
+        "en_base": "to think about it",
+        "subjects": SUBJECTS,
+        "tenses": ["presente", "futuro", "condizionale"],
+        "verb_for_progress": "pensare",
+    },
+    {
+        "id": "andarsene",
+        "en_base": "to leave / go away",
+        "subjects": SUBJECTS,
+        "tenses": ["presente", "passato_prossimo", "futuro"],
+        "verb_for_progress": "andare",
+    },
+    {
+        "id": "non_ci_credere",
+        "en_base": "to not believe it",
+        "subjects": SUBJECTS,
+        "tenses": ["presente", "imperfetto", "passato_prossimo", "condizionale"],
+        "verb_for_progress": "credere",
+    },
+    {
+        "id": "cosa_ne_pensare",
+        "en_base": "what do you think about it?",
+        "subjects": ["tu", "voi"],
+        "tenses": ["presente", "condizionale"],
+        "verb_for_progress": "pensare",
+    },
+    {
+        "id": "non_ricordarsi_piu",
+        "en_base": "to not remember anymore",
+        "subjects": SUBJECTS,
+        "tenses": ["presente", "imperfetto", "passato_prossimo"],
+        "verb_for_progress": "ricordare",
+    },
+    {
+        "id": "come_stare",
+        "en_base": "how are you?",
+        "subjects": ["tu", "voi", "lei"],  # lei = formal you
+        "tenses": ["presente"],
+        "verb_for_progress": "stare",
+    },
+    {
+        "id": "non_farcela",
+        "en_base": "to not be able to manage",
+        "subjects": SUBJECTS,
+        "tenses": ["presente", "imperfetto", "condizionale"],
+        "verb_for_progress": "fare",
+    },
+]
+
+
+def _build_idiomatic_italian(pattern_id: str, subject: str, tense: str,
+                              gender_io_tu: str) -> str:
+    """Build the Italian sentence for an idiomatic pattern."""
+
+    if pattern_id == "non_ne_avere_idea":
+        # non ne ho/hai/ha... idea
+        verb_form = conjugate("avere", tense, subject, gender_io_tu)
+        return f"non ne {verb_form} idea"
+
+    elif pattern_id == "pensarci_su":
+        # ci penso/pensi/pensa... su
+        verb_form = conjugate("pensare", tense, subject, gender_io_tu)
+        return f"ci {verb_form} su"
+
+    elif pattern_id == "andarsene":
+        # me ne vado / te ne vai / se ne va...
+        pron = REFLEXIVE_BEFORE_NE[subject]
+        if tense == "passato_prossimo":
+            aux = conjugate_presente("essere", subject)
+            pp = _agree_participle("andato", subject, gender_io_tu)
+            return f"{pron} ne {aux} {pp}"
+        verb_form = conjugate("andare", tense, subject, gender_io_tu)
+        return f"{pron} ne {verb_form}"
+
+    elif pattern_id == "non_ci_credere":
+        # non ci credo/credi/crede...
+        verb_form = conjugate("credere", tense, subject, gender_io_tu)
+        return f"non ci {verb_form}"
+
+    elif pattern_id == "cosa_ne_pensare":
+        # che cosa ne pensi/pensate?
+        verb_form = conjugate("pensare", tense, subject, gender_io_tu)
+        return f"che cosa ne {verb_form}?"
+
+    elif pattern_id == "non_ricordarsi_piu":
+        # non mi ricordo/ricordavo più; non mi sono ricordato/a più
+        pron = REFLEXIVE_PRONOUNS[subject]
+        if tense == "passato_prossimo":
+            aux = conjugate_presente("essere", subject)
+            pp = _agree_participle("ricordato", subject, gender_io_tu)
+            return f"non {pron} {aux} {pp} più"
+        verb_form = conjugate("ricordare", tense, subject, gender_io_tu)
+        return f"non {pron} {verb_form} più"
+
+    elif pattern_id == "come_stare":
+        # come stai? / come state? / come sta?
+        verb_form = conjugate("stare", "presente", subject, gender_io_tu)
+        return f"come {verb_form}?"
+
+    elif pattern_id == "non_farcela":
+        # non ce la faccio/fai/fa...
+        if tense == "passato_prossimo":
+            # non ce l'ho fatta / non ce l'hai fatta...
+            aux = conjugate_presente("avere", subject)
+            return f"non ce l'{aux} fatta"
+        verb_form = conjugate("fare", tense, subject, gender_io_tu)
+        return f"non ce la {verb_form}"
+
+    return ""
+
+
+def _build_idiomatic_english(pattern_id: str, subject: str, tense: str) -> str:
+    """Build the English prompt for an idiomatic pattern."""
+    subj = SUBJECT_EN[subject]
+
+    if pattern_id == "non_ne_avere_idea":
+        if tense == "presente":
+            have = "has" if subject in ("lui", "lei") else "have"
+            return f"{subj} {have} no idea"
+        elif tense == "imperfetto":
+            return f"{subj} had no idea (habitual)"
+        elif tense == "passato_prossimo":
+            return f"{subj} had no idea"
+        elif tense == "condizionale":
+            return f"{subj} would have no idea"
+
+    elif pattern_id == "pensarci_su":
+        if tense == "presente":
+            v = "thinks" if subject in ("lui", "lei") else "think"
+            return f"{subj} {v} about it"
+        elif tense == "futuro":
+            return f"{subj} will think about it"
+        elif tense == "condizionale":
+            return f"{subj} would think about it"
+
+    elif pattern_id == "andarsene":
+        if tense == "presente":
+            v = "leaves" if subject in ("lui", "lei") else "leave"
+            g = "goes" if subject in ("lui", "lei") else "go"
+            return f"{subj} {v} / {g} away"
+        elif tense == "passato_prossimo":
+            return f"{subj} left / went away"
+        elif tense == "futuro":
+            return f"{subj} will leave / go away"
+
+    elif pattern_id == "non_ci_credere":
+        if tense == "presente":
+            v = "doesn't" if subject in ("lui", "lei") else "don't"
+            return f"{subj} {v} believe it"
+        elif tense == "imperfetto":
+            return f"{subj} didn't believe it (habitual)"
+        elif tense == "passato_prossimo":
+            return f"{subj} didn't believe it"
+        elif tense == "condizionale":
+            return f"{subj} wouldn't believe it"
+
+    elif pattern_id == "cosa_ne_pensare":
+        if tense == "presente":
+            return f"what do {subj} think about it?"
+        elif tense == "condizionale":
+            return f"what would {subj} think about it?"
+
+    elif pattern_id == "non_ricordarsi_piu":
+        if tense == "presente":
+            v = "doesn't" if subject in ("lui", "lei") else "don't"
+            return f"{subj} {v} remember anymore"
+        elif tense == "imperfetto":
+            return f"{subj} didn't remember anymore (habitual)"
+        elif tense == "passato_prossimo":
+            return f"{subj} didn't remember anymore"
+
+    elif pattern_id == "come_stare":
+        if subject == "voi":
+            return "how are you all?"
+        elif subject == "lei":
+            return "how are you? (formal)"
+        return "how are you?"
+
+    elif pattern_id == "non_farcela":
+        if tense == "presente":
+            v = "can't" if subject in ("lui", "lei", "io") else "can't"
+            return f"{subj} {v} manage it"
+        elif tense == "imperfetto":
+            return f"{subj} couldn't manage it (habitual)"
+        elif tense == "condizionale":
+            return f"{subj} wouldn't be able to manage it"
+
+    return ""
+
+
+def _generate_template_k(
+    tense: str,
+    gender_io_tu: str,
+    difficulty_unlocked: bool,
+) -> SentenceSpec:
+    """Generate a template K (idiomatic expression) sentence."""
+    pattern = random.choice(IDIOMATIC_PATTERNS)
+
+    # Pick a compatible tense
+    if tense not in pattern["tenses"]:
+        tense = random.choice(pattern["tenses"])
+
+    # Pick a compatible subject
+    subject = random.choice(pattern["subjects"])
+
+    return SentenceSpec(
+        verb=pattern["verb_for_progress"],
+        tense=tense,
+        subject=subject,
+        frame=NO_FRAME,
+        template="K",
+        gender_io_tu=gender_io_tu,
+        idiomatic_id=pattern["id"],
     )
 
 
@@ -2759,6 +3297,53 @@ def _validate_sentence(spec: SentenceSpec) -> bool:
         if spec.adv:
             return False
 
+    # 8. Frame-content semantic compatibility
+    # Strong emotional frames sound wrong with routine mundane activities
+    frame_it = spec.frame.get("it", "")
+    if frame_it in STRONG_EMOTIONAL_FRAMES and spec.verb in ROUTINE_MUNDANE_VERBS:
+        return False
+
+    # 8b. "Purtroppo" + positive adjective or "Fortunatamente" + negative adjective
+    if spec.adjective:
+        adj_en = spec.adjective.get("en", "")
+        _POSITIVE_ADJS = {"happy", "glad", "content", "ready", "sure"}
+        _NEGATIVE_ADJS = {"sad", "sick", "tired", "angry", "nervous", "worried", "alone"}
+        if frame_it == "Purtroppo," and adj_en in _POSITIVE_ADJS:
+            return False
+        if frame_it == "Fortunatamente," and adj_en in _NEGATIVE_ADJS:
+            return False
+
+    # 9. Subject-verb plausibility for elderly subjects
+    if spec.gendered_subject:
+        subj_it = spec.gendered_subject.get("it", "")
+        if subj_it in ELDERLY_SUBJECTS_IT:
+            # Elderly + vigorous physical verb + traversal location is implausible
+            if spec.verb in VIGOROUS_PHYSICAL_VERBS and spec.location:
+                loc_it = spec.location.get("it", "")
+                if "attraverso" in loc_it or "lungo" in loc_it or "fino" in loc_it:
+                    return False
+
+    # 10. "insieme" (together) only makes sense with plural subjects or "io" (with implied companion)
+    if spec.adv and spec.adv.get("it") == "insieme":
+        if spec.subject in ("lui", "lei") and not spec.gendered_subject:
+            return False
+        # Gendered subjects that are singular
+        if spec.gendered_subject:
+            gs_it = spec.gendered_subject.get("it", "")
+            # Singular gendered subjects with "insieme" are odd
+            if not any(plural in gs_it for plural in ("i ", "le ", "gli ")):
+                return False
+
+    # 11. State verbs need a complement (adjective, location, or adverb) in template A
+    _STATE_VERBS_NEED_COMPLEMENT = {"essere", "diventare", "stare", "restare", "rimanere"}
+    if spec.template == "A" and spec.verb in _STATE_VERBS_NEED_COMPLEMENT:
+        if not spec.obj and not spec.location and not spec.adv:
+            return False
+
+    # 12. Template K (idiomatic) is always valid — pre-validated by builder
+    if spec.template == "K":
+        return True
+
     return True
 
 
@@ -2826,22 +3411,26 @@ def _generate_sentence_inner(
 
     # Choose template
     if _is_modal(verb):
-        template = "A"
-        obj = get_object_for_verb(verb)
-        adv = _get_compatible_adverb(tense, frame_class)
-        return SentenceSpec(verb, tense, subject, frame, template, obj, adv, gender_io_tu=gender_io_tu)
+        # Modals always use template B — they need an infinitive, not a standalone object
+        # Pick a non-modal verb as the infinitive
+        non_modals = [v for v in VERBS if not _is_modal(v["infinitive"])]
+        inf_verb = random.choice(non_modals)["infinitive"]
+        obj = get_object_for_verb(inf_verb) if _needs_object(inf_verb) else None
+        adv = _get_compatible_adverb(tense, frame_class) if not obj else None
+        return SentenceSpec(inf_verb, tense, subject, frame, "B", obj, adv,
+                            modal=verb, gender_io_tu=gender_io_tu)
 
     if difficulty_unlocked:
-        # A:20% B:10% C:5% D:5% E:5% F:15% G:10% H:15% I:10% J:5%
+        # A:18% B:8% C:5% D:5% E:5% F:13% G:9% H:13% I:9% J:5% K:10%
         template = random.choices(
-            ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J"],
-            weights=[20, 10, 5, 5, 5, 15, 10, 15, 10, 5],
+            ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K"],
+            weights=[18, 8, 5, 5, 5, 13, 9, 13, 9, 5, 10],
             k=1,
         )[0]
     else:
         template = random.choices(
-            ["A", "B", "F", "G", "H", "I"],
-            weights=[40, 10, 15, 10, 15, 10],
+            ["A", "B", "F", "G", "H", "I", "K"],
+            weights=[35, 10, 13, 10, 13, 10, 9],
             k=1,
         )[0]
 
@@ -2905,6 +3494,9 @@ def _generate_sentence_inner(
 
     elif template == "J":
         return _generate_template_j(tense, subject, frame, gender_io_tu)
+
+    elif template == "K":
+        return _generate_template_k(tense, gender_io_tu, difficulty_unlocked)
 
     return SentenceSpec(verb, tense, subject, frame, template, obj, adv, modal, gender_io_tu, location=location)
 
