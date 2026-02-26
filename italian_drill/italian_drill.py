@@ -37,23 +37,48 @@ TENSES: List[str] = [
     "passato_prossimo",
 ]
 
-DISCOURSE_FRAMES: List[Dict[str, str]] = [
-    {"it": "Secondo me,", "en": "In my opinion,"},
-    {"it": "Secondo lui,", "en": "According to him,"},
-    {"it": "Secondo lei,", "en": "According to her,"},
-    {"it": "Secondo noi,", "en": "According to us,"},
-    {"it": "A mio parere,", "en": "In my view,"},
-    {"it": "Per quanto mi riguarda,", "en": "As far as I'm concerned,"},
-    {"it": "In realtà,", "en": "Actually,"},
-    {"it": "Purtroppo,", "en": "Unfortunately,"},
-    {"it": "Fortunatamente,", "en": "Fortunately,"},
-    {"it": "Di solito,", "en": "Usually,"},
-    {"it": "Ogni giorno,", "en": "Every day,"},
-    {"it": "A volte,", "en": "Sometimes,"},
-    {"it": "Probabilmente,", "en": "Probably,"},
-    {"it": "Forse,", "en": "Maybe,"},
-    {"it": "Sinceramente,", "en": "Honestly,"},
+DISCOURSE_FRAMES: List[Dict[str, Any]] = [
+    # --- Habitual (total ~25%) ---
+    {"it": "Di solito,", "en": "Usually,", "weight": 8, "class": "habitual"},
+    {"it": "Ogni giorno,", "en": "Every day,", "weight": 5, "class": "habitual"},
+    {"it": "A volte,", "en": "Sometimes,", "weight": 5, "class": "habitual"},
+    {"it": "Spesso,", "en": "Often,", "weight": 4, "class": "habitual"},
+    {"it": "Raramente,", "en": "Rarely,", "weight": 3, "class": "habitual"},
+    # --- Opinion / perspective (total ~20%) ---
+    {"it": "Secondo me,", "en": "In my opinion,", "weight": 3, "class": "specific"},
+    {"it": "Secondo lui,", "en": "In his opinion,", "weight": 2, "class": "specific"},
+    {"it": "Secondo lei,", "en": "In her opinion,", "weight": 2, "class": "specific"},
+    {"it": "Secondo mio padre,", "en": "According to my father,", "weight": 2, "class": "specific"},
+    {"it": "Secondo mia madre,", "en": "According to my mother,", "weight": 2, "class": "specific"},
+    {"it": "A mio parere,", "en": "In my view,", "weight": 2, "class": "specific"},
+    {"it": "Per me,", "en": "For me,", "weight": 2, "class": "specific"},
+    {"it": "Onestamente,", "en": "Honestly,", "weight": 2, "class": "specific"},
+    {"it": "Francamente,", "en": "Frankly,", "weight": 3, "class": "specific"},
+    # --- Emotional / evaluative (total ~20%) ---
+    {"it": "Purtroppo,", "en": "Unfortunately,", "weight": 3, "class": "specific"},
+    {"it": "Fortunatamente,", "en": "Fortunately,", "weight": 3, "class": "specific"},
+    {"it": "Finalmente,", "en": "Finally,", "weight": 3, "class": "specific"},
+    {"it": "Stranamente,", "en": "Strangely,", "weight": 2, "class": "specific"},
+    {"it": "Ovviamente,", "en": "Obviously,", "weight": 2, "class": "specific"},
+    {"it": "Naturalmente,", "en": "Naturally,", "weight": 2, "class": "specific"},
+    {"it": "Sinceramente,", "en": "Sincerely,", "weight": 3, "class": "specific"},
+    {"it": "Incredibilmente,", "en": "Incredibly,", "weight": 2, "class": "specific"},
+    # --- Temporal / contextual (total ~20%) ---
+    {"it": "In realtà,", "en": "In reality,", "weight": 3, "class": "specific"},
+    {"it": "Infatti,", "en": "In fact,", "weight": 3, "class": "specific"},
+    {"it": "Comunque,", "en": "Anyway,", "weight": 3, "class": "specific"},
+    {"it": "Nel frattempo,", "en": "Meanwhile,", "weight": 2, "class": "specific"},
+    {"it": "D'altra parte,", "en": "On the other hand,", "weight": 2, "class": "specific"},
+    {"it": "In ogni caso,", "en": "In any case,", "weight": 3, "class": "specific"},
+    {"it": "Tutto sommato,", "en": "All things considered,", "weight": 2, "class": "specific"},
+    {"it": "Prima di tutto,", "en": "First of all,", "weight": 2, "class": "specific"},
 ]
+
+# Pre-compute weights list for random.choices
+_FRAME_WEIGHTS: List[int] = [f["weight"] for f in DISCOURSE_FRAMES]
+
+# Weight for "no frame" (15% of total = 15 weight units out of ~100)
+_NO_FRAME_WEIGHT: int = 15
 
 # No-frame sentinel
 NO_FRAME: Dict[str, str] = {"it": "", "en": ""}
@@ -1742,20 +1767,18 @@ def english_conjugation(
 
 # Habitual discourse frames (imply repeated/general action)
 HABITUAL_FRAMES: Set[str] = {
-    "Di solito,", "A volte,", "Ogni giorno,",
+    "Di solito,", "A volte,", "Ogni giorno,", "Spesso,", "Raramente,",
 }
 
 # Specific discourse frames (imply a particular occasion)
+# Everything not habitual and not empty is specific.
 SPECIFIC_FRAMES: Set[str] = {
-    "Purtroppo,", "Fortunatamente,", "In realtà,",
-    "Secondo me,", "Secondo lui,", "Secondo lei,", "Secondo noi,",
-    "A mio parere,", "Per quanto mi riguarda,",
-    "Probabilmente,", "Forse,", "Sinceramente,",
+    f["it"] for f in DISCOURSE_FRAMES if f["class"] == "specific"
 }
 
 # Habitual adverbs (imply repeated/general action)
 HABITUAL_ADVERBS: Set[str] = {
-    "sempre", "spesso", "a volte", "ogni giorno", "di solito",
+    "sempre", "spesso", "a volte", "ogni giorno", "di solito", "raramente",
 }
 
 # Specific-time adverbs (imply a particular moment)
@@ -1770,9 +1793,18 @@ NEUTRAL_ADVERBS: Set[str] = {
 }
 
 
-def _classify_frame(frame: Dict[str, str]) -> str:
-    """Classify a frame as 'habitual', 'specific', or 'neutral'."""
+def _classify_frame(frame: Dict[str, Any]) -> str:
+    """Classify a frame as 'habitual', 'specific', or 'neutral'.
+
+    NO_FRAME (empty it) returns 'neutral' so adverbs are unconstrained.
+    """
+    # If frame carries its own class (from DISCOURSE_FRAMES), use it
+    cls = frame.get("class")
+    if cls:
+        return cls
     it = frame.get("it", "")
+    if not it:
+        return "neutral"  # NO_FRAME
     if it in HABITUAL_FRAMES:
         return "habitual"
     if it in SPECIFIC_FRAMES:
@@ -1826,17 +1858,29 @@ def _get_compatible_adverb(tense: str, frame_class: str) -> Optional[Dict[str, s
 
 
 def _pick_frame(difficulty_unlocked: bool) -> Dict[str, str]:
-    """Pick a discourse frame. Always returns a frame (never empty)."""
+    """Pick a discourse frame with weighted distribution.
+
+    Returns NO_FRAME ~15% of the time (sentence starts directly with
+    subject/verb).  Remaining 85% is distributed across all frames
+    according to their individual weights so no single frame exceeds ~10%.
+    """
     if not difficulty_unlocked:
-        simple = [
-            {"it": "Secondo me,", "en": "In my opinion,"},
-            {"it": "Di solito,", "en": "Usually,"},
-            {"it": "In realtà,", "en": "Actually,"},
-            {"it": "Ogni giorno,", "en": "Every day,"},
-            {"it": "A volte,", "en": "Sometimes,"},
-        ]
-        return random.choice(simple)
-    return random.choice(DISCOURSE_FRAMES)
+        # Simpler pool for early play — still weighted
+        simple_frames = [f for f in DISCOURSE_FRAMES
+                         if f["it"] in ("Di solito,", "A volte,", "Secondo me,",
+                                        "In realtà,", "Purtroppo,", "Fortunatamente,")]
+        simple_weights = [f["weight"] for f in simple_frames]
+        # 15% no-frame
+        total_w = sum(simple_weights) + _NO_FRAME_WEIGHT
+        if random.random() < _NO_FRAME_WEIGHT / total_w:
+            return NO_FRAME
+        return random.choices(simple_frames, weights=simple_weights, k=1)[0]
+
+    # Full pool — weighted selection with no-frame option
+    total_w = sum(_FRAME_WEIGHTS) + _NO_FRAME_WEIGHT
+    if random.random() < _NO_FRAME_WEIGHT / total_w:
+        return NO_FRAME
+    return random.choices(DISCOURSE_FRAMES, weights=_FRAME_WEIGHTS, k=1)[0]
 
 
 def _pick_tense(difficulty_unlocked: bool, allowed_tenses: List[str]) -> str:
