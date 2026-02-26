@@ -98,20 +98,20 @@ VERBS: List[Dict[str, Any]] = [
     # --- Irregular essentials ---
     {"infinitive": "essere", "en": "to be", "conjugation": "irregular", "group": "irreg"},
     {"infinitive": "avere", "en": "to have", "conjugation": "irregular", "group": "irreg"},
-    {"infinitive": "fare", "en": "to do/make", "conjugation": "irregular", "group": "irreg"},
-    {"infinitive": "dire", "en": "to say/tell", "conjugation": "irregular", "group": "irreg"},
+    {"infinitive": "fare", "en": "to do", "conjugation": "irregular", "group": "irreg"},
+    {"infinitive": "dire", "en": "to say", "conjugation": "irregular", "group": "irreg"},
     {"infinitive": "andare", "en": "to go", "conjugation": "irregular", "group": "irreg"},
     {"infinitive": "venire", "en": "to come", "conjugation": "irregular", "group": "irreg"},
     {"infinitive": "dare", "en": "to give", "conjugation": "irregular", "group": "irreg"},
-    {"infinitive": "stare", "en": "to stay/be", "conjugation": "irregular", "group": "irreg"},
-    {"infinitive": "potere", "en": "to be able to/can", "conjugation": "irregular", "group": "irreg"},
+    {"infinitive": "stare", "en": "to stay", "conjugation": "irregular", "group": "irreg"},
+    {"infinitive": "potere", "en": "to be able to", "conjugation": "irregular", "group": "irreg"},
     {"infinitive": "volere", "en": "to want", "conjugation": "irregular", "group": "irreg"},
-    {"infinitive": "dovere", "en": "to have to/must", "conjugation": "irregular", "group": "irreg"},
-    {"infinitive": "sapere", "en": "to know", "conjugation": "irregular", "group": "irreg"},
+    {"infinitive": "dovere", "en": "to have to", "conjugation": "irregular", "group": "irreg"},
+    {"infinitive": "sapere", "en": "to know a fact", "conjugation": "irregular", "group": "irreg"},
     {"infinitive": "vedere", "en": "to see", "conjugation": "irregular", "group": "irreg"},
     {"infinitive": "uscire", "en": "to go out", "conjugation": "irregular", "group": "irreg"},
     # --- Regular -are ---
-    {"infinitive": "parlare", "en": "to speak/talk", "conjugation": "regular", "group": "are"},
+    {"infinitive": "parlare", "en": "to speak", "conjugation": "regular", "group": "are"},
     {"infinitive": "mangiare", "en": "to eat", "conjugation": "regular", "group": "are"},
     {"infinitive": "lavorare", "en": "to work", "conjugation": "regular", "group": "are"},
     {"infinitive": "studiare", "en": "to study", "conjugation": "regular", "group": "are"},
@@ -120,7 +120,7 @@ VERBS: List[Dict[str, Any]] = [
     {"infinitive": "pensare", "en": "to think", "conjugation": "regular", "group": "are"},
     {"infinitive": "chiamare", "en": "to call", "conjugation": "regular", "group": "are"},
     {"infinitive": "aspettare", "en": "to wait for", "conjugation": "regular", "group": "are"},
-    {"infinitive": "guardare", "en": "to watch/look at", "conjugation": "regular", "group": "are"},
+    {"infinitive": "guardare", "en": "to watch", "conjugation": "regular", "group": "are"},
     {"infinitive": "ascoltare", "en": "to listen to", "conjugation": "regular", "group": "are"},
     {"infinitive": "camminare", "en": "to walk", "conjugation": "regular", "group": "are"},
     {"infinitive": "giocare", "en": "to play", "conjugation": "regular", "group": "are"},
@@ -131,16 +131,16 @@ VERBS: List[Dict[str, Any]] = [
     {"infinitive": "insegnare", "en": "to teach", "conjugation": "regular", "group": "are"},
     {"infinitive": "imparare", "en": "to learn", "conjugation": "regular", "group": "are"},
     {"infinitive": "pagare", "en": "to pay", "conjugation": "regular", "group": "are"},
-    {"infinitive": "cercare", "en": "to look for/search", "conjugation": "regular", "group": "are"},
-    {"infinitive": "portare", "en": "to bring/carry", "conjugation": "regular", "group": "are"},
+    {"infinitive": "cercare", "en": "to search for", "conjugation": "regular", "group": "are"},
+    {"infinitive": "portare", "en": "to bring", "conjugation": "regular", "group": "are"},
     {"infinitive": "cambiare", "en": "to change", "conjugation": "regular", "group": "are"},
     {"infinitive": "provare", "en": "to try", "conjugation": "regular", "group": "are"},
     {"infinitive": "arrivare", "en": "to arrive", "conjugation": "regular", "group": "are"},
     {"infinitive": "tornare", "en": "to return", "conjugation": "regular", "group": "are"},
     {"infinitive": "entrare", "en": "to enter", "conjugation": "regular", "group": "are"},
-    {"infinitive": "restare", "en": "to stay/remain", "conjugation": "regular", "group": "are"},
+    {"infinitive": "restare", "en": "to remain", "conjugation": "regular", "group": "are"},
     {"infinitive": "diventare", "en": "to become", "conjugation": "regular", "group": "are"},
-    {"infinitive": "passare", "en": "to pass/spend (time)", "conjugation": "regular", "group": "are"},
+    {"infinitive": "passare", "en": "to spend time", "conjugation": "regular", "group": "are"},
     {"infinitive": "usare", "en": "to use", "conjugation": "regular", "group": "are"},
     {"infinitive": "amare", "en": "to love", "conjugation": "regular", "group": "are"},
     {"infinitive": "preparare", "en": "to prepare", "conjugation": "regular", "group": "are"},
@@ -148,14 +148,14 @@ VERBS: List[Dict[str, Any]] = [
     {"infinitive": "dimenticare", "en": "to forget", "conjugation": "regular", "group": "are"},
     {"infinitive": "aiutare", "en": "to help", "conjugation": "regular", "group": "are"},
     {"infinitive": "spiegare", "en": "to explain", "conjugation": "regular", "group": "are"},
-    {"infinitive": "cominciare", "en": "to begin/start", "conjugation": "regular", "group": "are"},
-    {"infinitive": "abitare", "en": "to live (reside)", "conjugation": "regular", "group": "are"},
+    {"infinitive": "cominciare", "en": "to begin", "conjugation": "regular", "group": "are"},
+    {"infinitive": "abitare", "en": "to reside", "conjugation": "regular", "group": "are"},
     {"infinitive": "viaggiare", "en": "to travel", "conjugation": "regular", "group": "are"},
-    {"infinitive": "suonare", "en": "to play (instrument)", "conjugation": "regular", "group": "are"},
-    {"infinitive": "raccontare", "en": "to tell (a story)", "conjugation": "regular", "group": "are"},
-    {"infinitive": "desiderare", "en": "to wish/desire", "conjugation": "regular", "group": "are"},
+    {"infinitive": "suonare", "en": "to play music", "conjugation": "regular", "group": "are"},
+    {"infinitive": "raccontare", "en": "to recount", "conjugation": "regular", "group": "are"},
+    {"infinitive": "desiderare", "en": "to desire", "conjugation": "regular", "group": "are"},
     {"infinitive": "visitare", "en": "to visit", "conjugation": "regular", "group": "are"},
-    {"infinitive": "lasciare", "en": "to leave/let", "conjugation": "regular", "group": "are"},
+    {"infinitive": "lasciare", "en": "to leave behind", "conjugation": "regular", "group": "are"},
     # --- Regular -ere ---
     {"infinitive": "scrivere", "en": "to write", "conjugation": "regular", "group": "ere"},
     {"infinitive": "leggere", "en": "to read", "conjugation": "regular", "group": "ere"},
@@ -166,9 +166,9 @@ VERBS: List[Dict[str, Any]] = [
     {"infinitive": "mettere", "en": "to put", "conjugation": "regular", "group": "ere"},
     {"infinitive": "chiudere", "en": "to close", "conjugation": "regular", "group": "ere"},
     {"infinitive": "perdere", "en": "to lose", "conjugation": "regular", "group": "ere"},
-    {"infinitive": "rispondere", "en": "to answer/reply", "conjugation": "regular", "group": "ere"},
+    {"infinitive": "rispondere", "en": "to reply", "conjugation": "regular", "group": "ere"},
     {"infinitive": "chiedere", "en": "to ask", "conjugation": "regular", "group": "ere"},
-    {"infinitive": "conoscere", "en": "to know (a person)", "conjugation": "regular", "group": "ere"},
+    {"infinitive": "conoscere", "en": "to be acquainted with", "conjugation": "regular", "group": "ere"},
     {"infinitive": "ricevere", "en": "to receive", "conjugation": "regular", "group": "ere"},
     {"infinitive": "vendere", "en": "to sell", "conjugation": "regular", "group": "ere"},
     {"infinitive": "cadere", "en": "to fall", "conjugation": "regular", "group": "ere"},
@@ -176,12 +176,12 @@ VERBS: List[Dict[str, Any]] = [
     {"infinitive": "rimanere", "en": "to remain", "conjugation": "irregular", "group": "ere"},
     # --- Regular -ire ---
     {"infinitive": "dormire", "en": "to sleep", "conjugation": "regular", "group": "ire"},
-    {"infinitive": "partire", "en": "to leave/depart", "conjugation": "regular", "group": "ire"},
-    {"infinitive": "sentire", "en": "to hear/feel", "conjugation": "regular", "group": "ire"},
+    {"infinitive": "partire", "en": "to depart", "conjugation": "regular", "group": "ire"},
+    {"infinitive": "sentire", "en": "to hear", "conjugation": "regular", "group": "ire"},
     {"infinitive": "aprire", "en": "to open", "conjugation": "regular", "group": "ire"},
     {"infinitive": "seguire", "en": "to follow", "conjugation": "regular", "group": "ire"},
     {"infinitive": "offrire", "en": "to offer", "conjugation": "regular", "group": "ire"},
-    {"infinitive": "servire", "en": "to serve/need", "conjugation": "regular", "group": "ire"},
+    {"infinitive": "servire", "en": "to serve", "conjugation": "regular", "group": "ire"},
     {"infinitive": "scoprire", "en": "to discover", "conjugation": "regular", "group": "ire"},
     {"infinitive": "coprire", "en": "to cover", "conjugation": "regular", "group": "ire"},
     # --- -ire (isc) verbs ---
@@ -191,14 +191,14 @@ VERBS: List[Dict[str, Any]] = [
     {"infinitive": "spedire", "en": "to send", "conjugation": "regular", "group": "ire_isc"},
     {"infinitive": "costruire", "en": "to build", "conjugation": "regular", "group": "ire_isc"},
     {"infinitive": "pulire", "en": "to clean", "conjugation": "regular", "group": "ire_isc"},
-    {"infinitive": "unire", "en": "to unite/join", "conjugation": "regular", "group": "ire_isc"},
-    {"infinitive": "guarire", "en": "to heal/recover", "conjugation": "regular", "group": "ire_isc"},
+    {"infinitive": "unire", "en": "to unite", "conjugation": "regular", "group": "ire_isc"},
+    {"infinitive": "guarire", "en": "to recover", "conjugation": "regular", "group": "ire_isc"},
     # --- More irregulars ---
-    {"infinitive": "salire", "en": "to go up/climb", "conjugation": "irregular", "group": "ire"},
-    {"infinitive": "scendere", "en": "to go down/descend", "conjugation": "regular", "group": "ere"},
+    {"infinitive": "salire", "en": "to go up", "conjugation": "irregular", "group": "ire"},
+    {"infinitive": "scendere", "en": "to go down", "conjugation": "regular", "group": "ere"},
     {"infinitive": "morire", "en": "to die", "conjugation": "irregular", "group": "ire"},
     {"infinitive": "bere", "en": "to drink", "conjugation": "irregular", "group": "ere"},
-    {"infinitive": "tenere", "en": "to hold/keep", "conjugation": "irregular", "group": "ere"},
+    {"infinitive": "tenere", "en": "to hold", "conjugation": "irregular", "group": "ere"},
     {"infinitive": "scegliere", "en": "to choose", "conjugation": "irregular", "group": "ere"},
     {"infinitive": "correggere", "en": "to correct", "conjugation": "regular", "group": "ere"},
     {"infinitive": "spegnere", "en": "to turn off", "conjugation": "irregular", "group": "ere"},
@@ -269,7 +269,7 @@ OBJECTS_BY_CATEGORY: Dict[str, List[Dict[str, str]]] = {
     "people": [
         {"it": "un amico", "en": "a friend"},
         {"it": "i figli", "en": "the children"},
-        {"it": "sua sorella", "en": "his/her sister"},
+        {"it": "sua sorella", "en": "his sister"},
         {"it": "mia madre", "en": "my mother"},
         {"it": "gli studenti", "en": "the students"},
         {"it": "il collega", "en": "the colleague"},
@@ -529,8 +529,8 @@ ADJECTIVE_PASSATO_VERBS: Set[str] = {
 OBJECTS_LOCATION: List[Dict[str, str]] = [
     {"it": "a casa", "en": "home"},
     {"it": "al lavoro", "en": "to work"},
-    {"it": "in Italia", "en": "to/in Italy"},
-    {"it": "a Roma", "en": "to/in Rome"},
+    {"it": "in Italia", "en": "to Italy"},
+    {"it": "a Roma", "en": "to Rome"},
     {"it": "al supermercato", "en": "to the supermarket"},
     {"it": "in ufficio", "en": "to the office"},
     {"it": "in centro", "en": "downtown"},
@@ -687,8 +687,8 @@ LOCATION_ADVERBS: List[Dict[str, str]] = [
     {"it": "lontano", "en": "far away"},
     {"it": "fuori", "en": "outside"},
     {"it": "dentro", "en": "inside"},
-    {"it": "sopra", "en": "above/upstairs"},
-    {"it": "sotto", "en": "below/downstairs"},
+    {"it": "sopra", "en": "upstairs"},
+    {"it": "sotto", "en": "downstairs"},
     {"it": "davanti", "en": "in front"},
     {"it": "dietro", "en": "behind"},
 ]
@@ -1614,23 +1614,47 @@ def english_conjugation(
     # Handle "to do/make" → "do/make"
     subj = SUBJECT_EN[subject]
 
-    # Simple helper for 3rd person singular
+    # Simple helper for 3rd person singular — add -s to the FIRST word only
     def s_form(v: str) -> str:
-        parts = v.split("/")
-        results = []
-        for p in parts:
-            p = p.strip()
-            if p.endswith("ch") or p.endswith("sh") or p.endswith("ss") or p.endswith("x") or p.endswith("o"):
-                results.append(p + "es")
-            elif p.endswith("y") and len(p) > 1 and p[-2] not in "aeiou":
-                results.append(p[:-1] + "ies")
-            else:
-                results.append(p + "s")
-        return "/".join(results)
+        words = v.split()
+        first = words[0]
+        if first.endswith("ch") or first.endswith("sh") or first.endswith("ss") or first.endswith("x") or first.endswith("o"):
+            first = first + "es"
+        elif first.endswith("y") and len(first) > 1 and first[-2] not in "aeiou":
+            first = first[:-1] + "ies"
+        else:
+            first = first + "s"
+        words[0] = first
+        return " ".join(words)
 
     third = subject in ("lui", "lei")
     obj_part = f" {obj_en}" if obj_en else ""
     adv_part = f" {adv_en}" if adv_en else ""
+
+    # Irregular past tense lookup (bare EN → simple past form)
+    _IRREG_PAST: Dict[str, str] = {
+        "be": "", "have": "had", "go": "went", "come": "came",
+        "do": "did", "say": "said", "see": "saw", "write": "wrote",
+        "read": "read", "take": "took", "put": "put", "run": "ran",
+        "drink": "drank", "live": "lived", "close": "closed",
+        "lose": "lost", "reply": "replied", "ask": "asked",
+        "be acquainted with": "was acquainted with",
+        "fall": "fell", "be born": "", "die": "died", "hold": "held",
+        "choose": "chose", "be able to": "",
+        "want": "wanted", "have to": "had to",
+        "know a fact": "knew", "give": "gave", "stay": "stayed",
+        "remain": "remained", "go out": "went out",
+        "go up": "went up", "go down": "went down",
+        "send": "sent", "turn off": "turned off",
+        "propose": "proposed", "sell": "sold", "receive": "received",
+        "spend time": "spent time", "search for": "searched for",
+        "bring": "brought", "begin": "began", "reside": "resided",
+        "play music": "played music", "recount": "recounted",
+        "desire": "desired", "leave behind": "left behind",
+        "hear": "heard", "serve": "served", "recover": "recovered",
+        "unite": "united", "depart": "departed",
+        "discover": "discovered", "understand": "understood",
+    }
 
     if tense == "presente":
         if bare in ("be",):
@@ -1639,16 +1663,19 @@ def english_conjugation(
             vf = forms[subject]
         elif bare in ("have",):
             vf = "has" if third else "have"
-        elif bare in ("can", "be able to/can"):
+        elif bare in ("be able to",):
             vf = "can"
-        elif bare in ("have to/must",):
+        elif bare in ("have to",):
             vf = "must"
+        elif bare in ("know a fact",):
+            vf = "knows a fact" if third else "know a fact"
+        elif bare in ("be acquainted with",):
+            vf = "is acquainted with" if third else "are acquainted with" if subject != "io" else "am acquainted with"
         else:
             vf = s_form(bare) if third else bare
         return f"{subj} {vf}{obj_part}{adv_part}"
 
     elif tense == "imperfetto":
-        # "used to X" or "was X-ing"
         if bare in ("be",):
             was = "was" if subject in ("io", "lui", "lei") else "were"
             return f"{subj} {was}{obj_part}{adv_part}"
@@ -1665,86 +1692,19 @@ def english_conjugation(
         if bare in ("be",):
             was = "was" if subject in ("io", "lui", "lei") else "were"
             return f"{subj} {was}{obj_part}{adv_part}"
-        elif bare in ("have",):
-            return f"{subj} had{obj_part}{adv_part}"
-        elif bare in ("go",):
-            return f"{subj} went{obj_part}{adv_part}"
-        elif bare in ("come",):
-            return f"{subj} came{obj_part}{adv_part}"
-        elif bare in ("do/make",):
-            return f"{subj} did/made{obj_part}{adv_part}"
-        elif bare in ("say/tell",):
-            return f"{subj} said/told{obj_part}{adv_part}"
-        elif bare in ("see",):
-            return f"{subj} saw{obj_part}{adv_part}"
-        elif bare in ("write",):
-            return f"{subj} wrote{obj_part}{adv_part}"
-        elif bare in ("read",):
-            return f"{subj} read{obj_part}{adv_part}"
-        elif bare in ("take",):
-            return f"{subj} took{obj_part}{adv_part}"
-        elif bare in ("put",):
-            return f"{subj} put{obj_part}{adv_part}"
-        elif bare in ("run",):
-            return f"{subj} ran{obj_part}{adv_part}"
-        elif bare in ("drink",):
-            return f"{subj} drank{obj_part}{adv_part}"
-        elif bare in ("live",):
-            return f"{subj} lived{obj_part}{adv_part}"
-        elif bare in ("close",):
-            return f"{subj} closed{obj_part}{adv_part}"
-        elif bare in ("lose",):
-            return f"{subj} lost{obj_part}{adv_part}"
-        elif bare in ("answer/reply",):
-            return f"{subj} answered/replied{obj_part}{adv_part}"
-        elif bare in ("ask",):
-            return f"{subj} asked{obj_part}{adv_part}"
-        elif bare in ("know (a person)",):
-            return f"{subj} knew{obj_part}{adv_part}"
-        elif bare in ("fall",):
-            return f"{subj} fell{obj_part}{adv_part}"
         elif bare in ("be born",):
             was = "was" if subject in ("io", "lui", "lei", "tu") else "were"
             return f"{subj} {was} born{obj_part}{adv_part}"
-        elif bare in ("die",):
-            return f"{subj} died{obj_part}{adv_part}"
-        elif bare in ("hold/keep",):
-            return f"{subj} held/kept{obj_part}{adv_part}"
-        elif bare in ("choose",):
-            return f"{subj} chose{obj_part}{adv_part}"
-        elif bare in ("be able to/can",):
-            return f"{subj} was able to{obj_part}{adv_part}" if subject in ("io", "lui", "lei") else f"{subj} were able to{obj_part}{adv_part}"
-        elif bare in ("want",):
-            return f"{subj} wanted{obj_part}{adv_part}"
-        elif bare in ("have to/must",):
-            return f"{subj} had to{obj_part}{adv_part}"
-        elif bare in ("know",):
-            return f"{subj} knew{obj_part}{adv_part}"
-        elif bare in ("give",):
-            return f"{subj} gave{obj_part}{adv_part}"
-        elif bare in ("stay/be",):
-            return f"{subj} stayed{obj_part}{adv_part}"
-        elif bare in ("remain",):
-            return f"{subj} remained{obj_part}{adv_part}"
-        elif bare in ("stay/remain",):
-            return f"{subj} stayed/remained{obj_part}{adv_part}"
-        elif bare in ("go out",):
-            return f"{subj} went out{obj_part}{adv_part}"
-        elif bare in ("go up/climb",):
-            return f"{subj} went up/climbed{obj_part}{adv_part}"
-        elif bare in ("go down/descend",):
-            return f"{subj} went down/descended{obj_part}{adv_part}"
-        elif bare in ("send",):
-            return f"{subj} sent{obj_part}{adv_part}"
-        elif bare in ("turn off",):
-            return f"{subj} turned off{obj_part}{adv_part}"
-        elif bare in ("propose",):
-            return f"{subj} proposed{obj_part}{adv_part}"
-        elif bare in ("sell",):
-            return f"{subj} sold{obj_part}{adv_part}"
-        elif bare in ("receive",):
-            return f"{subj} received{obj_part}{adv_part}"
-        # Generic: add -ed (won't always be right, but gives the idea)
+        elif bare in ("be able to",):
+            was = "was" if subject in ("io", "lui", "lei") else "were"
+            return f"{subj} {was} able to{obj_part}{adv_part}"
+        elif bare in ("be acquainted with",):
+            was = "was" if subject in ("io", "lui", "lei") else "were"
+            return f"{subj} {was} acquainted with{obj_part}{adv_part}"
+        # Check the irregular past table
+        elif bare in _IRREG_PAST:
+            return f"{subj} {_IRREG_PAST[bare]}{obj_part}{adv_part}"
+        # Generic: add -ed
         else:
             if bare.endswith("e"):
                 past = bare + "d"
@@ -2287,13 +2247,15 @@ class SentenceSpec:
                 if adv_en_f:
                     s += f" {adv_en_f}"
                 parts.append(s)
+                # Tag only with modals — pronoun can go before modal
+                # or attached to infinitive
+                parts.append("[pronoun before modal]")
             else:
                 verb_en = english_conjugation(verb_info, self.tense, self.subject)
                 s = f"{verb_en} {pron_en}"
                 if adv_en_f:
                     s += f" {adv_en_f}"
                 parts.append(s)
-            parts.append("[use Italian pronoun placement]")
 
         elif self.template == "G":
             gs = self.gendered_subject
@@ -2483,7 +2445,7 @@ class SentenceSpec:
                 if self.adv:
                     s += f" {self.adv['en']}"
                 parts.append(s)
-                parts.append("[use combined pronouns]")
+                parts.append("[combine indirect + direct pronouns]")
 
         return " ".join(parts)
 
