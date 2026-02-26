@@ -243,11 +243,15 @@ OBJECTS_BY_CATEGORY: Dict[str, List[Dict[str, str]]] = {
     # Helping / teaching / people as objects
     "people": [
         {"it": "un amico", "en": "a friend"},
-        {"it": "i bambini", "en": "the children"},
+        {"it": "i figli", "en": "the children"},
         {"it": "sua sorella", "en": "his/her sister"},
         {"it": "mia madre", "en": "my mother"},
         {"it": "gli studenti", "en": "the students"},
         {"it": "il collega", "en": "the colleague"},
+        {"it": "mio fratello", "en": "my brother"},
+        {"it": "la nonna", "en": "the grandmother"},
+        {"it": "il vicino", "en": "the neighbor"},
+        {"it": "i genitori", "en": "the parents"},
     ],
     # Buying/selling/paying/bringing/carrying
     "commerce": [
@@ -284,8 +288,11 @@ OBJECTS_BY_CATEGORY: Dict[str, List[Dict[str, str]]] = {
     # Calling (people only)
     "calling": [
         {"it": "un amico", "en": "a friend"},
-        {"it": "il dottore", "en": "the doctor"},
+        {"it": "il medico", "en": "the doctor"},
         {"it": "mia madre", "en": "my mother"},
+        {"it": "mio padre", "en": "my father"},
+        {"it": "mia sorella", "en": "my sister"},
+        {"it": "il vicino", "en": "the neighbor"},
         {"it": "un taxi", "en": "a taxi"},
     ],
     # Remembering / forgetting
@@ -776,20 +783,121 @@ ADJECTIVES: List[Dict[str, str]] = [
 ]
 
 # Gendered subjects for template G (noun phrases with explicit gender/number)
-GENDERED_SUBJECTS: List[Dict[str, Any]] = [
-    {"it": "il ragazzo", "en": "the boy", "gender": "m", "number": "s", "verb_subject": "lui"},
-    {"it": "la ragazza", "en": "the girl", "gender": "f", "number": "s", "verb_subject": "lei"},
-    {"it": "i ragazzi", "en": "the boys", "gender": "m", "number": "p", "verb_subject": "loro"},
-    {"it": "le ragazze", "en": "the girls", "gender": "f", "number": "p", "verb_subject": "loro"},
-    {"it": "l'uomo", "en": "the man", "gender": "m", "number": "s", "verb_subject": "lui"},
-    {"it": "la donna", "en": "the woman", "gender": "f", "number": "s", "verb_subject": "lei"},
-    {"it": "gli uomini", "en": "the men", "gender": "m", "number": "p", "verb_subject": "loro"},
-    {"it": "le donne", "en": "the women", "gender": "f", "number": "p", "verb_subject": "loro"},
-    {"it": "il bambino", "en": "the child (m)", "gender": "m", "number": "s", "verb_subject": "lui"},
-    {"it": "la bambina", "en": "the child (f)", "gender": "f", "number": "s", "verb_subject": "lei"},
-    {"it": "i bambini", "en": "the children (m)", "gender": "m", "number": "p", "verb_subject": "loro"},
-    {"it": "le bambine", "en": "the children (f)", "gender": "f", "number": "p", "verb_subject": "loro"},
+# ---------------------------------------------------------------------------
+# Gendered noun-phrase subjects (family, social, possessive)
+# ---------------------------------------------------------------------------
+
+# Family nouns (with articles)
+SUBJECTS_FAMILY: List[Dict[str, Any]] = [
+    {"it": "il marito", "en": "the husband", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la moglie", "en": "the wife", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il padre", "en": "the father", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la madre", "en": "the mother", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il figlio", "en": "the son", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la figlia", "en": "the daughter", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il fratello", "en": "the brother", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la sorella", "en": "the sister", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il nonno", "en": "the grandfather", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la nonna", "en": "the grandmother", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il nipote", "en": "the nephew", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la nipote", "en": "the niece", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il cugino", "en": "the cousin (m)", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la cugina", "en": "the cousin (f)", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "lo zio", "en": "the uncle", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la zia", "en": "the aunt", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il cognato", "en": "the brother-in-law", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la cognata", "en": "the sister-in-law", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il suocero", "en": "the father-in-law", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la suocera", "en": "the mother-in-law", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il genero", "en": "the son-in-law", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la nuora", "en": "the daughter-in-law", "gender": "f", "number": "s", "verb_subject": "lei"},
+    # Plural family
+    {"it": "i genitori", "en": "the parents", "gender": "m", "number": "p", "verb_subject": "loro"},
+    {"it": "i figli", "en": "the children", "gender": "m", "number": "p", "verb_subject": "loro"},
+    {"it": "i fratelli", "en": "the brothers", "gender": "m", "number": "p", "verb_subject": "loro"},
+    {"it": "le sorelle", "en": "the sisters", "gender": "f", "number": "p", "verb_subject": "loro"},
+    {"it": "i nonni", "en": "the grandparents", "gender": "m", "number": "p", "verb_subject": "loro"},
+    {"it": "i cugini", "en": "the cousins", "gender": "m", "number": "p", "verb_subject": "loro"},
 ]
+
+# Social/professional nouns (with articles)
+SUBJECTS_SOCIAL: List[Dict[str, Any]] = [
+    {"it": "il capo", "en": "the boss", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "il collega", "en": "the colleague (m)", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la collega", "en": "the colleague (f)", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il vicino", "en": "the neighbor (m)", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la vicina", "en": "the neighbor (f)", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "l'amico", "en": "the friend (m)", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "l'amica", "en": "the friend (f)", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il compagno", "en": "the partner (m)", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la compagna", "en": "the partner (f)", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il ragazzo", "en": "the boyfriend", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la ragazza", "en": "the girlfriend", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il medico", "en": "the doctor", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "l'insegnante", "en": "the teacher", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "lo studente", "en": "the student (m)", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la studentessa", "en": "the student (f)", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il professore", "en": "the professor (m)", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la professoressa", "en": "the professor (f)", "gender": "f", "number": "s", "verb_subject": "lei"},
+    # Plural social
+    {"it": "gli amici", "en": "the friends", "gender": "m", "number": "p", "verb_subject": "loro"},
+    {"it": "i colleghi", "en": "the colleagues", "gender": "m", "number": "p", "verb_subject": "loro"},
+    {"it": "i vicini", "en": "the neighbors", "gender": "m", "number": "p", "verb_subject": "loro"},
+    {"it": "i ragazzi", "en": "the guys", "gender": "m", "number": "p", "verb_subject": "loro"},
+    {"it": "le ragazze", "en": "the girls", "gender": "f", "number": "p", "verb_subject": "loro"},
+]
+
+# Possessive variants
+# Italian drops the article with singular unmodified family nouns:
+#   mio padre (NOT il mio padre), mia sorella (NOT la mia sorella)
+# Plural always keeps the article: i miei genitori
+# Non-family always keeps the article: il mio capo, il mio amico
+SUBJECTS_POSSESSIVE: List[Dict[str, Any]] = [
+    # Singular family — no article
+    {"it": "mio marito", "en": "my husband", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "mia moglie", "en": "my wife", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "mio padre", "en": "my father", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "mia madre", "en": "my mother", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "mio figlio", "en": "my son", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "mia figlia", "en": "my daughter", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "mio fratello", "en": "my brother", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "mia sorella", "en": "my sister", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "mio nonno", "en": "my grandfather", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "mia nonna", "en": "my grandmother", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "mio cugino", "en": "my cousin (m)", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "mia cugina", "en": "my cousin (f)", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "mio zio", "en": "my uncle", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "mia zia", "en": "my aunt", "gender": "f", "number": "s", "verb_subject": "lei"},
+    # Plural family — keeps article
+    {"it": "i miei genitori", "en": "my parents", "gender": "m", "number": "p", "verb_subject": "loro"},
+    {"it": "i miei figli", "en": "my children", "gender": "m", "number": "p", "verb_subject": "loro"},
+    {"it": "i miei fratelli", "en": "my siblings", "gender": "m", "number": "p", "verb_subject": "loro"},
+    # Non-family — keeps article
+    {"it": "il mio capo", "en": "my boss", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "il mio amico", "en": "my friend (m)", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la mia amica", "en": "my friend (f)", "gender": "f", "number": "s", "verb_subject": "lei"},
+    {"it": "il mio collega", "en": "my colleague (m)", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "il mio vicino", "en": "my neighbor (m)", "gender": "m", "number": "s", "verb_subject": "lui"},
+    {"it": "la mia vicina", "en": "my neighbor (f)", "gender": "f", "number": "s", "verb_subject": "lei"},
+]
+
+
+def _pick_gendered_subject() -> Dict[str, Any]:
+    """Pick a gendered noun-phrase subject with weighted distribution.
+
+    60% family, 20% social/professional, 20% possessive.
+    """
+    r = random.random()
+    if r < 0.60:
+        return random.choice(SUBJECTS_FAMILY)
+    elif r < 0.80:
+        return random.choice(SUBJECTS_SOCIAL)
+    else:
+        return random.choice(SUBJECTS_POSSESSIVE)
+
+
+# Flat list for backward compat
+GENDERED_SUBJECTS: List[Dict[str, Any]] = SUBJECTS_FAMILY + SUBJECTS_SOCIAL + SUBJECTS_POSSESSIVE
 
 # Verbs that work for agreement drills (Template G with predicate adjective)
 # ONLY state verbs and a few essere-verbs that take resultative adjectives in passato prossimo
@@ -1862,7 +1970,7 @@ def _generate_template_g(
     - Resultative verbs (arrivare, tornare) can only take adjectives in
       passato_prossimo ("è arrivata stanca").
     """
-    gs = random.choice(GENDERED_SUBJECTS)
+    gs = _pick_gendered_subject()
     adj = random.choice(ADJECTIVES)
 
     # Enforce tense compatibility with adjective usage
