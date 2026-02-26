@@ -1,0 +1,803 @@
+MODAL AUDIT — 200 Modal Sentences
+============================================================
+
+  1. [F] [present] [io] [modal=dovere]
+     IT: Ovviamente, le devo dire male
+     EN: Obviously, I must say to her badly (Hint: pronoun goes before the modal verb)
+
+  2. [E] [imperfect] [tu] [modal=potere]
+     IT: Secondo lui, puoi avere la macchina?
+     EN: In his opinion, can you have the car?
+
+  3. [E] [present] [tu] [modal=potere]
+     IT: Ovviamente, puoi uscire al parco?
+     EN: Obviously, can you go out to the park?
+
+  4. [B] [imperfect] [lui] [modal=dovere]
+     IT: Di solito, doveva restituire la macchina
+     EN: Usually, he used to have to return the car
+
+  5. [E] [future] [tu] [modal=potere]
+     IT: Spesso, puoi morire?
+     EN: Often, can you die?
+
+  6. [B] [passato prossimo] [noi] [modal=volere]
+     IT: Secondo lei, abbiamo voluto scoprire la situazione
+     EN: In her opinion, we wanted to discover the situation
+
+  7. [B] [imperfect] [lui] [modal=volere]
+     IT: A volte, voleva spedire l'email
+     EN: Sometimes, he used to want to send the email
+
+  8. [B] [present] [lei] [modal=potere]
+     IT: Naturalmente, può unire la nonna
+     EN: Naturally, she can unite the grandmother
+
+  9. [I] [imperfect] [lui] [modal=volere]
+     IT: Si voleva pettinare
+     EN: he used to want to comb his hair
+
+ 10. [B] [passato prossimo] [lui] [modal=potere]
+     IT: In realtà, ha potuto correggere le abitudini
+     EN: In reality, he was able to correct the habits
+
+ 11. [B] [imperfect] [lui] [modal=volere]
+     IT: Secondo me, voleva preferire il motivo
+     EN: In my opinion, he used to want to prefer the reason
+
+ 12. [B] [conditional] [lui] [modal=potere]
+     IT: Potrebbe lavorare
+     EN: he would be able to work
+
+ 13. [B] [imperfect] [lei] [modal=volere]
+     IT: Sinceramente, voleva prendere il pranzo
+     EN: Sincerely, she used to want to take the lunch
+
+ 14. [I] [imperfect] [lei] [modal=dovere]
+     IT: Spesso, si doveva sedere
+     EN: Often, she used to have to sit down
+
+ 15. [B] [present] [lui] [modal=volere]
+     IT: Vuole stare fuori
+     EN: he wants to stay outside
+
+ 16. [C] [imperfect] [tu] [modal=]
+     IT: In ogni caso, volevi scegliere il lavoro
+     EN: In any case, you used to want to choose the work
+
+ 17. [B] [passato prossimo] [loro] [modal=volere]
+     IT: Ogni giorno, hanno voluto correggere le abitudini
+     EN: Every day, they wanted to correct the habits
+
+ 18. [F] [imperfect] [noi] [modal=volere]
+     IT: Nel frattempo, ci volevamo leggere subito
+     EN: Meanwhile, we used to want to read to us right away (Hint: pronoun goes before the modal verb)
+
+ 19. [B] [present] [lui] [modal=dovere]
+     IT: In realtà, deve cucinare la cena
+     EN: In reality, he must cook the dinner
+
+ 20. [F] [conditional] [lui] [modal=potere]
+     IT: Ovviamente, la potrebbe comprare lì
+     EN: Obviously, he would be able to buy it (f) there (Hint: pronoun goes before the modal verb)
+
+ 21. [E] [imperfect] [tu] [modal=potere]
+     IT: Puoi studiare l'email?
+     EN: can you study the email?
+
+ 22. [E] [conditional] [tu] [modal=potere]
+     IT: Prima di tutto, potresti nuotare in Italia?
+     EN: First of all, could you swim to Italy?
+
+ 23. [E] [imperfect] [tu] [modal=potere]
+     IT: Naturalmente, puoi salire al parco?
+     EN: Naturally, can you go up to the park?
+
+ 24. [B] [passato prossimo] [lui] [modal=potere]
+     IT: Ha potuto camminare dietro
+     EN: he was able to walk behind
+
+ 25. [E] [imperfect] [tu] [modal=potere]
+     IT: A volte, puoi arrivare in Italia?
+     EN: Sometimes, can you arrive to Italy?
+
+ 26. [E] [passato prossimo] [tu] [modal=potere]
+     IT: Tutto sommato, puoi seguire il collega?
+     EN: All things considered, can you follow the colleague?
+
+ 27. [B] [present] [voi] [modal=dovere]
+     IT: Dovete credere il problema
+     EN: you all must believe the problem
+
+ 28. [E] [conditional] [tu] [modal=potere]
+     IT: Potresti cucinare la torta?
+     EN: could you cook the cake?
+
+ 29. [C] [present] [noi] [modal=]
+     IT: Onestamente, vogliamo desiderare il successo
+     EN: Honestly, we want to desire success
+
+ 30. [B] [future] [lei] [modal=volere]
+     IT: D'altra parte, vorrà scendere davanti alla scuola
+     EN: On the other hand, she will want to go down in front of the school
+
+ 31. [B] [present] [tu] [modal=volere]
+     IT: Finalmente, vuoi salire lassù
+     EN: Finally, you want to go up up there
+
+ 32. [B] [present] [loro] [modal=dovere]
+     IT: Prima di tutto, devono spegnere il telefono
+     EN: First of all, they must turn off the phone
+
+ 33. [F] [passato prossimo] [tu] [modal=potere]
+     IT: In realtà, le hai potuto dire qui
+     EN: In reality, you were able to say to her here (Hint: pronoun goes before the modal verb)
+
+ 34. [B] [present] [noi] [modal=volere]
+     IT: Infatti, vogliamo venire al cinema
+     EN: In fact, we want to come to the cinema
+
+ 35. [B] [passato prossimo] [lei] [modal=volere]
+     IT: Di solito, ha voluto lavorare
+     EN: Usually, she wanted to work
+
+ 36. [E] [present] [tu] [modal=potere]
+     IT: Francamente, puoi dormire?
+     EN: Frankly, can you sleep?
+
+ 37. [E] [imperfect] [tu] [modal=potere]
+     IT: Tutto sommato, puoi seguire mia madre?
+     EN: All things considered, can you follow my mother?
+
+ 38. [B] [passato prossimo] [loro] [modal=dovere]
+     IT: Ogni giorno, hanno dovuto perdere il lavoro
+     EN: Every day, they had to lose the work
+
+ 39. [B] [present] [noi] [modal=potere]
+     IT: A volte, possiamo correggere il vestito
+     EN: Sometimes, we can correct the outfit
+
+ 40. [B] [future] [loro] [modal=potere]
+     IT: D'altra parte, potranno lavorare
+     EN: On the other hand, they will be able to work
+
+ 41. [F] [passato prossimo] [tu] [modal=volere]
+     IT: Sinceramente, ve li hai voluto mandare qui
+     EN: Sincerely, you wanted to send them (m) to you all here (Hint: pronoun goes before the modal verb)
+
+ 42. [E] [imperfect] [tu] [modal=potere]
+     IT: Secondo mia madre, puoi dare la macchina?
+     EN: According to my mother, can you give the car?
+
+ 43. [B] [imperfect] [lui] [modal=potere]
+     IT: Comunque, poteva viaggiare vicino alla stazione
+     EN: Anyway, he used to be able to travel near the station
+
+ 44. [E] [conditional] [tu] [modal=potere]
+     IT: Secondo lui, potresti dormire?
+     EN: In his opinion, could you sleep?
+
+ 45. [E] [imperfect] [tu] [modal=potere]
+     IT: Di solito, puoi guardare il programma?
+     EN: Usually, can you watch the program?
+
+ 46. [B] [passato prossimo] [lei] [modal=volere]
+     IT: Secondo lui, ha voluto studiare il giornale
+     EN: In his opinion, she wanted to study the newspaper
+
+ 47. [B] [imperfect] [lei] [modal=dovere]
+     IT: Doveva mangiare la pizza
+     EN: she used to have to eat the pizza
+
+ 48. [E] [present] [tu] [modal=potere]
+     IT: Prima di tutto, puoi morire?
+     EN: First of all, can you die?
+
+ 49. [E] [future] [tu] [modal=potere]
+     IT: Purtroppo, puoi dire la risposta?
+     EN: Unfortunately, can you say the answer?
+
+ 50. [F] [future] [noi] [modal=dovere]
+     IT: A mio parere, lo dovremo raccontare poco
+     EN: In my view, we will have to recount it (m) a little (Hint: pronoun goes before the modal verb)
+
+ 51. [F] [present] [lei] [modal=dovere]
+     IT: Comunque, te lo deve scrivere ora
+     EN: Anyway, she must write it (m) to you now (Hint: pronoun goes before the modal verb)
+
+ 52. [B] [passato prossimo] [lei] [modal=potere]
+     IT: Secondo lui, ha potuto preferire la verità
+     EN: In his opinion, she was able to prefer the truth
+
+ 53. [B] [passato prossimo] [lui] [modal=potere]
+     IT: Prima di tutto, ha potuto servire il pane
+     EN: First of all, he was able to serve the bread
+
+ 54. [E] [imperfect] [tu] [modal=potere]
+     IT: In realtà, puoi lasciare la città?
+     EN: In reality, can you leave behind the city?
+
+ 55. [B] [imperfect] [io] [modal=dovere]
+     IT: In ogni caso, dovevo morire
+     EN: In any case, I used to have to die
+
+ 56. [B] [present] [io] [modal=dovere]
+     IT: Devo spegnere il telefono
+     EN: I must turn off the phone
+
+ 57. [B] [passato prossimo] [noi] [modal=volere]
+     IT: Fortunatamente, abbiamo voluto cadere davanti
+     EN: Fortunately, we wanted to fall in front
+
+ 58. [I] [conditional] [tu] [modal=volere]
+     IT: Onestamente, ti vorresti sentire
+     EN: Honestly, you would want to feel
+
+ 59. [B] [imperfect] [tu] [modal=dovere]
+     IT: Ogni giorno, dovevi finire il corso
+     EN: Every day, you used to have to finish the course
+
+ 60. [C] [conditional] [loro] [modal=]
+     IT: Infatti, vorrebbero mettere il computer
+     EN: In fact, they would want to put the computer
+
+ 61. [B] [present] [lei] [modal=potere]
+     IT: Per me, può preparare il pranzo
+     EN: For me, she can prepare the lunch
+
+ 62. [B] [imperfect] [voi] [modal=dovere]
+     IT: Spesso, dovevate vivere
+     EN: Often, you all used to have to live
+
+ 63. [B] [present] [voi] [modal=potere]
+     IT: Spesso, potete spegnere la televisione
+     EN: Often, you all can turn off the television
+
+ 64. [B] [present] [loro] [modal=potere]
+     IT: Secondo mio padre, possono stare
+     EN: According to my father, they can stay
+
+ 65. [B] [imperfect] [loro] [modal=potere]
+     IT: Infatti, potevano preferire il motivo
+     EN: In fact, they used to be able to prefer the reason
+
+ 66. [F] [imperfect] [lei] [modal=volere]
+     IT: Prima di tutto, ve li voleva offrire lì
+     EN: First of all, she used to want to offer them (m) to you all there (Hint: pronoun goes before the modal verb)
+
+ 67. [B] [present] [tu] [modal=dovere]
+     IT: Devi coprire il computer
+     EN: you must cover the computer
+
+ 68. [E] [conditional] [tu] [modal=potere]
+     IT: Nel frattempo, potresti restituire la borsa?
+     EN: Meanwhile, could you return the bag?
+
+ 69. [B] [conditional] [tu] [modal=volere]
+     IT: Prima di tutto, vorresti aprire il computer
+     EN: First of all, you would want to open the computer
+
+ 70. [E] [conditional] [tu] [modal=potere]
+     IT: Purtroppo, potresti abitare?
+     EN: Unfortunately, could you reside?
+
+ 71. [B] [passato prossimo] [lui] [modal=potere]
+     IT: Raramente, ha potuto salire vicino al mare
+     EN: Rarely, he was able to go up near the sea
+
+ 72. [B] [imperfect] [noi] [modal=dovere]
+     IT: Dovevamo spedire la lettera
+     EN: we used to have to send the letter
+
+ 73. [I] [imperfect] [voi] [modal=dovere]
+     IT: Secondo lui, vi dovevate riposare bene
+     EN: In his opinion, you all used to have to rest well
+
+ 74. [F] [present] [lei] [modal=volere]
+     IT: Di solito, ve li vuole leggere
+     EN: Usually, she wants to read them (m) to you all (Hint: pronoun goes before the modal verb)
+
+ 75. [B] [present] [voi] [modal=dovere]
+     IT: Dovete cucinare la torta
+     EN: you all must cook the cake
+
+ 76. [B] [present] [tu] [modal=potere]
+     IT: Secondo mio padre, puoi pagare il conto
+     EN: According to my father, you can pay the bill
+
+ 77. [B] [passato prossimo] [noi] [modal=volere]
+     IT: Abbiamo voluto chiamare mio padre
+     EN: we wanted to call my father
+
+ 78. [B] [imperfect] [io] [modal=dovere]
+     IT: Di solito, dovevo mostrare il giornale
+     EN: Usually, I used to have to show the newspaper
+
+ 79. [B] [future] [lui] [modal=volere]
+     IT: Sinceramente, vorrà dare il regalo
+     EN: Sincerely, he will want to give the gift
+
+ 80. [C] [conditional] [lei] [modal=]
+     IT: Di solito, vorrebbe pulire la finestra
+     EN: Usually, she would want to clean the window
+
+ 81. [I] [present] [lui] [modal=volere]
+     IT: Tutto sommato, si vuole sbagliare oggi
+     EN: All things considered, he wants to be mistaken today
+
+ 82. [E] [future] [tu] [modal=potere]
+     IT: Di solito, puoi comprare la macchina?
+     EN: Usually, can you buy the car?
+
+ 83. [F] [imperfect] [noi] [modal=dovere]
+     IT: Di solito, gliela dovevamo insegnare
+     EN: Usually, we used to have to teach it (f) to him (Hint: pronoun goes before the modal verb)
+
+ 84. [E] [passato prossimo] [tu] [modal=potere]
+     IT: Tutto sommato, puoi restare?
+     EN: All things considered, can you remain?
+
+ 85. [E] [imperfect] [tu] [modal=potere]
+     IT: Secondo mio padre, puoi insegnare mio fratello?
+     EN: According to my father, can you teach my brother?
+
+ 86. [C] [imperfect] [loro] [modal=]
+     IT: Secondo lei, volevano aspettare l'autobus
+     EN: In her opinion, they used to want to wait for the bus
+
+ 87. [B] [conditional] [lei] [modal=volere]
+     IT: Per me, vorrebbe coprire il rubinetto
+     EN: For me, she would want to cover the faucet
+
+ 88. [E] [passato prossimo] [tu] [modal=potere]
+     IT: Onestamente, puoi cercare la soluzione?
+     EN: Honestly, can you search for the solution?
+
+ 89. [B] [passato prossimo] [tu] [modal=potere]
+     IT: Hai potuto scendere in centro
+     EN: you were able to go down downtown
+
+ 90. [B] [imperfect] [noi] [modal=volere]
+     IT: Secondo lei, volevamo mettere il rubinetto
+     EN: In her opinion, we used to want to put the faucet
+
+ 91. [C] [passato prossimo] [tu] [modal=]
+     IT: Comunque, hai voluto pulire la luce
+     EN: Anyway, you wanted to clean the light
+
+ 92. [E] [future] [tu] [modal=potere]
+     IT: Secondo mio padre, puoi diventare?
+     EN: According to my father, can you become?
+
+ 93. [B] [future] [lui] [modal=potere]
+     IT: Potrà sapere l'esame
+     EN: he will be able to know the exam
+
+ 94. [F] [present] [loro] [modal=dovere]
+     IT: Tutto sommato, lo devono raccontare male
+     EN: All things considered, they must recount it (m) badly (Hint: pronoun goes before the modal verb)
+
+ 95. [B] [imperfect] [tu] [modal=potere]
+     IT: Potevi pulire il computer
+     EN: you used to be able to clean the computer
+
+ 96. [B] [present] [io] [modal=dovere]
+     IT: Raramente, devo pagare le bollette
+     EN: Rarely, I must pay the bills
+
+ 97. [B] [passato prossimo] [noi] [modal=volere]
+     IT: Ogni giorno, abbiamo voluto raccontare la situazione
+     EN: Every day, we wanted to recount the situation
+
+ 98. [B] [passato prossimo] [lui] [modal=potere]
+     IT: Infatti, ha potuto scrivere la poesia
+     EN: In fact, he was able to write the poem
+
+ 99. [B] [conditional] [lui] [modal=volere]
+     IT: Stranamente, vorrebbe nascere sopra
+     EN: Strangely, he would want to be born upstairs
+
+100. [E] [imperfect] [tu] [modal=potere]
+     IT: Puoi passare il weekend?
+     EN: can you spend the weekend?
+
+101. [B] [future] [lei] [modal=volere]
+     IT: Raramente, vorrà costruire la finestra
+     EN: Rarely, she will want to build the window
+
+102. [E] [imperfect] [tu] [modal=potere]
+     IT: Stranamente, puoi credere la notizia?
+     EN: Strangely, can you believe the news?
+
+103. [C] [present] [loro] [modal=]
+     IT: Incredibilmente, vogliono salire a casa
+     EN: Incredibly, they want to go up home
+
+104. [B] [passato prossimo] [noi] [modal=volere]
+     IT: Abbiamo voluto unire mia madre
+     EN: we wanted to unite my mother
+
+105. [C] [passato prossimo] [lui] [modal=]
+     IT: A volte, ha voluto chiamare mia madre
+     EN: Sometimes, he wanted to call my mother
+
+106. [B] [present] [loro] [modal=potere]
+     IT: Purtroppo, possono desiderare una vacanza
+     EN: Unfortunately, they can desire a vacation
+
+107. [C] [passato prossimo] [lui] [modal=]
+     IT: Secondo me, ha voluto abitare
+     EN: In my opinion, he wanted to reside
+
+108. [B] [imperfect] [lui] [modal=potere]
+     IT: A mio parere, poteva lavorare
+     EN: In my view, he used to be able to work
+
+109. [B] [imperfect] [loro] [modal=dovere]
+     IT: In realtà, dovevano preparare la valigia
+     EN: In reality, they used to have to prepare the suitcase
+
+110. [B] [conditional] [tu] [modal=volere]
+     IT: Infatti, vorresti aiutare mio fratello
+     EN: In fact, you would want to help my brother
+
+111. [B] [future] [lei] [modal=dovere]
+     IT: Di solito, dovrà uscire qua
+     EN: Usually, she will have to go out here
+
+112. [B] [present] [voi] [modal=potere]
+     IT: Secondo lui, potete cercare il lavoro
+     EN: In his opinion, you all can search for the work
+
+113. [B] [present] [tu] [modal=volere]
+     IT: Francamente, vuoi pensare la situazione
+     EN: Frankly, you want to think the situation
+
+114. [B] [passato prossimo] [lei] [modal=potere]
+     IT: Ha potuto mettere il computer
+     EN: she was able to put the computer
+
+115. [F] [imperfect] [voi] [modal=potere]
+     IT: In realtà, lo potevate raccontare poco
+     EN: In reality, you all used to be able to recount it (m) a little (Hint: pronoun goes before the modal verb)
+
+116. [C] [future] [loro] [modal=]
+     IT: Francamente, vorranno parlare
+     EN: Frankly, they will want to speak
+
+117. [C] [passato prossimo] [io] [modal=]
+     IT: Naturalmente, ho voluto scoprire la notizia
+     EN: Naturally, I wanted to discover the news
+
+118. [E] [present] [tu] [modal=potere]
+     IT: Di solito, puoi ascoltare la notizia?
+     EN: Usually, can you listen to the news?
+
+119. [B] [imperfect] [lei] [modal=dovere]
+     IT: Francamente, doveva nuotare a casa
+     EN: Frankly, she used to have to swim home
+
+120. [B] [conditional] [tu] [modal=volere]
+     IT: Secondo mia madre, vorresti conoscere un amico
+     EN: According to my mother, you would want to be acquainted with a friend
+
+121. [B] [conditional] [lui] [modal=potere]
+     IT: A mio parere, potrebbe finire il corso
+     EN: In my view, he would be able to finish the course
+
+122. [I] [future] [voi] [modal=volere]
+     IT: Ogni giorno, vi vorrete fermare un momento
+     EN: Every day, you all will want to stop for a moment
+
+123. [C] [present] [voi] [modal=]
+     IT: In ogni caso, volete spegnere la televisione
+     EN: In any case, you all want to turn off the television
+
+124. [B] [present] [tu] [modal=potere]
+     IT: Nel frattempo, puoi visitare la città
+     EN: Meanwhile, you can visit the city
+
+125. [B] [imperfect] [lei] [modal=potere]
+     IT: Finalmente, poteva nascere
+     EN: Finally, she used to be able to be born
+
+126. [F] [imperfect] [voi] [modal=potere]
+     IT: Ve li potevate vendere qui
+     EN: you all used to be able to sell them (m) to you all here (Hint: pronoun goes before the modal verb)
+
+127. [B] [present] [tu] [modal=potere]
+     IT: Di solito, puoi preparare la lezione
+     EN: Usually, you can prepare the lesson
+
+128. [C] [conditional] [lei] [modal=]
+     IT: A mio parere, vorrebbe stare
+     EN: In my view, she would want to stay
+
+129. [E] [imperfect] [tu] [modal=potere]
+     IT: Raramente, puoi cadere a Roma?
+     EN: Rarely, can you fall to Rome?
+
+130. [B] [future] [io] [modal=volere]
+     IT: Tutto sommato, vorrò mostrare il giornale
+     EN: All things considered, I will want to show the newspaper
+
+131. [E] [imperfect] [tu] [modal=potere]
+     IT: Naturalmente, puoi nascere?
+     EN: Naturally, can you be born?
+
+132. [F] [passato prossimo] [loro] [modal=volere]
+     IT: Finalmente, le hanno voluto insegnare poco
+     EN: Finally, they wanted to teach them (f) a little (Hint: pronoun goes before the modal verb)
+
+133. [E] [passato prossimo] [tu] [modal=potere]
+     IT: Puoi rimanere?
+     EN: can you remain?
+
+134. [C] [imperfect] [noi] [modal=]
+     IT: Naturalmente, volevamo lasciare il lavoro
+     EN: Naturally, we used to want to leave behind the job
+
+135. [B] [imperfect] [tu] [modal=dovere]
+     IT: Secondo me, dovevi cucinare la pizza
+     EN: In my opinion, you used to have to cook the pizza
+
+136. [B] [passato prossimo] [io] [modal=volere]
+     IT: Ho voluto costruire la porta
+     EN: I wanted to build the door
+
+137. [E] [passato prossimo] [tu] [modal=potere]
+     IT: Ogni giorno, puoi cercare il lavoro?
+     EN: Every day, can you search for the work?
+
+138. [F] [present] [voi] [modal=potere]
+     IT: Naturalmente, lo potete comprare molto
+     EN: Naturally, you all can buy it (m) a lot (Hint: pronoun goes before the modal verb)
+
+139. [B] [imperfect] [tu] [modal=dovere]
+     IT: Di solito, dovevi conoscere il vicino
+     EN: Usually, you used to have to be acquainted with the neighbor
+
+140. [E] [passato prossimo] [tu] [modal=potere]
+     IT: In ogni caso, puoi chiudere la luce?
+     EN: In any case, can you close the light?
+
+141. [B] [present] [tu] [modal=volere]
+     IT: Tutto sommato, vuoi visitare la città
+     EN: All things considered, you want to visit the city
+
+142. [E] [imperfect] [tu] [modal=potere]
+     IT: Infatti, puoi aiutare un amico?
+     EN: In fact, can you help a friend?
+
+143. [B] [imperfect] [lei] [modal=volere]
+     IT: Francamente, voleva vedere il film
+     EN: Frankly, she used to want to see the film
+
+144. [B] [future] [tu] [modal=potere]
+     IT: Potrai entrare a Roma
+     EN: you will be able to enter to Rome
+
+145. [E] [present] [tu] [modal=potere]
+     IT: Puoi guardare il documentario?
+     EN: can you watch the documentary?
+
+146. [C] [future] [tu] [modal=]
+     IT: Ovviamente, vorrai sapere il risultato
+     EN: Obviously, you will want to know the result
+
+147. [F] [present] [noi] [modal=potere]
+     IT: A volte, glieli possiamo portare
+     EN: Sometimes, we can bring them (m) to them (Hint: pronoun goes before the modal verb)
+
+148. [E] [present] [tu] [modal=potere]
+     IT: Secondo lui, puoi cantare?
+     EN: In his opinion, can you sing?
+
+149. [C] [future] [lui] [modal=]
+     IT: Tutto sommato, vorrà entrare all'università
+     EN: All things considered, he will want to enter to the university
+
+150. [B] [conditional] [voi] [modal=dovere]
+     IT: Dovreste ricevere la lettera
+     EN: you all would have to receive the letter
+
+151. [B] [passato prossimo] [lei] [modal=volere]
+     IT: Francamente, ha voluto morire
+     EN: Frankly, she wanted to die
+
+152. [B] [conditional] [lui] [modal=dovere]
+     IT: A volte, dovrebbe chiedere la situazione
+     EN: Sometimes, he would have to ask the situation
+
+153. [B] [conditional] [loro] [modal=dovere]
+     IT: Comunque, dovrebbero credere la storia
+     EN: Anyway, they would have to believe the story
+
+154. [B] [present] [lei] [modal=volere]
+     IT: Vuole stare lassù
+     EN: she wants to stay up there
+
+155. [B] [passato prossimo] [tu] [modal=volere]
+     IT: In ogni caso, hai voluto comprare il telefono
+     EN: In any case, you wanted to buy the phone
+
+156. [B] [imperfect] [voi] [modal=potere]
+     IT: In ogni caso, potevate sentire il podcast
+     EN: In any case, you all used to be able to hear the podcast
+
+157. [B] [passato prossimo] [voi] [modal=dovere]
+     IT: Raramente, avete dovuto dire la notizia
+     EN: Rarely, you all had to say the news
+
+158. [I] [conditional] [loro] [modal=volere]
+     IT: Secondo me, si vorrebbero rilassare
+     EN: In my opinion, they would want to relax
+
+159. [E] [conditional] [tu] [modal=potere]
+     IT: Secondo mia madre, potresti entrare a casa?
+     EN: According to my mother, could you enter home?
+
+160. [B] [passato prossimo] [lui] [modal=volere]
+     IT: Spesso, ha voluto ballare
+     EN: Often, he wanted to dance
+
+161. [I] [present] [voi] [modal=dovere]
+     IT: Vi dovete parlare spesso
+     EN: you all must talk to each other often
+
+162. [C] [future] [io] [modal=]
+     IT: A volte, vorrò scendere vicino alla stazione
+     EN: Sometimes, I will want to go down near the station
+
+163. [B] [future] [noi] [modal=dovere]
+     IT: Di solito, dovremo cucinare la pasta
+     EN: Usually, we will have to cook the pasta
+
+164. [B] [passato prossimo] [lui] [modal=potere]
+     IT: Secondo me, ha potuto venire vicino alla stazione
+     EN: In my opinion, he was able to come near the station
+
+165. [B] [present] [tu] [modal=dovere]
+     IT: Fortunatamente, devi imparare il risultato
+     EN: Fortunately, you must learn the result
+
+166. [C] [present] [lui] [modal=]
+     IT: D'altra parte, vuole usare internet
+     EN: On the other hand, he wants to use the internet
+
+167. [B] [conditional] [lei] [modal=potere]
+     IT: A volte, potrebbe vendere le scarpe
+     EN: Sometimes, she would be able to sell the shoes
+
+168. [C] [present] [lei] [modal=]
+     IT: Secondo lei, vuole perdere la casa
+     EN: In her opinion, she wants to lose the house
+
+169. [C] [passato prossimo] [voi] [modal=]
+     IT: Infatti, avete voluto perdere la casa
+     EN: In fact, you all wanted to lose the house
+
+170. [I] [present] [voi] [modal=dovere]
+     IT: Secondo mio padre, vi dovete addormentare
+     EN: According to my father, you all must fall asleep
+
+171. [C] [imperfect] [noi] [modal=]
+     IT: Stranamente, volevamo mandare la borsa
+     EN: Strangely, we used to want to send the bag
+
+172. [B] [conditional] [tu] [modal=dovere]
+     IT: Incredibilmente, dovresti arrivare in Italia
+     EN: Incredibly, you would have to arrive to Italy
+
+173. [B] [present] [io] [modal=volere]
+     IT: Di solito, voglio aiutare gli studenti
+     EN: Usually, I want to help the students
+
+174. [C] [imperfect] [tu] [modal=]
+     IT: Volevi passare il tempo
+     EN: you used to want to spend time
+
+175. [B] [conditional] [lei] [modal=volere]
+     IT: Ovviamente, vorrebbe salire nel parco
+     EN: Obviously, she would want to go up in the park
+
+176. [C] [conditional] [loro] [modal=]
+     IT: Ogni giorno, vorrebbero costruire la finestra
+     EN: Every day, they would want to build the window
+
+177. [B] [passato prossimo] [tu] [modal=volere]
+     IT: Infatti, hai voluto costruire il computer
+     EN: In fact, you wanted to build the computer
+
+178. [B] [present] [voi] [modal=volere]
+     IT: A volte, volete entrare a casa
+     EN: Sometimes, you all want to enter home
+
+179. [C] [imperfect] [voi] [modal=]
+     IT: In ogni caso, volevate pulire la finestra
+     EN: In any case, you all used to want to clean the window
+
+180. [C] [passato prossimo] [voi] [modal=]
+     IT: Di solito, avete voluto spiegare il problema
+     EN: Usually, you all wanted to explain the problem
+
+181. [C] [passato prossimo] [lui] [modal=]
+     IT: Naturalmente, ha voluto credere la situazione
+     EN: Naturally, he wanted to believe the situation
+
+182. [B] [future] [io] [modal=dovere]
+     IT: Infatti, dovrò pagare l'affitto
+     EN: In fact, I will have to pay the rent
+
+183. [C] [imperfect] [noi] [modal=]
+     IT: Naturalmente, volevamo spegnere il computer
+     EN: Naturally, we used to want to turn off the computer
+
+184. [C] [future] [io] [modal=]
+     IT: Secondo me, vorrò pensare la verità
+     EN: In my opinion, I will want to think the truth
+
+185. [F] [conditional] [lei] [modal=potere]
+     IT: Prima di tutto, la potrebbe insegnare subito
+     EN: First of all, she would be able to teach it (f) right away (Hint: pronoun goes before the modal verb)
+
+186. [F] [future] [tu] [modal=dovere]
+     IT: Secondo me, ce le dovrai spiegare poco
+     EN: In my opinion, you will have to explain them (f) to us a little (Hint: pronoun goes before the modal verb)
+
+187. [C] [conditional] [tu] [modal=]
+     IT: Prima di tutto, vorresti visitare il museo
+     EN: First of all, you would want to visit the museum
+
+188. [B] [passato prossimo] [tu] [modal=volere]
+     IT: In ogni caso, hai voluto stare sull'autobus
+     EN: In any case, you wanted to stay on the bus
+
+189. [F] [passato prossimo] [voi] [modal=volere]
+     IT: Gliela avete voluto vendere qui
+     EN: you all wanted to sell it (f) to her here (Hint: pronoun goes before the modal verb)
+
+190. [B] [present] [loro] [modal=dovere]
+     IT: Fortunatamente, devono rimanere
+     EN: Fortunately, they must remain
+
+191. [C] [conditional] [io] [modal=]
+     IT: Sinceramente, vorrei diventare
+     EN: Sincerely, I would want to become
+
+192. [B] [passato prossimo] [lui] [modal=volere]
+     IT: Ovviamente, ha voluto seguire sua sorella
+     EN: Obviously, he wanted to follow his sister
+
+193. [B] [future] [noi] [modal=volere]
+     IT: Ogni giorno, vorremo scendere in biblioteca
+     EN: Every day, we will want to go down to the library
+
+194. [B] [present] [io] [modal=dovere]
+     IT: Secondo mia madre, devo credere la storia
+     EN: According to my mother, I must believe the story
+
+195. [F] [present] [noi] [modal=potere]
+     IT: In ogni caso, ve lo possiamo spiegare bene
+     EN: In any case, we can explain it (m) to you all well (Hint: pronoun goes before the modal verb)
+
+196. [B] [future] [tu] [modal=volere]
+     IT: A volte, vorrai cercare la soluzione
+     EN: Sometimes, you will want to search for the solution
+
+197. [F] [future] [io] [modal=volere]
+     IT: Finalmente, gliele vorrò dire qui
+     EN: Finally, I will want to say them (f) to them here (Hint: pronoun goes before the modal verb)
+
+198. [C] [conditional] [tu] [modal=]
+     IT: Prima di tutto, vorresti offrire il pranzo
+     EN: First of all, you would want to offer the lunch
+
+199. [B] [passato prossimo] [tu] [modal=potere]
+     IT: Comunque, hai potuto cominciare il libro
+     EN: Anyway, you were able to begin the book
+
+200. [F] [passato prossimo] [noi] [modal=dovere]
+     IT: Prima di tutto, lo abbiamo dovuto prendere subito
+     EN: First of all, we had to take it (m) right away (Hint: pronoun goes before the modal verb)
+
