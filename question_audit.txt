@@ -1,0 +1,1203 @@
+QUESTION AUDIT — 300 Question Sentences
+============================================================
+
+  1. [H] [present] [loro] [perché]
+     IT: Perché giocano le sorelle?
+     EN: Why do the sisters play?
+
+  2. [H] [future] [lui] [chi]
+     IT: Chi partirà qui?
+     EN: Who will depart here?
+
+  3. [H] [present] [lei] [a chi]
+     IT: A chi dà la vicina?
+     EN: To whom does the neighbor (f) give?
+
+  4. [H] [imperfect] [lei] [come]
+     IT: Come moriva la sorella?
+     EN: How was the sister dying?
+
+  5. [H] [future] [lui] [da quando]
+     IT: Da quando studierà il fratello poco?
+     EN: From when will the brother study a little?
+
+  6. [H] [imperfect] [loro] [perché]
+     IT: Perché regalavano i miei figli il giornale bene?
+     EN: Why were my children giving as a gift the newspaper well?
+
+  7. [H] [passato prossimo] [lei] [quando]
+     IT: Quando è stata mia moglie?
+     EN: When did my wife stay?
+
+  8. [H] [imperfect] [lei] [quante volte]
+     IT: Quante volte comprava mia nonna bene?
+     EN: How many times did my grandmother buy well?
+
+  9. [H] [present] [lui] [come]
+     IT: Come dà il collega le scarpe?
+     EN: How does the colleague (m) give the shoes?
+
+ 10. [H] [present] [lei] [perché]
+     IT: Perché spiega la suocera la verità?
+     EN: Why does the mother-in-law explain the truth?
+
+ 11. [H] [imperfect] [voi] [da quando]
+     IT: Da quando abitavate?
+     EN: Since when had you all been residing?
+
+ 12. [H] [future] [lui] [quando]
+     IT: Quando aprirà lo zio la luce?
+     EN: When will the uncle open the light?
+
+ 13. [H] [passato prossimo] [lui] [perché]
+     IT: Perché ha preferito il professore la differenza poco?
+     EN: Why did the professor (m) prefer the difference a little?
+
+ 14. [H] [conditional] [lui] [con chi]
+     IT: Con chi studierebbe il mio amico?
+     EN: With whom would my friend (m) study?
+
+ 15. [H] [imperfect] [lui] [da quanto tempo]
+     IT: Da quanto tempo viveva?
+     EN: How long had he been living?
+
+ 16. [H] [conditional] [lei] [a chi]
+     IT: A chi spiegherebbe la cognata?
+     EN: To whom would the sister-in-law explain?
+
+ 17. [H] [future] [loro] [quale]
+     IT: Quale film prenderanno i genitori?
+     EN: Which film will the parents take?
+
+ 18. [H] [present] [lei] [cosa]
+     IT: Cosa vede mia zia?
+     EN: What does my aunt see?
+
+ 19. [H] [passato prossimo] [lui] [chi]
+     IT: Chi ha cominciato lì?
+     EN: Who began there?
+
+ 20. [H] [present] [lei] [da quando]
+     IT: Da quando abita?
+     EN: Since when has she been residing?
+
+ 21. [H] [present] [tu] [da dove]
+     IT: Da dove parti in ufficio oggi?
+     EN: From where do you depart for the office today?
+
+ 22. [H] [future] [lui] [a che ora]
+     IT: A che ora mangerà il mio capo la cena?
+     EN: At what time will my boss eat the dinner?
+
+ 23. [H] [future] [lui] [perché]
+     IT: Perché lavorerà lo zio male?
+     EN: Why will the uncle work badly?
+
+ 24. [H] [conditional] [lui] [chi]
+     IT: Chi pagherebbe?
+     EN: Who would pay?
+
+ 25. [H] [conditional] [lui] [dove]
+     IT: Dove lavorerebbe il marito?
+     EN: Where would the husband work?
+
+ 26. [H] [conditional] [lui] [dove]
+     IT: Dove desidererebbe mio zio il successo subito?
+     EN: Where would my uncle desire success right away?
+
+ 27. [H] [passato prossimo] [lui] [a chi]
+     IT: A chi ha mandato mio figlio qui?
+     EN: To whom did my son send here?
+
+ 28. [H] [future] [lei] [quante volte]
+     IT: Quante volte viaggerà la nuora?
+     EN: How many times will the daughter-in-law travel?
+
+ 29. [H] [conditional] [loro] [da dove]
+     IT: Da dove verrebbero i genitori a Roma insieme?
+     EN: From where would the parents come to Rome together?
+
+ 30. [H] [passato prossimo] [lui] [quando]
+     IT: Quando ha studiato il mio amico la lettera subito?
+     EN: When did my friend (m) study the letter right away?
+
+ 31. [H] [future] [lei] [da quando]
+     IT: Da quando viverà la nipote?
+     EN: From when will the niece live?
+
+ 32. [H] [present] [lui] [a che ora]
+     IT: A che ora arriva l'insegnante in chiesa?
+     EN: At what time does the teacher arrive at church?
+
+ 33. [H] [present] [lei] [dove]
+     IT: Dove passa la vicina le vacanze molto?
+     EN: Where does the neighbor (f) spend the holidays a lot?
+
+ 34. [H] [future] [lei] [cosa]
+     IT: Cosa ascolterà la suocera?
+     EN: What will the mother-in-law listen to?
+
+ 35. [H] [imperfect] [tu] [a che ora]
+     IT: A che ora partivi in biblioteca?
+     EN: At what time were you departing for the library?
+
+ 36. [H] [present] [lui] [dove]
+     IT: Dove serve il nonno la cena?
+     EN: Where does the grandfather serve the dinner?
+
+ 37. [H] [present] [voi] [perché]
+     IT: Perché morite?
+     EN: Why do you all die?
+
+ 38. [H] [present] [lei] [dove]
+     IT: Dove cammina la zia all'università?
+     EN: Where does the aunt walk to the university?
+
+ 39. [H] [passato prossimo] [loro] [a che ora]
+     IT: A che ora hanno finito i nonni il progetto?
+     EN: At what time did the grandparents finish the project?
+
+ 40. [H] [present] [voi] [dove]
+     IT: Dove cantate poco?
+     EN: Where do you all sing a little?
+
+ 41. [H] [passato prossimo] [voi] [da quando]
+     IT: Da quando avete studiato?
+     EN: Since when have you all been studying?
+
+ 42. [H] [passato prossimo] [lui] [quale]
+     IT: Quale libro ha letto stamattina?
+     EN: Which book did he read this morning?
+
+ 43. [H] [future] [lui] [a che ora]
+     IT: A che ora tornerà lo studente a Roma?
+     EN: At what time will the student (m) return to Rome?
+
+ 44. [H] [future] [lui] [a che ora]
+     IT: A che ora tornerà l'amico in biblioteca presto?
+     EN: At what time will the friend (m) return to the library soon?
+
+ 45. [H] [imperfect] [lei] [quando]
+     IT: Quando moriva la sorella?
+     EN: When was the sister dying?
+
+ 46. [H] [imperfect] [loro] [cosa]
+     IT: Cosa entravano le sorelle?
+     EN: What were the sisters entering?
+
+ 47. [H] [present] [lui] [chi]
+     IT: Chi regala?
+     EN: Who gives as a gift?
+
+ 48. [H] [imperfect] [lui] [chi]
+     IT: Chi mostrava?
+     EN: Who used to show?
+
+ 49. [H] [imperfect] [lui] [a che ora]
+     IT: A che ora finiva il figlio il lavoro?
+     EN: At what time was the son finishing the work?
+
+ 50. [H] [passato prossimo] [tu] [a chi]
+     IT: A chi hai scritto male?
+     EN: To whom did you write badly?
+
+ 51. [H] [imperfect] [loro] [cosa]
+     IT: Cosa aprivano i fratelli?
+     EN: What were the brothers opening?
+
+ 52. [H] [present] [lui] [chi]
+     IT: Chi spedisce?
+     EN: Who sends?
+
+ 53. [H] [passato prossimo] [lei] [cosa]
+     IT: Cosa ha servito la nonna?
+     EN: What did the grandmother serve?
+
+ 54. [H] [present] [loro] [da quando]
+     IT: Da quando studiano i miei fratelli?
+     EN: Since when have my siblings been studying?
+
+ 55. [H] [present] [lei] [con chi]
+     IT: Con chi studia la sorella?
+     EN: With whom does the sister study?
+
+ 56. [H] [present] [lei] [cosa]
+     IT: Cosa corre la sorella?
+     EN: What does the sister run?
+
+ 57. [H] [future] [lui] [chi]
+     IT: Chi darà la settimana prossima?
+     EN: Who will give next week?
+
+ 58. [H] [passato prossimo] [lui] [cosa]
+     IT: Cosa ha visto il genero poco?
+     EN: What did the son-in-law see a little?
+
+ 59. [H] [passato prossimo] [lei] [dove]
+     IT: Dove ha scritto la madre il giornale?
+     EN: Where did the mother write the newspaper?
+
+ 60. [H] [passato prossimo] [lei] [da dove]
+     IT: Da dove è partita in chiesa?
+     EN: From where did she depart for church?
+
+ 61. [H] [passato prossimo] [lei] [cosa]
+     IT: Cosa ha portato mia cugina?
+     EN: What did my cousin (f) bring?
+
+ 62. [H] [future] [lei] [quando]
+     IT: Quando resterà la nuora molto?
+     EN: When will the daughter-in-law remain a lot?
+
+ 63. [H] [conditional] [lui] [chi]
+     IT: Chi offrirebbe?
+     EN: Who would offer?
+
+ 64. [H] [future] [lui] [dove]
+     IT: Dove nuoterà il nonno in centro?
+     EN: Where will the grandfather swim downtown?
+
+ 65. [H] [present] [loro] [quando]
+     IT: Quando cadono a casa ora?
+     EN: When are they falling home now?
+
+ 66. [H] [passato prossimo] [lui] [per quanto tempo]
+     IT: Per quanto tempo ha vissuto il fratello?
+     EN: For how long did the brother live?
+
+ 67. [H] [conditional] [lui] [come]
+     IT: Come ascolterebbe il mio collega la notizia?
+     EN: How would my colleague (m) listen to the news?
+
+ 68. [H] [future] [lui] [come]
+     IT: Come terrà il figlio il libro?
+     EN: How will the son hold the book?
+
+ 69. [H] [passato prossimo] [lui] [dove]
+     IT: Dove è nato il padre?
+     EN: Where was the father born?
+
+ 70. [H] [passato prossimo] [voi] [quale]
+     IT: Quale libro avete preso?
+     EN: Which book did you all take?
+
+ 71. [H] [present] [voi] [quante ore]
+     IT: Quante ore giocate?
+     EN: How many hours have you all been playing?
+
+ 72. [H] [passato prossimo] [loro] [cosa]
+     IT: Cosa hanno ricevuto i genitori?
+     EN: What did the parents receive?
+
+ 73. [H] [present] [tu] [quando]
+     IT: Quando trovi il lavoro adesso?
+     EN: When are you finding the work now?
+
+ 74. [H] [conditional] [noi] [come]
+     IT: Come chiuderemmo la finestra poco?
+     EN: How would we close the window a little?
+
+ 75. [H] [imperfect] [lui] [cosa]
+     IT: Cosa offriva il cognato?
+     EN: What was the brother-in-law offering?
+
+ 76. [H] [passato prossimo] [lui] [chi]
+     IT: Chi ha preparato?
+     EN: Who prepared?
+
+ 77. [H] [present] [lei] [cosa]
+     IT: Cosa serve mia moglie?
+     EN: What does my wife serve?
+
+ 78. [H] [future] [lui] [da quando]
+     IT: Da quando lavorerà?
+     EN: From when will he work?
+
+ 79. [H] [future] [lei] [quale]
+     IT: Quale libro comprerà?
+     EN: Which book will she buy?
+
+ 80. [H] [passato prossimo] [loro] [da quando]
+     IT: Da quando hanno aspettato?
+     EN: Since when have they been waiting?
+
+ 81. [H] [imperfect] [lei] [con chi]
+     IT: Con chi lavorava?
+     EN: With whom was she working?
+
+ 82. [H] [passato prossimo] [loro] [dove]
+     IT: Dove sono scesi i genitori all'università?
+     EN: Where did the parents go down to the university?
+
+ 83. [H] [imperfect] [lei] [con chi]
+     IT: Con chi viveva la nipote?
+     EN: With whom was the niece living?
+
+ 84. [H] [imperfect] [noi] [cosa]
+     IT: Cosa passavamo?
+     EN: What were we spending?
+
+ 85. [H] [present] [noi] [dove]
+     IT: Dove cadiamo in biblioteca?
+     EN: Where do we fall to the library?
+
+ 86. [H] [present] [lui] [chi]
+     IT: Chi comincia?
+     EN: Who begins?
+
+ 87. [H] [conditional] [lui] [cosa]
+     IT: Cosa direbbe il marito molto?
+     EN: What would the husband say a lot?
+
+ 88. [H] [passato prossimo] [noi] [cosa]
+     IT: Cosa abbiamo servito?
+     EN: What did we serve?
+
+ 89. [H] [imperfect] [lui] [cosa]
+     IT: Cosa preparava il nipote?
+     EN: What was the nephew preparing?
+
+ 90. [H] [future] [lui] [quando]
+     IT: Quando spedirà il messaggio?
+     EN: When will he send the message?
+
+ 91. [H] [imperfect] [lui] [a chi]
+     IT: A chi chiedeva lo zio?
+     EN: To whom was the uncle asking?
+
+ 92. [H] [present] [lui] [chi]
+     IT: Chi conosce?
+     EN: Who is acquainted with?
+
+ 93. [H] [passato prossimo] [tu] [da quando]
+     IT: Da quando hai vissuto?
+     EN: Since when have you been living?
+
+ 94. [H] [imperfect] [lei] [quando]
+     IT: Quando insegnava la cugina mio fratello?
+     EN: When was the cousin (f) teaching my brother?
+
+ 95. [H] [passato prossimo] [voi] [quando]
+     IT: Quando avete avuto il telefono qui?
+     EN: When did you all have the phone here?
+
+ 96. [H] [future] [lui] [cosa]
+     IT: Cosa comincerà il fratello la settimana prossima?
+     EN: What will the brother begin next week?
+
+ 97. [H] [present] [noi] [a che ora]
+     IT: A che ora dormiamo?
+     EN: At what time do we sleep?
+
+ 98. [H] [imperfect] [noi] [da quanto tempo]
+     IT: Da quanto tempo dormivamo?
+     EN: How long had we been sleeping?
+
+ 99. [H] [conditional] [lei] [quando]
+     IT: Quando entrerebbe la sorella al ristorante?
+     EN: When would the sister enter the restaurant?
+
+100. [H] [future] [lei] [dove]
+     IT: Dove guarderà lo spettacolo molto?
+     EN: Where will she watch the show a lot?
+
+101. [H] [future] [lui] [cosa]
+     IT: Cosa costruirà mio nonno?
+     EN: What will my grandfather build?
+
+102. [H] [conditional] [lui] [chi]
+     IT: Chi seguirebbe?
+     EN: Who would follow?
+
+103. [H] [conditional] [loro] [perché]
+     IT: Perché comincerebbero i vicini il corso?
+     EN: Why would the neighbors begin the course?
+
+104. [H] [imperfect] [lei] [cosa]
+     IT: Cosa regalava?
+     EN: What was she giving as a gift?
+
+105. [H] [imperfect] [loro] [quante ore]
+     IT: Quante ore studiavano?
+     EN: How many hours had they been studying?
+
+106. [H] [imperfect] [loro] [cosa]
+     IT: Cosa facevano?
+     EN: What were they doing?
+
+107. [H] [future] [lui] [quante volte]
+     IT: Quante volte visiterà il marito?
+     EN: How many times will the husband visit?
+
+108. [H] [future] [lui] [quale]
+     IT: Quale canzone cucinerà il cugino?
+     EN: Which song will the cousin (m) cook?
+
+109. [H] [conditional] [lui] [come]
+     IT: Come morrebbe lo zio?
+     EN: How would the uncle die?
+
+110. [H] [present] [lui] [chi]
+     IT: Chi nuota?
+     EN: Who swims?
+
+111. [H] [present] [tu] [quando]
+     IT: Quando abiti?
+     EN: When do you reside?
+
+112. [H] [future] [lui] [perché]
+     IT: Perché morrà subito?
+     EN: Why will he die right away?
+
+113. [H] [present] [lui] [quale]
+     IT: Quale treno prepara lo zio?
+     EN: Which train does the uncle prepare?
+
+114. [H] [conditional] [lei] [quante ore]
+     IT: Quante ore studierebbe la nuora?
+     EN: How many hours would the daughter-in-law study?
+
+115. [H] [imperfect] [lei] [perché]
+     IT: Perché correggeva la nipote le abitudini subito?
+     EN: Why was the niece correcting the habits right away?
+
+116. [H] [imperfect] [loro] [come]
+     IT: Come aprivano i genitori la porta lì?
+     EN: How were the parents opening the door there?
+
+117. [H] [imperfect] [lei] [quante ore]
+     IT: Quante ore lavorava mia moglie?
+     EN: How many hours had my wife been working?
+
+118. [H] [present] [lei] [a chi]
+     IT: A chi scrive?
+     EN: To whom does she write?
+
+119. [H] [future] [lei] [dove]
+     IT: Dove correrà la suocera al lavoro?
+     EN: Where will the mother-in-law run to work?
+
+120. [H] [future] [noi] [da quando]
+     IT: Da quando aspetteremo domani?
+     EN: From when will we wait tomorrow?
+
+121. [H] [passato prossimo] [lui] [chi]
+     IT: Chi ha desiderato?
+     EN: Who desired?
+
+122. [H] [passato prossimo] [lui] [perché]
+     IT: Perché ha ricordato il mio amico l'indirizzo poco?
+     EN: Why did my friend (m) remember the address a little?
+
+123. [H] [future] [lui] [con chi]
+     IT: Con chi camminerà?
+     EN: With whom will he walk?
+
+124. [H] [future] [loro] [cosa]
+     IT: Cosa faranno gli amici?
+     EN: What will the friends do?
+
+125. [H] [passato prossimo] [lui] [dove]
+     IT: Dove ha lasciato il genero la città?
+     EN: Where did the son-in-law leave behind the city?
+
+126. [H] [passato prossimo] [lui] [da dove]
+     IT: Da dove è venuto il medico in biblioteca?
+     EN: From where did the doctor come to the library?
+
+127. [H] [passato prossimo] [voi] [come]
+     IT: Come avete parlato?
+     EN: How did you all speak?
+
+128. [H] [imperfect] [loro] [dove]
+     IT: Dove ballavano i ragazzi qui?
+     EN: Where were the guys dancing here?
+
+129. [H] [future] [noi] [quando]
+     IT: Quando arriveremo al parco?
+     EN: When will we arrive at the park?
+
+130. [H] [present] [loro] [da quando]
+     IT: Da quando abitano?
+     EN: Since when have they been residing?
+
+131. [H] [present] [lui] [dove]
+     IT: Dove ha il telefono?
+     EN: Where has he the phone?
+
+132. [H] [future] [lui] [chi]
+     IT: Chi berrà?
+     EN: Who will drink?
+
+133. [H] [passato prossimo] [lei] [a che ora]
+     IT: A che ora è tornata in chiesa molto?
+     EN: At what time did she return to church a lot?
+
+134. [H] [imperfect] [loro] [come]
+     IT: Come costruivano i figli la porta?
+     EN: How were the children building the door?
+
+135. [H] [conditional] [lei] [da quanto tempo]
+     IT: Da quanto tempo lavorerebbe la figlia?
+     EN: How long would the daughter work?
+
+136. [H] [present] [lei] [dove]
+     IT: Dove suona la nonna la chitarra?
+     EN: Where does the grandmother play the guitar?
+
+137. [H] [conditional] [lui] [da quanto tempo]
+     IT: Da quanto tempo resterebbe l'amico subito?
+     EN: How long would the friend (m) remain right away?
+
+138. [H] [present] [loro] [quante ore]
+     IT: Quante ore giocano i cugini male?
+     EN: How many hours have the cousins been playing badly?
+
+139. [H] [conditional] [lui] [cosa]
+     IT: Cosa studierebbe il figlio?
+     EN: What would the son study?
+
+140. [H] [imperfect] [lui] [quando]
+     IT: Quando passava il fratello la serata poco?
+     EN: When was the brother spending the evening a little?
+
+141. [H] [present] [noi] [a chi]
+     IT: A chi spieghiamo?
+     EN: To whom do we explain?
+
+142. [H] [future] [lui] [chi]
+     IT: Chi chiederà la settimana prossima?
+     EN: Who will ask next week?
+
+143. [H] [imperfect] [tu] [dove]
+     IT: Dove prestavi la borsa bene?
+     EN: Where were you lending the bag well?
+
+144. [H] [imperfect] [lui] [perché]
+     IT: Perché proponeva una soluzione la settimana scorsa?
+     EN: Why was he proposing a solution last week?
+
+145. [H] [passato prossimo] [voi] [per quanto tempo]
+     IT: Per quanto tempo avete lavorato?
+     EN: For how long did you all work?
+
+146. [H] [imperfect] [lei] [quante ore]
+     IT: Quante ore studiava la suocera la settimana scorsa?
+     EN: How many hours had the mother-in-law been studying last week?
+
+147. [H] [imperfect] [loro] [quante volte]
+     IT: Quante volte compravano?
+     EN: How many times did they buy?
+
+148. [H] [imperfect] [lui] [per quanto tempo]
+     IT: Per quanto tempo dormiva molto?
+     EN: For how long had he been sleeping a lot?
+
+149. [H] [imperfect] [lui] [dove]
+     IT: Dove puliva il figlio la porta?
+     EN: Where was the son cleaning the door?
+
+150. [H] [conditional] [lei] [a chi]
+     IT: A chi darebbe?
+     EN: To whom would she give?
+
+151. [H] [imperfect] [lui] [quando]
+     IT: Quando dimenticava il capo il numero?
+     EN: When was the boss forgetting the number?
+
+152. [H] [passato prossimo] [lui] [quale]
+     IT: Quale film ha studiato il medico la settimana scorsa?
+     EN: Which film did the doctor study last week?
+
+153. [H] [passato prossimo] [lui] [cosa]
+     IT: Cosa ha imparato il suocero male?
+     EN: What did the father-in-law learn badly?
+
+154. [H] [future] [loro] [perché]
+     IT: Perché verranno le sorelle al lavoro?
+     EN: Why will the sisters come to work?
+
+155. [H] [imperfect] [lui] [cosa]
+     IT: Cosa mangiava il suocero?
+     EN: What was the father-in-law eating?
+
+156. [H] [future] [lei] [quale]
+     IT: Quale treno ascolterà la moglie?
+     EN: Which train will the wife listen to?
+
+157. [H] [imperfect] [lei] [per quanto tempo]
+     IT: Per quanto tempo studiava la mia vicina?
+     EN: For how long had my neighbor (f) been studying?
+
+158. [H] [passato prossimo] [lui] [cosa]
+     IT: Cosa ha ricevuto lo zio lì?
+     EN: What did the uncle receive there?
+
+159. [H] [passato prossimo] [lui] [come]
+     IT: Come è salito il cognato al ristorante molto?
+     EN: How did the brother-in-law go up to the restaurant a lot?
+
+160. [H] [future] [lei] [per quanto tempo]
+     IT: Per quanto tempo lavorerà la suocera?
+     EN: For how long will the mother-in-law work?
+
+161. [H] [passato prossimo] [lei] [dove]
+     IT: Dove ha preparato la studentessa il pranzo?
+     EN: Where did the student (f) prepare the lunch?
+
+162. [H] [conditional] [lui] [dove]
+     IT: Dove porterebbe il mio collega la macchina?
+     EN: Where would my colleague (m) bring the car?
+
+163. [H] [imperfect] [noi] [quale]
+     IT: Quale treno leggevamo?
+     EN: Which train were we reading?
+
+164. [H] [future] [lei] [cosa]
+     IT: Cosa passerà?
+     EN: What will she spend?
+
+165. [H] [imperfect] [lui] [chi]
+     IT: Chi raccontava?
+     EN: Who used to recount?
+
+166. [H] [present] [voi] [quando]
+     IT: Quando ricevete la poesia bene?
+     EN: When do you all receive the poem well?
+
+167. [H] [passato prossimo] [loro] [dove]
+     IT: Dove hanno raccontato la storia?
+     EN: Where did they recount the story?
+
+168. [H] [passato prossimo] [lui] [quando]
+     IT: Quando è rimasto il nipote?
+     EN: When did the nephew remain?
+
+169. [H] [conditional] [lui] [come]
+     IT: Come camminerebbe il figlio al supermercato?
+     EN: How would the son walk to the supermarket?
+
+170. [H] [present] [tu] [cosa]
+     IT: Cosa senti molto?
+     EN: What do you hear a lot?
+
+171. [H] [conditional] [loro] [dove]
+     IT: Dove sentirebbero la canzone?
+     EN: Where would they hear the song?
+
+172. [H] [present] [noi] [cosa]
+     IT: Cosa uniamo?
+     EN: What do we unite?
+
+173. [H] [present] [lui] [chi]
+     IT: Chi trova subito?
+     EN: Who finds right away?
+
+174. [H] [passato prossimo] [lui] [dove]
+     IT: Dove ha imparato il fratello l'esame?
+     EN: Where did the brother learn the exam?
+
+175. [H] [imperfect] [lei] [quando]
+     IT: Quando moriva la zia?
+     EN: When was the aunt dying?
+
+176. [H] [passato prossimo] [lui] [cosa]
+     IT: Cosa ha saputo?
+     EN: What did he know?
+
+177. [H] [passato prossimo] [loro] [cosa]
+     IT: Cosa hanno coperto stamattina?
+     EN: What did they cover this morning?
+
+178. [H] [passato prossimo] [loro] [cosa]
+     IT: Cosa sono scesi i genitori?
+     EN: What did the parents go down?
+
+179. [H] [imperfect] [lei] [come]
+     IT: Come teneva la studentessa la promessa?
+     EN: How was the student (f) holding the promise?
+
+180. [H] [imperfect] [lui] [da quando]
+     IT: Da quando viveva?
+     EN: Since when had he been living?
+
+181. [H] [imperfect] [lui] [a che ora]
+     IT: A che ora arrivava il medico al supermercato?
+     EN: At what time was the doctor arriving at the supermarket?
+
+182. [H] [conditional] [tu] [cosa]
+     IT: Cosa spediresti?
+     EN: What would you send?
+
+183. [H] [imperfect] [lui] [chi]
+     IT: Chi faceva male?
+     EN: Who used to do badly?
+
+184. [H] [present] [lei] [dove]
+     IT: Dove rimane la zia?
+     EN: Where does the aunt remain?
+
+185. [H] [conditional] [loro] [quante volte]
+     IT: Quante volte visiterebbero le ragazze domani?
+     EN: How many times would the girls visit tomorrow?
+
+186. [H] [future] [loro] [da quando]
+     IT: Da quando lavoreranno molto?
+     EN: From when will they work a lot?
+
+187. [H] [passato prossimo] [voi] [quando]
+     IT: Quando avete parlato poco?
+     EN: When did you all speak a little?
+
+188. [H] [passato prossimo] [tu] [da quanto tempo]
+     IT: Da quanto tempo hai aspettato ieri?
+     EN: How long did you wait yesterday?
+
+189. [H] [conditional] [lei] [quando]
+     IT: Quando lascerebbe il lavoro?
+     EN: When would she leave behind the job?
+
+190. [H] [present] [noi] [dove]
+     IT: Dove passiamo la serata?
+     EN: Where do we spend the evening?
+
+191. [H] [imperfect] [lei] [dove]
+     IT: Dove insegnava la madre il collega molto?
+     EN: Where was the mother teaching the colleague a lot?
+
+192. [H] [present] [lei] [a chi]
+     IT: A chi manda la cugina?
+     EN: To whom does the cousin (f) send?
+
+193. [H] [future] [lei] [come]
+     IT: Come berrà la collega il tè?
+     EN: How will the colleague (f) drink the tea?
+
+194. [H] [passato prossimo] [lui] [chi]
+     IT: Chi ha chiuso?
+     EN: Who closed?
+
+195. [H] [present] [voi] [come]
+     IT: Come prendete la pasta ora?
+     EN: How are you all taking the pasta now?
+
+196. [H] [imperfect] [lei] [perché]
+     IT: Perché comprava mia cugina il telefono?
+     EN: Why was my cousin (f) buying the phone?
+
+197. [H] [future] [loro] [quando]
+     IT: Quando staranno i cugini?
+     EN: When will the cousins stay?
+
+198. [H] [imperfect] [noi] [a che ora]
+     IT: A che ora arrivavamo in ufficio?
+     EN: At what time were we arriving at the office?
+
+199. [H] [imperfect] [lui] [chi]
+     IT: Chi viveva?
+     EN: Who used to live?
+
+200. [H] [imperfect] [loro] [quante ore]
+     IT: Quante ore giocavano la settimana scorsa?
+     EN: How many hours had they been playing last week?
+
+201. [H] [conditional] [lui] [quante volte]
+     IT: Quante volte comprerebbe lo zio?
+     EN: How many times would the uncle buy?
+
+202. [H] [imperfect] [lei] [con chi]
+     IT: Con chi usciva?
+     EN: With whom was she going out?
+
+203. [H] [present] [lui] [chi]
+     IT: Chi costruisce?
+     EN: Who builds?
+
+204. [H] [future] [lui] [chi]
+     IT: Chi dimenticherà?
+     EN: Who will forget?
+
+205. [H] [present] [noi] [quante volte]
+     IT: Quante volte visitiamo?
+     EN: How many times do we visit?
+
+206. [H] [imperfect] [lei] [come]
+     IT: Come sentiva la mia amica la notizia?
+     EN: How was my friend (f) hearing the news?
+
+207. [H] [conditional] [lei] [a chi]
+     IT: A chi direbbe?
+     EN: To whom would she say?
+
+208. [H] [future] [lui] [quando]
+     IT: Quando scenderà mio marito al cinema?
+     EN: When will my husband go down to the cinema?
+
+209. [H] [future] [lei] [come]
+     IT: Come sceglierà il lavoro?
+     EN: How will she choose the work?
+
+210. [H] [passato prossimo] [lei] [da dove]
+     IT: Da dove è partita la professoressa a Roma?
+     EN: From where did the professor (f) depart for Rome?
+
+211. [H] [conditional] [lui] [chi]
+     IT: Chi giocherebbe bene?
+     EN: Who would play well?
+
+212. [H] [conditional] [lui] [chi]
+     IT: Chi insegnerebbe?
+     EN: Who would teach?
+
+213. [H] [passato prossimo] [lui] [chi]
+     IT: Chi ha perso?
+     EN: Who lost?
+
+214. [H] [passato prossimo] [tu] [quale]
+     IT: Quale ristorante hai comprato?
+     EN: Which restaurant did you buy?
+
+215. [H] [passato prossimo] [lui] [a che ora]
+     IT: A che ora è uscito il genero in centro?
+     EN: At what time did the son-in-law go out downtown?
+
+216. [H] [present] [lui] [chi]
+     IT: Chi preferisce?
+     EN: Who prefers?
+
+217. [H] [imperfect] [lei] [cosa]
+     IT: Cosa spegneva?
+     EN: What was she turning off?
+
+218. [H] [imperfect] [lei] [cosa]
+     IT: Cosa tornava la mia vicina?
+     EN: What was my neighbor (f) returning?
+
+219. [H] [imperfect] [tu] [quante ore]
+     IT: Quante ore lavoravi qui?
+     EN: How many hours had you been working here?
+
+220. [H] [conditional] [lui] [quando]
+     IT: Quando viaggerebbe il figlio in chiesa?
+     EN: When would the son travel to church?
+
+221. [H] [conditional] [lei] [come]
+     IT: Come terrebbe la sorella le chiavi?
+     EN: How would the sister hold the keys?
+
+222. [H] [conditional] [lui] [dove]
+     IT: Dove salirebbe il padre in ospedale?
+     EN: Where would the father go up to the hospital?
+
+223. [H] [present] [lui] [dove]
+     IT: Dove suona il pianoforte?
+     EN: Where does he play the piano?
+
+224. [H] [imperfect] [lui] [chi]
+     IT: Chi nuotava?
+     EN: Who used to swim?
+
+225. [H] [imperfect] [loro] [a che ora]
+     IT: A che ora partivano i genitori in ufficio?
+     EN: At what time were the parents departing for the office?
+
+226. [H] [present] [loro] [quando]
+     IT: Quando conoscono la nonna?
+     EN: When are they acquainted with the grandmother?
+
+227. [H] [passato prossimo] [lei] [dove]
+     IT: Dove ha preferito la verità stamattina?
+     EN: Where did she prefer the truth this morning?
+
+228. [H] [passato prossimo] [lei] [da dove]
+     IT: Da dove è arrivata in ospedale?
+     EN: From where did she arrive at the hospital?
+
+229. [H] [conditional] [lei] [quale]
+     IT: Quale libro guarderebbe la figlia?
+     EN: Which book would the daughter watch?
+
+230. [H] [future] [lui] [come]
+     IT: Come restituirà lo zio il regalo la settimana prossima?
+     EN: How will the uncle return the gift next week?
+
+231. [H] [future] [lui] [con chi]
+     IT: Con chi viaggerà lo zio lì?
+     EN: With whom will the uncle travel there?
+
+232. [H] [conditional] [loro] [dove]
+     IT: Dove racconterebbero i colleghi la notizia qui?
+     EN: Where would the colleagues recount the news here?
+
+233. [H] [present] [lei] [quando]
+     IT: Quando sceglie la nipote il lavoro poco?
+     EN: When does the niece choose the work a little?
+
+234. [H] [future] [lui] [con chi]
+     IT: Con chi viverà?
+     EN: With whom will he live?
+
+235. [H] [future] [lui] [a che ora]
+     IT: A che ora tornerà al parco bene?
+     EN: At what time will he return to the park well?
+
+236. [H] [conditional] [loro] [perché]
+     IT: Perché unirebbero la nonna?
+     EN: Why would they unite the grandmother?
+
+237. [H] [passato prossimo] [lui] [chi]
+     IT: Chi è venuto la settimana scorsa?
+     EN: Who came last week?
+
+238. [H] [passato prossimo] [lui] [chi]
+     IT: Chi ha mangiato?
+     EN: Who ate?
+
+239. [H] [passato prossimo] [voi] [quando]
+     IT: Quando avete camminato in biblioteca?
+     EN: When did you all walk to the library?
+
+240. [H] [present] [loro] [quando]
+     IT: Quando dormono?
+     EN: When do they sleep?
+
+241. [H] [passato prossimo] [loro] [dove]
+     IT: Dove hanno prestato la macchina?
+     EN: Where did they lend the car?
+
+242. [H] [future] [lei] [quando]
+     IT: Quando cercherà la nuora la soluzione lì?
+     EN: When will the daughter-in-law search for the solution there?
+
+243. [H] [conditional] [lei] [a che ora]
+     IT: A che ora partirebbe l'amica al lavoro?
+     EN: At what time would the friend (f) depart for work?
+
+244. [H] [passato prossimo] [lei] [quando]
+     IT: Quando è stata?
+     EN: When did she stay?
+
+245. [H] [present] [lei] [quando]
+     IT: Quando viene la nipote al supermercato?
+     EN: When does the niece come to the supermarket?
+
+246. [H] [imperfect] [lui] [chi]
+     IT: Chi scendeva?
+     EN: Who used to go down?
+
+247. [H] [present] [lui] [chi]
+     IT: Chi copre?
+     EN: Who covers?
+
+248. [H] [passato prossimo] [lui] [quante volte]
+     IT: Quante volte è venuto?
+     EN: How many times has he come?
+
+249. [H] [present] [tu] [a chi]
+     IT: A chi dici?
+     EN: To whom do you say?
+
+250. [H] [present] [lui] [quante ore]
+     IT: Quante ore lavora poco?
+     EN: How many hours has he been working a little?
+
+251. [H] [present] [lui] [chi]
+     IT: Chi guarda bene?
+     EN: Who watches well?
+
+252. [H] [future] [loro] [cosa]
+     IT: Cosa uniranno?
+     EN: What will they unite?
+
+253. [H] [passato prossimo] [loro] [da quando]
+     IT: Da quando hanno abitato?
+     EN: Since when have they been residing?
+
+254. [H] [conditional] [lei] [quando]
+     IT: Quando dormirebbe la nonna?
+     EN: When would the grandmother sleep?
+
+255. [H] [passato prossimo] [lei] [quante ore]
+     IT: Quante ore ha studiato la nuora?
+     EN: How many hours did the daughter-in-law study?
+
+256. [H] [imperfect] [lui] [quando]
+     IT: Quando chiudeva mio nonno la finestra?
+     EN: When was my grandfather closing the window?
+
+257. [H] [imperfect] [voi] [da quanto tempo]
+     IT: Da quanto tempo studiavate?
+     EN: How long had you all been studying?
+
+258. [H] [conditional] [lui] [chi]
+     IT: Chi salirebbe?
+     EN: Who would go up?
+
+259. [H] [conditional] [lui] [quando]
+     IT: Quando salirebbe il suocero in Italia bene?
+     EN: When would the father-in-law go up to Italy well?
+
+260. [H] [passato prossimo] [loro] [quante volte]
+     IT: Quante volte hanno visitato i fratelli stamattina?
+     EN: How many times have the brothers visited this morning?
+
+261. [H] [passato prossimo] [tu] [dove]
+     IT: Dove hai cucinato la cena?
+     EN: Where did you cook the dinner?
+
+262. [H] [conditional] [lui] [chi]
+     IT: Chi correrebbe lì?
+     EN: Who would run there?
+
+263. [H] [conditional] [loro] [perché]
+     IT: Perché risponderebbero i nonni la settimana prossima?
+     EN: Why would the grandparents reply next week?
+
+264. [H] [present] [lui] [chi]
+     IT: Chi canta bene?
+     EN: Who sings well?
+
+265. [H] [imperfect] [lei] [cosa]
+     IT: Cosa costruiva la zia?
+     EN: What was the aunt building?
+
+266. [H] [imperfect] [loro] [cosa]
+     IT: Cosa regalavano?
+     EN: What were they giving as a gift?
+
+267. [H] [conditional] [lui] [dove]
+     IT: Dove visiterebbe il cugino il museo?
+     EN: Where would the cousin (m) visit the museum?
+
+268. [H] [conditional] [lei] [cosa]
+     IT: Cosa leggerebbe la cugina?
+     EN: What would the cousin (f) read?
+
+269. [H] [passato prossimo] [lei] [da quando]
+     IT: Da quando ha vissuto la mia amica?
+     EN: Since when has my friend (f) been living?
+
+270. [H] [passato prossimo] [lui] [dove]
+     IT: Dove ha studiato il giornale lì?
+     EN: Where did he study the newspaper there?
+
+271. [H] [passato prossimo] [tu] [come]
+     IT: Come hai creduto la notizia?
+     EN: How did you believe the news?
+
+272. [H] [future] [lei] [perché]
+     IT: Perché spiegherà la cugina il problema?
+     EN: Why will the cousin (f) explain the problem?
+
+273. [H] [conditional] [tu] [perché]
+     IT: Perché giocheresti?
+     EN: Why would you play?
+
+274. [H] [passato prossimo] [lui] [chi]
+     IT: Chi ha viaggiato?
+     EN: Who traveled?
+
+275. [H] [passato prossimo] [lei] [dove]
+     IT: Dove ha pulito la cognata la porta bene?
+     EN: Where did the sister-in-law clean the door well?
+
+276. [H] [passato prossimo] [lei] [con chi]
+     IT: Con chi ha lavorato la ragazza?
+     EN: With whom did the girlfriend work?
+
+277. [H] [present] [loro] [quando]
+     IT: Quando propongono i ragazzi un cambiamento?
+     EN: When do the guys propose a change?
+
+278. [H] [imperfect] [noi] [cosa]
+     IT: Cosa passavamo?
+     EN: What were we spending?
+
+279. [H] [present] [lei] [da dove]
+     IT: Da dove arriva la compagna al ristorante?
+     EN: From where does the partner (f) arrive at the restaurant?
+
+280. [H] [passato prossimo] [lui] [quando]
+     IT: Quando ha offerto il fratello il pranzo?
+     EN: When did the brother offer the lunch?
+
+281. [H] [future] [lui] [chi]
+     IT: Chi starà?
+     EN: Who will stay?
+
+282. [H] [passato prossimo] [lei] [quando]
+     IT: Quando ha corretto la cugina la strategia molto?
+     EN: When did the cousin (f) correct the strategy a lot?
+
+283. [H] [future] [noi] [cosa]
+     IT: Cosa proporremo qui?
+     EN: What will we propose here?
+
+284. [H] [conditional] [lei] [cosa]
+     IT: Cosa suonerebbe mia moglie?
+     EN: What would my wife play?
+
+285. [H] [conditional] [noi] [quante volte]
+     IT: Quante volte compreremmo?
+     EN: How many times would we buy?
+
+286. [H] [imperfect] [lui] [chi]
+     IT: Chi rimaneva?
+     EN: Who used to remain?
+
+287. [H] [passato prossimo] [tu] [quando]
+     IT: Quando hai guardato il film la settimana scorsa?
+     EN: When did you watch the film last week?
+
+288. [H] [passato prossimo] [lui] [chi]
+     IT: Chi ha passato bene?
+     EN: Who spent well?
+
+289. [H] [present] [lui] [chi]
+     IT: Chi guarda?
+     EN: Who watches?
+
+290. [H] [present] [lei] [quando]
+     IT: Quando sa l'esame?
+     EN: When does she know the exam?
+
+291. [H] [conditional] [loro] [perché]
+     IT: Perché giocherebbero?
+     EN: Why would they play?
+
+292. [H] [imperfect] [lui] [da quanto tempo]
+     IT: Da quanto tempo dormiva il cognato subito?
+     EN: How long had the brother-in-law been sleeping right away?
+
+293. [H] [present] [loro] [perché]
+     IT: Perché prendono i ragazzi la pizza?
+     EN: Why do the guys take the pizza?
+
+294. [H] [conditional] [lui] [quante ore]
+     IT: Quante ore dormirebbe il padre?
+     EN: How many hours would the father sleep?
+
+295. [H] [imperfect] [lei] [quando]
+     IT: Quando raccontava la cognata la risposta stamattina?
+     EN: When was the sister-in-law recounting the answer this morning?
+
+296. [H] [imperfect] [lei] [cosa]
+     IT: Cosa prendeva la vicina?
+     EN: What was the neighbor (f) taking?
+
+297. [H] [passato prossimo] [lei] [dove]
+     IT: Dove ha conosciuto mia zia i figli?
+     EN: Where was my aunt acquainted with the children?
+
+298. [H] [imperfect] [lui] [chi]
+     IT: Chi viveva qui?
+     EN: Who used to live here?
+
+299. [H] [passato prossimo] [lei] [quando]
+     IT: Quando è stata la sorella bene?
+     EN: When was the sister well?
+
+300. [H] [present] [lui] [chi]
+     IT: Chi chiede?
+     EN: Who asks?
+

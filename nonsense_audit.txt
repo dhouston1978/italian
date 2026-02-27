@@ -2,24 +2,24 @@ NONSENSE AUDIT — 500 Generated Sentences
 ============================================================
 
   1. [H] [present] [lei]
-     IT: Come offre la sorella il pranzo?
-     EN: How does the sister offer the lunch?
+     IT: Perché offre la sorella il pranzo?
+     EN: Why does the sister offer the lunch?
 
   2. [H] [present] [loro]
-     IT: Perché ricevono i fratelli il giornale lì?
-     EN: Why do the brothers receive the newspaper there?
+     IT: A chi mandano i fratelli?
+     EN: To whom do the brothers send?
 
-  3. [A] [conditional] [noi]
-     IT: Sinceramente, vedremmo il film lì
-     EN: Sincerely, we would see the film there
+  3. [F] [passato prossimo] [voi]
+     IT: Infatti, li avete offerti qui
+     EN: In fact, you all offered them (m) here
 
-  4. [I] [future] [loro]
-     IT: Di solito, si sveglieranno tardi
-     EN: Usually, they will wake up late
+  4. [J] [present] [io]
+     IT: Raramente, glielo mando
+     EN: Rarely, I send it (m) to him (Hint: combine the indirect and direct pronouns)
 
   5. [H] [imperfect] [lui]
      IT: Perché proponeva lo zio una soluzione la settimana scorsa?
-     EN: Why did the uncle propose a solution last week?
+     EN: Why was the uncle proposing a solution last week?
 
   6. [I] [passato prossimo] [lui]
      IT: Spesso, si è avvicinato
@@ -59,7 +59,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
  15. [A] [present] [io]
      IT: Fortunatamente, insegno un amico ora
-     EN: Fortunately, I teach a friend now
+     EN: Fortunately, I am teaching a friend now
 
  16. [C] [passato prossimo] [tu]
      IT: Hai voluto ballare
@@ -69,49 +69,49 @@ NONSENSE AUDIT — 500 Generated Sentences
      IT: Secondo mia madre, cucino il pranzo lì
      EN: According to my mother, I cook the lunch there
 
- 18. [I] [imperfect] [io]
-     IT: In ogni caso, mi lavavo male
-     EN: In any case, I used to wash myself badly
+ 18. [H] [conditional] [lui]
+     IT: Da dove verrebbe lo zio in Italia?
+     EN: From where would the uncle come to Italy?
 
- 19. [A] [present] [io]
-     IT: Fortunatamente, unisco mio fratello bene
-     EN: Fortunately, I unite my brother well
+ 19. [H] [imperfect] [lei]
+     IT: Quante ore lavorava subito?
+     EN: How many hours had she been working right away?
 
- 20. [F] [present] [loro]
-     IT: Purtroppo, li raccontano adesso
-     EN: Unfortunately, they recount them (m) now
+ 20. [C] [passato prossimo] [lei]
+     IT: Di solito, ha voluto prendere la pasta
+     EN: Usually, she wanted to take the pasta
 
- 21. [F] [present] [loro]
-     IT: Francamente, lo vogliono portare lì
-     EN: Frankly, they want to bring it (m) there (Hint: pronoun goes before the modal verb)
+ 21. [H] [present] [loro]
+     IT: Con chi parlano i cugini?
+     EN: With whom do the cousins speak?
 
- 22. [B] [present] [io]
-     IT: Voglio mangiare la cena
-     EN: I want to eat the dinner
+ 22. [G] [conditional] [lui]
+     IT: Il suocero starebbe preoccupato qua
+     EN: the father-in-law would stay worried here
 
- 23. [A] [present] [voi]
-     IT: Capite il problema qui
-     EN: you all understand the problem here
+ 23. [C] [passato prossimo] [tu]
+     IT: Sinceramente, hai voluto viaggiare al supermercato
+     EN: Sincerely, you wanted to travel to the supermarket
 
- 24. [J] [present] [lui]
-     IT: Raramente, te la mostra
-     EN: Rarely, he shows it (f) to you (Hint: combine the indirect and direct pronouns)
+ 24. [E] [present] [tu]
+     IT: Di solito, puoi lasciare la città?
+     EN: Usually, can you leave behind the city?
 
- 25. [K] [present] [tu]
-     IT: Che cosa ne pensi?
-     EN: what do you think about it?
+ 25. [G] [passato prossimo] [lei]
+     IT: Purtroppo, mia madre è restata arrabbiata ieri
+     EN: Unfortunately, my mother remained angry yesterday
 
- 26. [H] [imperfect] [lei]
-     IT: Cosa puliva mia moglie lì?
-     EN: What did my wife clean there?
+ 26. [F] [conditional] [lui]
+     IT: Finalmente, le vorrebbe dire qui
+     EN: Finally, he would want to say them (f) here (Hint: pronoun goes before the modal verb)
 
- 27. [A] [imperfect] [lui]
-     IT: Proponeva un cambiamento stamattina
-     EN: he used to propose a change this morning
+ 27. [A] [present] [noi]
+     IT: Naturalmente, saliamo in biblioteca male
+     EN: Naturally, we go up to the library badly
 
- 28. [G] [passato prossimo] [lei]
-     IT: Naturalmente, la cugina è diventata arrabbiata sulla collina
-     EN: Naturally, the cousin (f) became angry on the hill
+ 28. [A] [future] [tu]
+     IT: Troverai il lavoro lì
+     EN: you will find the work there
 
  29. [E] [conditional] [tu]
      IT: Purtroppo, potresti amare i viaggi?
@@ -123,7 +123,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
  31. [A] [present] [lei]
      IT: Pensa la storia adesso
-     EN: she thinks the story now
+     EN: she is thinking the story now
 
  32. [I] [present] [lui]
      IT: A volte, si riposa
@@ -143,795 +143,795 @@ NONSENSE AUDIT — 500 Generated Sentences
 
  36. [H] [imperfect] [noi]
      IT: Cosa arrivavamo?
-     EN: What did we arrive?
+     EN: What were we arriving?
 
  37. [I] [present] [lei]
      IT: Secondo me, la sorella si arrabbia
      EN: In my opinion, the sister gets angry
 
  38. [H] [present] [lui]
-     IT: Chi sente bene?
-     EN: Who hears well?
+     IT: Cosa sente il vicino?
+     EN: What does the neighbor (m) hear?
 
- 39. [K] [imperfect] [loro]
-     IT: Non ne avevano idea
-     EN: they had no idea (habitual)
+ 39. [A] [present] [lei]
+     IT: Comunque, canta subito
+     EN: Anyway, she sings right away
 
- 40. [A] [conditional] [noi]
-     IT: Secondo lui, mangeremmo la cena insieme
-     EN: In his opinion, we would eat the dinner together
+ 40. [J] [passato prossimo] [voi]
+     IT: Finalmente, te la avete chiesta
+     EN: Finally, you all asked for it (f) to you (Hint: combine the indirect and direct pronouns)
 
- 41. [A] [present] [lei]
-     IT: Purtroppo, aiuta mio fratello lì
-     EN: Unfortunately, she helps my brother there
+ 41. [G] [passato prossimo] [lei]
+     IT: In realtà, la nonna è rimasta preoccupata dietro l'angolo
+     EN: In reality, the grandmother remained worried around the corner
 
- 42. [K] [present] [lei]
-     IT: Come sta?
-     EN: how are you? (formal)
+ 42. [B] [imperfect] [lei]
+     IT: Spesso, doveva raccontare la storia
+     EN: Often, she used to have to recount the story
 
- 43. [A] [present] [lei]
-     IT: Pulisce il computer qui
-     EN: she cleans the computer here
+ 43. [K] [present] [voi]
+     IT: Come state?
+     EN: how are you all?
 
- 44. [G] [passato prossimo] [lei]
-     IT: Purtroppo, la cugina è stata arrabbiata lassù
-     EN: Unfortunately, the cousin (f) was angry up there
+ 44. [F] [imperfect] [lei]
+     IT: In realtà, gli mandava bene
+     EN: In reality, she used to send to him well
 
- 45. [K] [present] [voi]
-     IT: Che cosa ne pensate?
-     EN: what do you all think about it?
+ 45. [F] [conditional] [noi]
+     IT: In ogni caso, le daremmo insieme
+     EN: In any case, we would give them (f) together
 
- 46. [A] [passato prossimo] [voi]
-     IT: Avete fatto la spesa spesso
-     EN: you all did the shopping often
+ 46. [C] [present] [lei]
+     IT: Incredibilmente, vuole dare la macchina
+     EN: Incredibly, she wants to give the car
 
- 47. [G] [conditional] [lui]
-     IT: Onestamente, il medico rimarrebbe arrabbiato male
-     EN: Honestly, the doctor would remain angry badly
+ 47. [B] [conditional] [lui]
+     IT: Dovrebbe proporre un'idea
+     EN: he would have to propose an idea
 
- 48. [H] [present] [lei]
-     IT: A chi manda la collega?
-     EN: To whom does the colleague (f) send?
+ 48. [B] [present] [tu]
+     IT: Devi unire i figli
+     EN: you must unite the children
 
- 49. [H] [passato prossimo] [loro]
-     IT: Perché hanno passato i ragazzi le vacanze?
-     EN: Why did the guys spend the holidays?
+ 49. [K] [present] [lui]
+     IT: Ci pensa su
+     EN: he thinks about it
 
- 50. [A] [present] [loro]
-     IT: Di solito, rispondono
-     EN: Usually, they reply
+ 50. [B] [future] [voi]
+     IT: Secondo lei, dovrete uscire a Roma
+     EN: In her opinion, you all will have to go out to Rome
 
- 51. [D] [present] [lei]
-     IT: Finalmente, forse sa il motivo
-     EN: Finally, maybe she knows the reason
+ 51. [I] [passato prossimo] [lei]
+     IT: Ogni giorno, la zia si è fermata un momento
+     EN: Every day, the aunt stopped for a moment
 
- 52. [J] [passato prossimo] [voi]
-     IT: Nel frattempo, te li avete dati lì
-     EN: Meanwhile, you all gave them (m) to you there (Hint: combine the indirect and direct pronouns)
+ 52. [A] [conditional] [lei]
+     IT: Sinceramente, uscirebbe al supermercato domani
+     EN: Sincerely, she would go out to the supermarket tomorrow
 
- 53. [A] [conditional] [loro]
-     IT: Onestamente, viverebbero in fondo al corridoio
-     EN: Honestly, they would live at the end of the corridor
+ 53. [I] [present] [lei]
+     IT: Secondo me, si rade
+     EN: In my opinion, she shaves
 
- 54. [G] [passato prossimo] [lei]
-     IT: A mio parere, la nonna è arrivata preparata sul treno
-     EN: In my view, the grandmother arrived prepared on the train
+ 54. [B] [passato prossimo] [loro]
+     IT: Spesso, hanno voluto dimenticare il numero
+     EN: Often, they wanted to forget the number
 
- 55. [K] [present] [tu]
-     IT: Che cosa ne pensi?
-     EN: what do you think about it?
+ 55. [H] [present] [loro]
+     IT: Come mandano i genitori il giornale?
+     EN: How do the parents send the newspaper?
 
- 56. [C] [imperfect] [tu]
+ 56. [F] [imperfect] [lui]
+     IT: Ovviamente, gli metteva poco
+     EN: Obviously, he used to put to him a little
+
+ 57. [H] [conditional] [lei]
+     IT: Quando tornerebbe la professoressa in chiesa male?
+     EN: When would the professor (f) return to church badly?
+
+ 58. [C] [imperfect] [tu]
      IT: Sinceramente, volevi proporre un cambiamento
      EN: Sincerely, you used to want to propose a change
 
- 57. [G] [conditional] [lui]
+ 59. [G] [conditional] [lui]
      IT: Ogni giorno, il nipote rimarrebbe arrabbiato davanti alla scuola
      EN: Every day, the nephew would remain angry in front of the school
 
- 58. [A] [passato prossimo] [tu]
+ 60. [A] [passato prossimo] [tu]
      IT: Hai parlato ieri
      EN: you spoke yesterday
 
- 59. [J] [passato prossimo] [lui]
+ 61. [J] [passato prossimo] [lui]
      IT: D'altra parte, ce li ha spiegati male
      EN: On the other hand, he explained them (m) to us badly (Hint: combine the indirect and direct pronouns)
 
- 60. [A] [imperfect] [tu]
+ 62. [A] [imperfect] [tu]
      IT: Guarivi vicino
      EN: you used to recover nearby
 
- 61. [J] [imperfect] [voi]
+ 63. [J] [imperfect] [voi]
      IT: Sinceramente, gliela cucinavate
      EN: Sincerely, you all used to cook it (f) to him (Hint: combine the indirect and direct pronouns)
 
- 62. [I] [imperfect] [tu]
+ 64. [I] [imperfect] [tu]
      IT: Stranamente, ti addormentavi
      EN: Strangely, you used to fall asleep
 
- 63. [F] [conditional] [lei]
+ 65. [F] [conditional] [lei]
      IT: Francamente, ci vorrebbe dire molto
      EN: Frankly, she would want to say to us a lot (Hint: pronoun goes before the modal verb)
 
- 64. [H] [passato prossimo] [lui]
+ 66. [H] [passato prossimo] [lui]
      IT: Quando ha finito il nonno il progetto?
      EN: When did the grandfather finish the project?
 
- 65. [H] [passato prossimo] [lui]
+ 67. [H] [passato prossimo] [lui]
      IT: Chi ha raccontato?
      EN: Who recounted?
 
- 66. [B] [passato prossimo] [lui]
+ 68. [B] [passato prossimo] [lui]
      IT: Per me, ha voluto cambiare il programma
      EN: For me, he wanted to change the plan
 
- 67. [G] [passato prossimo] [lei]
+ 69. [G] [passato prossimo] [lei]
      IT: La moglie è arrivata preoccupata fino in centro
      EN: the wife arrived worried all the way to the center
 
- 68. [H] [present] [loro]
-     IT: Cosa cambiano i nonni?
-     EN: What do the grandparents change?
+ 70. [H] [present] [loro]
+     IT: Come cambiano i nonni il programma?
+     EN: How do the grandparents change the plan?
 
- 69. [B] [present] [lui]
-     IT: A volte, vuole scrivere il messaggio
-     EN: Sometimes, he wants to write the message
+ 71. [F] [future] [lui]
+     IT: Francamente, le vorrà vendere presto
+     EN: Frankly, he will want to sell them (f) soon (Hint: pronoun goes before the modal verb)
 
- 70. [J] [imperfect] [tu]
-     IT: Francamente, gliela scrivevi
-     EN: Frankly, you used to write it (f) to him (Hint: combine the indirect and direct pronouns)
+ 72. [I] [passato prossimo] [loro]
+     IT: I colleghi si sono sbagliati
+     EN: the colleagues were mistaken
 
- 71. [F] [imperfect] [voi]
-     IT: Fortunatamente, gliele insegnavate ieri
-     EN: Fortunately, you all used to teach them (f) to him yesterday
+ 73. [G] [imperfect] [lei]
+     IT: Secondo lui, la mia vicina restava preoccupata davanti alla chiesa
+     EN: In his opinion, my neighbor (f) used to remain worried in front of the church
 
- 72. [B] [passato prossimo] [lei]
-     IT: Spesso, ha voluto dimenticare il nome
-     EN: Often, she wanted to forget the name
+ 74. [I] [conditional] [lui]
+     IT: Secondo mio padre, mio cugino si vestirebbe
+     EN: According to my father, my cousin (m) would get dressed
 
- 73. [F] [present] [tu]
-     IT: Fortunatamente, glieli puoi raccontare male
-     EN: Fortunately, you can recount them (m) to them badly (Hint: pronoun goes before the modal verb)
+ 75. [H] [present] [loro]
+     IT: Dove desiderano una vacanza?
+     EN: Where do they desire a vacation?
 
- 74. [A] [imperfect] [tu]
-     IT: Purtroppo, perdevi la soluzione poco
-     EN: Unfortunately, you used to lose the solution a little
+ 76. [G] [passato prossimo] [lei]
+     IT: Secondo mio padre, la suocera è tornata contenta vicino al fiume
+     EN: According to my father, the mother-in-law returned happy near the river
 
- 75. [K] [conditional] [io]
-     IT: Non ce la farei
-     EN: I wouldn't be able to manage it
+ 77. [B] [present] [lui]
+     IT: Di solito, può ballare
+     EN: Usually, he can dance
 
- 76. [I] [passato prossimo] [noi]
-     IT: A mio parere, ci siamo incontrati lì
-     EN: In my view, we met each other there
+ 78. [E] [present] [tu]
+     IT: Puoi perdere il ristorante?
+     EN: can you lose the restaurant?
 
- 77. [G] [future] [lui]
-     IT: A volte, il compagno rimarrà felice lontano
-     EN: Sometimes, the partner (m) will remain glad far away
+ 79. [F] [conditional] [loro]
+     IT: Ovviamente, le comprerebbero poco
+     EN: Obviously, they would buy them (f) a little
 
- 78. [H] [conditional] [noi]
-     IT: Dove offriremmo il pane?
-     EN: Where would we offer the bread?
+ 80. [I] [present] [lei]
+     IT: Si trucca
+     EN: she puts on makeup
 
- 79. [A] [passato prossimo] [lei]
-     IT: Secondo mio padre, ha suonato il violino lì
-     EN: According to my father, she played the violin there
+ 81. [K] [imperfect] [loro]
+     IT: Non ce la facevano
+     EN: they couldn't manage it (habitual)
 
- 80. [G] [passato prossimo] [lui]
-     IT: Secondo mio padre, il collega è tornato nervoso poco
-     EN: According to my father, the colleague (m) returned nervous a little
+ 82. [A] [present] [voi]
+     IT: Cambiate la strategia molto
+     EN: you all change the strategy a lot
 
- 81. [G] [passato prossimo] [lui]
-     IT: Il genero è arrivato malato davanti
-     EN: the son-in-law arrived sick in front
+ 83. [A] [imperfect] [voi]
+     IT: Fortunatamente, seguivate il collega poco
+     EN: Fortunately, you all used to follow the colleague a little
 
- 82. [D] [conditional] [lui]
-     IT: Forse desidererebbe un caffè
-     EN: maybe he would desire a coffee
+ 84. [F] [present] [noi]
+     IT: Tutto sommato, gli possiamo comprare male
+     EN: All things considered, we can buy to them badly (Hint: pronoun goes before the modal verb)
 
- 83. [K] [conditional] [tu]
+ 85. [H] [imperfect] [lui]
+     IT: Da quando abitava il capo male?
+     EN: Since when had the boss been residing badly?
+
+ 86. [H] [future] [noi]
+     IT: Dove lasceremo la casa?
+     EN: Where will we leave behind the house?
+
+ 87. [A] [passato prossimo] [tu]
+     IT: Secondo mia madre, hai cantato bene
+     EN: According to my mother, you sang well
+
+ 88. [B] [present] [lei]
+     IT: Di solito, deve arrivare al ristorante
+     EN: Usually, she must arrive at the restaurant
+
+ 89. [E] [passato prossimo] [tu]
+     IT: Infatti, puoi viaggiare a casa?
+     EN: In fact, can you travel home?
+
+ 90. [E] [imperfect] [tu]
+     IT: Secondo lei, puoi spedire il giornale?
+     EN: In her opinion, can you send the newspaper?
+
+ 91. [H] [passato prossimo] [lui]
+     IT: Perché è stato?
+     EN: Why did he stay?
+
+ 92. [I] [present] [lui]
+     IT: Di solito, si trucca
+     EN: Usually, he puts on makeup
+
+ 93. [A] [present] [voi]
+     IT: Secondo me, portate la macchina subito
+     EN: In my opinion, you all bring the car right away
+
+ 94. [K] [conditional] [tu]
      IT: Che cosa ne penseresti?
      EN: what would you think about it?
 
- 84. [H] [imperfect] [lui]
-     IT: A che ora finiva il nonno il compito qui?
-     EN: At what time did the grandfather finish the assignment here?
-
- 85. [G] [present] [loro]
-     IT: In realtà, gli amici sono soli sul marciapiede
-     EN: In reality, the friends are alone on the sidewalk
-
- 86. [K] [present] [io]
-     IT: Non ce la faccio
-     EN: I can't manage it
-
- 87. [K] [passato prossimo] [voi]
-     IT: Ve ne siete andati
-     EN: you all left / went away
-
- 88. [B] [passato prossimo] [voi]
-     IT: Avete voluto vedere la partita
-     EN: you all wanted to see the match
-
- 89. [C] [future] [lei]
-     IT: Secondo lei, vorrà preparare il pranzo
-     EN: In her opinion, she will want to prepare the lunch
-
- 90. [G] [passato prossimo] [lei]
-     IT: Prima di tutto, l'amica è tornata nervosa nel parco
-     EN: First of all, the friend (f) returned nervous in the park
-
- 91. [A] [present] [noi]
-     IT: In realtà, diventiamo dietro
-     EN: In reality, we become behind
-
- 92. [C] [passato prossimo] [tu]
-     IT: Secondo me, hai voluto dire la situazione
-     EN: In my opinion, you wanted to say the situation
-
- 93. [F] [future] [io]
-     IT: Francamente, glieli dirò bene
-     EN: Frankly, I will say them (m) to her well
-
- 94. [I] [present] [lui]
+ 95. [I] [present] [lui]
      IT: Si sveglia tardi
      EN: he wakes up late
 
- 95. [G] [passato prossimo] [loro]
+ 96. [G] [passato prossimo] [loro]
      IT: Secondo me, i ragazzi sono tornati malati ieri
      EN: In my opinion, the guys returned sick yesterday
 
- 96. [I] [present] [voi]
+ 97. [I] [present] [voi]
      IT: Vi allontanate
      EN: you all move away
 
- 97. [H] [present] [lui]
+ 98. [H] [present] [lui]
      IT: Chi ricorda bene?
      EN: Who remembers well?
 
- 98. [B] [imperfect] [loro]
+ 99. [B] [imperfect] [loro]
      IT: Fortunatamente, dovevano rimanere
      EN: Fortunately, they used to have to remain
 
- 99. [I] [present] [lei]
+100. [I] [present] [lei]
      IT: Comunque, la cognata si lava
      EN: Anyway, the sister-in-law washes herself
 
-100. [B] [conditional] [io]
+101. [B] [conditional] [io]
      IT: Naturalmente, vorrei correggere il vestito
      EN: Naturally, I would want to correct the outfit
 
-101. [K] [future] [voi]
+102. [K] [future] [voi]
      IT: Ci penserete su
      EN: you all will think about it
 
-102. [I] [future] [lui]
+103. [I] [future] [lui]
      IT: Secondo me, il collega si annoierà
      EN: In my opinion, the colleague (m) will get bored
 
-103. [F] [future] [loro]
+104. [F] [future] [loro]
      IT: Raramente, gli metteranno
      EN: Rarely, they will put to him
 
-104. [B] [present] [io]
+105. [B] [present] [io]
      IT: Fortunatamente, voglio rimanere
      EN: Fortunately, I want to remain
 
-105. [H] [future] [loro]
+106. [H] [future] [loro]
      IT: Cosa proveranno bene?
      EN: What will they try well?
 
-106. [H] [passato prossimo] [loro]
+107. [H] [passato prossimo] [loro]
      IT: Dove hanno raccontato le sorelle la notizia?
      EN: Where did the sisters recount the news?
 
-107. [G] [passato prossimo] [lui]
+108. [G] [passato prossimo] [lui]
      IT: Mio cugino è rimasto preoccupato fuori
      EN: my cousin (m) remained worried outside
 
-108. [H] [passato prossimo] [lei]
+109. [H] [passato prossimo] [lei]
      IT: Quando ha offerto la suocera la cena?
      EN: When did the mother-in-law offer the dinner?
 
-109. [K] [passato prossimo] [lui]
+110. [K] [passato prossimo] [lui]
      IT: Non si è ricordato più
      EN: he didn't remember anymore
 
-110. [D] [imperfect] [io]
+111. [D] [imperfect] [io]
      IT: Raramente, forse trovavo il lavoro
      EN: Rarely, maybe I used to find the work
 
-111. [K] [present] [noi]
+112. [K] [present] [noi]
      IT: Ci pensiamo su
      EN: we think about it
 
-112. [F] [future] [io]
+113. [F] [future] [io]
      IT: Sinceramente, ci vorrò preparare subito
      EN: Sincerely, I will want to prepare to us right away (Hint: pronoun goes before the modal verb)
 
-113. [A] [passato prossimo] [voi]
+114. [A] [passato prossimo] [voi]
      IT: Siete usciti all'università insieme
      EN: you all went out to the university together
 
-114. [D] [imperfect] [loro]
+115. [D] [imperfect] [loro]
      IT: Secondo mio padre, forse perdevano il lavoro
      EN: According to my father, maybe they used to lose the work
 
-115. [E] [present] [tu]
+116. [E] [present] [tu]
      IT: Puoi bere il succo?
      EN: can you drink the juice?
 
-116. [A] [present] [lui]
+117. [A] [present] [lui]
      IT: Di solito, copre il computer
      EN: Usually, he covers the computer
 
-117. [A] [imperfect] [loro]
+118. [A] [imperfect] [loro]
      IT: In realtà, lavoravano la settimana scorsa
      EN: In reality, they used to work last week
 
-118. [B] [future] [lui]
+119. [B] [future] [lui]
      IT: Vorrà perdere il ristorante
      EN: he will want to lose the restaurant
 
-119. [I] [present] [lei]
+120. [I] [present] [lei]
      IT: In realtà, la figlia si addormenta adesso
      EN: In reality, the daughter falls asleep now
 
-120. [A] [present] [voi]
+121. [A] [present] [voi]
      IT: Scegliete le chiavi adesso
-     EN: you all choose the keys now
+     EN: you all are choosing the keys now
 
-121. [H] [present] [lui]
+122. [H] [present] [lui]
      IT: Chi cambia?
      EN: Who changes?
 
-122. [I] [passato prossimo] [loro]
+123. [I] [passato prossimo] [loro]
      IT: Secondo mia madre, si sono vestiti
      EN: According to my mother, they got dressed
 
-123. [A] [present] [noi]
+124. [A] [present] [noi]
      IT: Di solito, conosciamo mio fratello
      EN: Usually, we are acquainted with my brother
 
-124. [A] [conditional] [lei]
+125. [A] [conditional] [lei]
      IT: In realtà, saprebbe il motivo domani
      EN: In reality, she would know the reason tomorrow
 
-125. [I] [imperfect] [tu]
+126. [I] [imperfect] [tu]
      IT: Ti potevi sbagliare
      EN: you used to be able to be mistaken
 
-126. [A] [imperfect] [io]
+127. [A] [imperfect] [io]
      IT: Proponevo un'idea male
      EN: I used to propose an idea badly
 
-127. [I] [present] [noi]
+128. [I] [present] [noi]
      IT: Di solito, ci annoiamo
      EN: Usually, we get bored
 
-128. [H] [conditional] [noi]
-     IT: A che ora partiremmo al ristorante?
-     EN: At what time would we depart to the restaurant?
+129. [H] [conditional] [noi]
+     IT: Quante volte andremmo?
+     EN: How many times would we go?
 
-129. [K] [passato prossimo] [lui]
+130. [K] [passato prossimo] [lui]
      IT: Non ne ha avuto idea
      EN: he had no idea
 
-130. [H] [conditional] [lei]
+131. [H] [conditional] [lei]
      IT: Dove morrebbe mia figlia?
      EN: Where would my daughter die?
 
-131. [K] [conditional] [lui]
+132. [K] [conditional] [lui]
      IT: Non ne avrebbe idea
      EN: he would have no idea
 
-132. [K] [imperfect] [io]
+133. [K] [imperfect] [io]
      IT: Non ce la facevo
      EN: I couldn't manage it (habitual)
 
-133. [C] [imperfect] [lui]
+134. [C] [imperfect] [lui]
      IT: Comunque, voleva unire mio fratello
      EN: Anyway, he used to want to unite my brother
 
-134. [F] [present] [voi]
+135. [F] [present] [voi]
      IT: Me le portate bene
      EN: you all bring them (f) to me well
 
-135. [H] [present] [loro]
-     IT: Perché chiedono i cugini la storia?
-     EN: Why do the cousins ask the story?
+136. [H] [present] [lui]
+     IT: Quale strada prende il medico?
+     EN: Which road does the doctor take?
 
-136. [H] [present] [voi]
-     IT: A che ora tornate al parco?
-     EN: At what time do you all return to the park?
+137. [H] [present] [voi]
+     IT: Da quando studiate?
+     EN: Since when have you all been studying?
 
-137. [H] [imperfect] [lui]
-     IT: Per quanto tempo aspettava il figlio?
-     EN: For how long did the son wait for?
+138. [A] [passato prossimo] [noi]
+     IT: Secondo mio padre, siamo andati in ufficio insieme
+     EN: According to my father, we went to the office together
 
-138. [B] [present] [voi]
-     IT: Dovete spiegare la verità
-     EN: you all must explain the truth
+139. [C] [future] [voi]
+     IT: Secondo mio padre, vorrete ricordare il nome
+     EN: According to my father, you all will want to remember the name
 
-139. [I] [present] [lui]
-     IT: A volte, si dimentica
-     EN: Sometimes, he forgets
+140. [C] [passato prossimo] [loro]
+     IT: Hanno voluto costruire la finestra
+     EN: they wanted to build the window
 
-140. [B] [imperfect] [loro]
-     IT: Secondo me, potevano provare la strategia
-     EN: In my opinion, they used to be able to try the strategy
+141. [F] [present] [io]
+     IT: Ve li porto di solito
+     EN: I bring them (m) to you all usually
 
-141. [K] [present] [io]
-     IT: Ci penso su
-     EN: I think about it
+142. [A] [passato prossimo] [voi]
+     IT: In ogni caso, avete conosciuto il vicino qui
+     EN: In any case, you all were acquainted with the neighbor here
 
-142. [A] [future] [io]
-     IT: Infatti, tornerò all'università qui
-     EN: In fact, I will return to the university here
+143. [G] [passato prossimo] [lui]
+     IT: Onestamente, il mio capo è rimasto arrabbiato lassù
+     EN: Honestly, my boss remained angry up there
 
-143. [F] [passato prossimo] [io]
-     IT: La ho scritta insieme
-     EN: I wrote it (f) together
+144. [A] [present] [io]
+     IT: Fortunatamente, spiego la situazione qui
+     EN: Fortunately, I explain the situation here
 
-144. [K] [future] [lui]
-     IT: Se ne andrà
-     EN: he will leave / go away
+145. [B] [imperfect] [io]
+     IT: Di solito, volevo chiedere la risposta
+     EN: Usually, I used to want to ask the answer
 
-145. [H] [future] [noi]
-     IT: Come sentiremo la musica?
-     EN: How will we hear the music?
+146. [J] [passato prossimo] [noi]
+     IT: In ogni caso, ve la abbiamo spiegata
+     EN: In any case, we explained it (f) to you all (Hint: combine the indirect and direct pronouns)
 
-146. [A] [conditional] [voi]
-     IT: Secondo mia madre, direste la notizia la settimana prossima
-     EN: According to my mother, you all would say the news next week
+147. [A] [conditional] [voi]
+     IT: Portereste i biglietti a volte
+     EN: you all would bring the tickets sometimes
 
-147. [F] [future] [lui]
-     IT: Naturalmente, le comprerà qui
-     EN: Naturally, he will buy to her here
+148. [A] [passato prossimo] [io]
+     IT: Infatti, ho coperto il rubinetto la settimana scorsa
+     EN: In fact, I covered the faucet last week
 
-148. [I] [conditional] [io]
-     IT: Tutto sommato, mi sentirei molto
-     EN: All things considered, I would feel a lot
+149. [G] [passato prossimo] [loro]
+     IT: Le sorelle sono rimaste malate in fondo al corridoio
+     EN: the sisters remained sick at the end of the corridor
 
-149. [K] [passato prossimo] [tu]
-     IT: Non ti sei ricordata più
-     EN: you didn't remember anymore
+150. [F] [future] [tu]
+     IT: La potrai insegnare domani
+     EN: you will be able to teach it (f) tomorrow (Hint: pronoun goes before the modal verb)
 
-150. [F] [future] [lei]
-     IT: Di solito, li potrà mandare
-     EN: Usually, she will be able to send them (m) (Hint: pronoun goes before the modal verb)
+151. [H] [conditional] [lui]
+     IT: Quante volte leggerebbe il marito lì?
+     EN: How many times would the husband read there?
 
-151. [B] [present] [io]
-     IT: Voglio dormire
-     EN: I want to sleep
+152. [G] [passato prossimo] [lui]
+     IT: Di solito, il professore è tornato preparato
+     EN: Usually, the professor (m) returned prepared
 
-152. [A] [imperfect] [io]
-     IT: Ovviamente, preparavo il pranzo male
-     EN: Obviously, I used to prepare the lunch badly
+153. [A] [conditional] [lei]
+     IT: Secondo lei, uscirebbe fuori
+     EN: In her opinion, she would go out outside
 
-153. [A] [present] [tu]
-     IT: Ricordi il numero subito
-     EN: you remember the number right away
+154. [G] [passato prossimo] [loro]
+     IT: Prima di tutto, le sorelle sono state sole sull'autobus
+     EN: First of all, the sisters were alone on the bus
 
-154. [G] [passato prossimo] [lei]
-     IT: Francamente, la suocera è stata sola poco
-     EN: Frankly, the mother-in-law stayed alone a little
+155. [H] [future] [lui]
+     IT: Come camminerà mio figlio in ufficio?
+     EN: How will my son walk to the office?
 
-155. [D] [conditional] [lui]
-     IT: Infatti, forse rimarrebbe
-     EN: In fact, maybe he would remain
+156. [H] [future] [lei]
+     IT: Cosa entrerà la madre?
+     EN: What will the mother enter?
 
-156. [G] [passato prossimo] [lei]
+157. [G] [passato prossimo] [lei]
      IT: Stranamente, la zia è arrivata arrabbiata stamattina
      EN: Strangely, the aunt arrived angry this morning
 
-157. [K] [conditional] [io]
+158. [K] [conditional] [io]
      IT: Non ci crederei
      EN: I wouldn't believe it
 
-158. [K] [future] [tu]
+159. [K] [future] [tu]
      IT: Te ne andrai
      EN: you will leave / go away
 
-159. [D] [future] [noi]
+160. [D] [future] [noi]
      IT: A volte, forse riceveremo il giornale
      EN: Sometimes, maybe we will receive the newspaper
 
-160. [A] [present] [tu]
+161. [A] [present] [tu]
      IT: Finisci il progetto poco
      EN: you finish the project a little
 
-161. [K] [conditional] [tu]
+162. [K] [conditional] [tu]
      IT: Che cosa ne penseresti?
      EN: what would you think about it?
 
-162. [I] [passato prossimo] [lui]
+163. [I] [passato prossimo] [lui]
      IT: Secondo lui, si è addormentato tardi
      EN: In his opinion, he fell asleep late
 
-163. [B] [present] [noi]
+164. [B] [present] [noi]
      IT: Possiamo pulire la porta
      EN: we can clean the door
 
-164. [K] [present] [lei]
+165. [K] [present] [lei]
      IT: Se ne va
      EN: she leaves / goes away
 
-165. [A] [present] [lui]
+166. [A] [present] [lui]
      IT: Scopre la verità spesso
      EN: he discovers the truth often
 
-166. [K] [present] [tu]
+167. [K] [present] [tu]
      IT: Come stai?
      EN: how are you?
 
-167. [G] [passato prossimo] [lui]
+168. [G] [passato prossimo] [lui]
      IT: Il genero è restato triste a volte
      EN: the son-in-law remained sad sometimes
 
-168. [B] [passato prossimo] [voi]
+169. [B] [passato prossimo] [voi]
      IT: Sinceramente, avete voluto correre laggiù
      EN: Sincerely, you all wanted to run down there
 
-169. [F] [present] [loro]
+170. [F] [present] [loro]
      IT: D'altra parte, le vogliono vendere subito
      EN: On the other hand, they want to sell them (f) right away (Hint: pronoun goes before the modal verb)
 
-170. [A] [present] [loro]
+171. [A] [present] [loro]
      IT: Restano dietro al negozio
      EN: they remain behind the shop
 
-171. [F] [conditional] [io]
+172. [F] [conditional] [io]
      IT: Ve li potrei offrire lì
      EN: I would be able to offer them (m) to you all there (Hint: pronoun goes before the modal verb)
 
-172. [F] [future] [lui]
+173. [F] [future] [lui]
      IT: Prima di tutto, gliela dovrà vendere male
      EN: First of all, he will have to sell it (f) to them badly (Hint: pronoun goes before the modal verb)
 
-173. [K] [present] [noi]
+174. [K] [present] [noi]
      IT: Non ci crediamo
      EN: we don't believe it
 
-174. [G] [passato prossimo] [lei]
+175. [G] [passato prossimo] [lei]
      IT: Ovviamente, la moglie è diventata felice dietro al negozio
      EN: Obviously, the wife became glad behind the shop
 
-175. [B] [conditional] [voi]
+176. [B] [conditional] [voi]
      IT: Infatti, dovreste stare laggiù
      EN: In fact, you all would have to stay down there
 
-176. [B] [passato prossimo] [lei]
+177. [B] [passato prossimo] [lei]
      IT: Ha potuto andare al supermercato
      EN: she was able to go to the supermarket
 
-177. [E] [passato prossimo] [tu]
+178. [E] [passato prossimo] [tu]
      IT: Stranamente, puoi abitare?
      EN: Strangely, can you reside?
 
-178. [K] [present] [lui]
+179. [K] [present] [lui]
      IT: Non ne ha idea
      EN: he has no idea
 
-179. [A] [future] [lui]
+180. [A] [future] [lui]
      IT: Spesso, scriverà la lettera
      EN: Often, he will write the letter
 
-180. [A] [future] [io]
+181. [A] [future] [io]
      IT: Fortunatamente, mostrerò il libro male
      EN: Fortunately, I will show the book badly
 
-181. [B] [present] [lei]
+182. [B] [present] [lei]
      IT: Può dormire
      EN: she can sleep
 
-182. [J] [present] [noi]
+183. [J] [present] [noi]
      IT: Di solito, glielo portiamo
      EN: Usually, we bring it (m) to her (Hint: combine the indirect and direct pronouns)
 
-183. [B] [future] [lei]
+184. [B] [future] [lei]
      IT: Vorrà usare il telefono
      EN: she will want to use the phone
 
-184. [F] [passato prossimo] [loro]
+185. [F] [passato prossimo] [loro]
      IT: Sinceramente, le hanno voluto lasciare qui
      EN: Sincerely, they wanted to leave behind to her here (Hint: pronoun goes before the modal verb)
 
-185. [I] [passato prossimo] [lei]
+186. [I] [passato prossimo] [lei]
      IT: Si è rasa
      EN: she shaved
 
-186. [A] [present] [io]
+187. [A] [present] [io]
      IT: A volte, ascolto la canzone
      EN: Sometimes, I listen to the song
 
-187. [K] [passato prossimo] [loro]
+188. [K] [passato prossimo] [loro]
      IT: Non si sono ricordati più
      EN: they didn't remember anymore
 
-188. [A] [imperfect] [lei]
+189. [A] [imperfect] [lei]
      IT: Nel frattempo, cambiava il vestito subito
      EN: Meanwhile, she used to change the outfit right away
 
-189. [B] [future] [lui]
+190. [B] [future] [lui]
      IT: Ogni giorno, dovrà giocare
      EN: Every day, he will have to play
 
-190. [H] [imperfect] [lei]
+191. [H] [imperfect] [lei]
      IT: Quando proponeva un'idea?
-     EN: When did she propose an idea?
+     EN: When was she proposing an idea?
 
-191. [H] [future] [lei]
-     IT: A chi scriverà la collega?
-     EN: To whom will the colleague (f) write?
+192. [H] [future] [lei]
+     IT: Con chi camminerà la collega?
+     EN: With whom will the colleague (f) walk?
 
-192. [K] [imperfect] [io]
+193. [K] [imperfect] [io]
      IT: Non ce la facevo
      EN: I couldn't manage it (habitual)
 
-193. [K] [present] [tu]
+194. [K] [present] [tu]
      IT: Te ne vai
      EN: you leave / go away
 
-194. [F] [imperfect] [lei]
+195. [F] [imperfect] [lei]
      IT: Secondo lei, vi mandava la settimana scorsa
      EN: In her opinion, she used to send to you all last week
 
-195. [H] [imperfect] [voi]
+196. [H] [imperfect] [voi]
      IT: Dove guarivate?
-     EN: Where did you all recover?
+     EN: Where were you all recovering?
 
-196. [H] [passato prossimo] [lui]
+197. [H] [passato prossimo] [lui]
      IT: Come ha venduto il mio vicino la macchina?
      EN: How did my neighbor (m) sell the car?
 
-197. [A] [passato prossimo] [noi]
+198. [A] [passato prossimo] [noi]
      IT: Tutto sommato, abbiamo venduto il regalo lì
      EN: All things considered, we sold the gift there
 
-198. [D] [future] [noi]
+199. [D] [future] [noi]
      IT: Ovviamente, forse arriveremo al parco
-     EN: Obviously, maybe we will arrive to the park
+     EN: Obviously, maybe we will arrive at the park
 
-199. [B] [present] [lei]
+200. [B] [present] [lei]
      IT: Può spedire l'email
      EN: she can send the email
 
-200. [H] [present] [lei]
-     IT: Quale ristorante prende la nonna?
-     EN: Which restaurant does the grandmother take?
+201. [H] [present] [lei]
+     IT: A chi manda la nonna?
+     EN: To whom does the grandmother send?
 
-201. [A] [present] [lei]
-     IT: Purtroppo, cerca la soluzione male
-     EN: Unfortunately, she searches for the solution badly
+202. [E] [present] [tu]
+     IT: Purtroppo, puoi guarire?
+     EN: Unfortunately, can you recover?
 
-202. [E] [passato prossimo] [tu]
-     IT: Puoi conoscere il vicino?
-     EN: can you be acquainted with the neighbor?
+203. [C] [future] [io]
+     IT: Comunque, vorrò sapere il problema
+     EN: Anyway, I will want to know the problem
 
-203. [F] [conditional] [lui]
-     IT: Raramente, la potrebbe insegnare
-     EN: Rarely, he would be able to teach it (f) (Hint: pronoun goes before the modal verb)
+204. [A] [present] [lei]
+     IT: Mostra la macchina molto
+     EN: she shows the car a lot
 
-204. [F] [present] [voi]
-     IT: Ti prendete subito
-     EN: you all take to you right away
+205. [A] [present] [loro]
+     IT: Secondo me, cercano la casa poco
+     EN: In my opinion, they search for the house a little
 
-205. [B] [future] [lui]
-     IT: Dovrà diventare in cima alla collina
-     EN: he will have to become at the top of the hill
+206. [K] [present] [voi]
+     IT: Come state?
+     EN: how are you all?
 
-206. [H] [passato prossimo] [loro]
-     IT: A che ora sono usciti le sorelle in centro?
-     EN: At what time did the sisters go out downtown?
+207. [D] [imperfect] [lei]
+     IT: Naturalmente, forse diventava
+     EN: Naturally, maybe she used to become
 
-207. [K] [conditional] [loro]
-     IT: Non ce la farebbero
-     EN: they wouldn't be able to manage it
+208. [I] [passato prossimo] [io]
+     IT: Secondo me, mi sono fermata al bar
+     EN: In my opinion, I stopped at the bar
 
-208. [A] [conditional] [lei]
-     IT: A volte, proverebbe il vestito
-     EN: Sometimes, she would try the outfit
+209. [H] [passato prossimo] [lei]
+     IT: Quale canzone ha guardato?
+     EN: Which song did she watch?
 
-209. [F] [conditional] [noi]
-     IT: Di solito, ce le potremmo offrire
-     EN: Usually, we would be able to offer them (f) to us (Hint: pronoun goes before the modal verb)
+210. [F] [present] [lei]
+     IT: Onestamente, mi dice ora
+     EN: Honestly, she says to me now
 
-210. [B] [present] [voi]
-     IT: Dovete mandare il regalo
-     EN: you all must send the gift
+211. [D] [future] [loro]
+     IT: Stranamente, forse capiranno il problema
+     EN: Strangely, maybe they will understand the problem
 
-211. [B] [passato prossimo] [lui]
-     IT: Di solito, ha dovuto finire il compito
-     EN: Usually, he had to finish the assignment
+212. [B] [future] [noi]
+     IT: Fortunatamente, vorremo avere il giornale
+     EN: Fortunately, we will want to have the newspaper
 
-212. [H] [imperfect] [lui]
-     IT: Chi riceveva male?
-     EN: Who used to receive badly?
+213. [C] [imperfect] [io]
+     IT: Volevo salire sotto
+     EN: I used to want to go up downstairs
 
-213. [D] [present] [lui]
-     IT: Ogni giorno, forse prova la strategia
-     EN: Every day, maybe he tries the strategy
+214. [A] [future] [lei]
+     IT: Onestamente, comprerà la macchina subito
+     EN: Honestly, she will buy the car right away
 
-214. [C] [present] [io]
-     IT: Per me, voglio chiudere la porta
-     EN: For me, I want to close the door
+215. [B] [present] [loro]
+     IT: Ogni giorno, possono ascoltare la canzone
+     EN: Every day, they can listen to the song
 
-215. [A] [passato prossimo] [noi]
-     IT: Francamente, abbiamo passato la serata ieri
-     EN: Frankly, we spent the evening yesterday
+216. [E] [imperfect] [tu]
+     IT: Per me, puoi chiudere la finestra?
+     EN: For me, can you close the window?
 
-216. [B] [imperfect] [tu]
-     IT: Di solito, dovevi scrivere il libro
-     EN: Usually, you used to have to write the book
+217. [F] [present] [noi]
+     IT: A volte, la dobbiamo offrire
+     EN: Sometimes, we must offer it (f) (Hint: pronoun goes before the modal verb)
 
-217. [J] [imperfect] [voi]
-     IT: Ogni giorno, ce la chiedevate
-     EN: Every day, you all used to ask for it (f) to us (Hint: combine the indirect and direct pronouns)
+218. [F] [future] [tu]
+     IT: A volte, ce le scriverai
+     EN: Sometimes, you will write them (f) to us
 
-218. [H] [imperfect] [lui]
-     IT: Chi spiegava?
-     EN: Who used to explain?
+219. [A] [future] [noi]
+     IT: Comunque, entreremo al supermercato la settimana prossima
+     EN: Anyway, we will enter the supermarket next week
 
-219. [B] [present] [voi]
-     IT: A volte, dovete chiamare mia sorella
-     EN: Sometimes, you all must call my sister
+220. [H] [imperfect] [lui]
+     IT: Come sentiva il cugino la radio la settimana scorsa?
+     EN: How was the cousin (m) hearing the radio last week?
 
-220. [H] [future] [lui]
-     IT: Per quanto tempo rimarrà il figlio subito?
-     EN: For how long will the son remain right away?
+221. [I] [future] [io]
+     IT: Ogni giorno, mi annoierò
+     EN: Every day, I will get bored
 
-221. [K] [imperfect] [voi]
-     IT: Non ce la facevate
-     EN: you all couldn't manage it (habitual)
+222. [F] [present] [lei]
+     IT: Purtroppo, li deve dare poco
+     EN: Unfortunately, she must give them (m) a little (Hint: pronoun goes before the modal verb)
 
-222. [I] [future] [loro]
-     IT: I figli si prepareranno
-     EN: the children will get ready
+223. [A] [present] [io]
+     IT: Chiamo mia sorella lì
+     EN: I call my sister there
 
-223. [K] [conditional] [lui]
-     IT: Non ce la farebbe
-     EN: he wouldn't be able to manage it
+224. [G] [passato prossimo] [lei]
+     IT: Di solito, la moglie è stata felice
+     EN: Usually, the wife stayed glad
 
-224. [A] [passato prossimo] [noi]
-     IT: A volte, abbiamo usato il telefono
-     EN: Sometimes, we used the phone
+225. [H] [passato prossimo] [lui]
+     IT: Perché ha saputo il fratello la situazione?
+     EN: Why did the brother know the situation?
 
-225. [D] [future] [tu]
-     IT: Fortunatamente, forse correggerai il vestito
-     EN: Fortunately, maybe you will correct the outfit
+226. [C] [future] [lui]
+     IT: Prima di tutto, vorrà vendere il telefono
+     EN: First of all, he will want to sell the phone
 
-226. [K] [present] [voi]
-     IT: Ve ne andate
-     EN: you all leave / go away
+227. [I] [passato prossimo] [lei]
+     IT: In realtà, la sorella si è preoccupata
+     EN: In reality, the sister worried
 
-227. [A] [passato prossimo] [lei]
-     IT: Ovviamente, ha lavorato la settimana scorsa
-     EN: Obviously, she worked last week
+228. [A] [future] [lei]
+     IT: Secondo mia madre, finirà il libro male
+     EN: According to my mother, she will finish the book badly
 
-228. [E] [future] [tu]
-     IT: Nel frattempo, puoi cercare la strada?
-     EN: Meanwhile, can you search for the road?
+229. [H] [present] [voi]
+     IT: A chi insegnate?
+     EN: To whom do you all teach?
 
-229. [I] [imperfect] [lei]
-     IT: Si rilassava
-     EN: she used to relax
+230. [B] [present] [lui]
+     IT: Di solito, può usare la macchina
+     EN: Usually, he can use the car
 
-230. [D] [passato prossimo] [lui]
-     IT: Secondo me, forse ha spiegato la risposta
-     EN: In my opinion, maybe he explained the answer
+231. [I] [future] [voi]
+     IT: Secondo lui, vi laverete insieme
+     EN: In his opinion, you all will wash yourselves together
 
-231. [H] [passato prossimo] [loro]
-     IT: Cosa hanno venduto i miei genitori?
-     EN: What did my parents sell?
+232. [C] [present] [voi]
+     IT: Ogni giorno, volete desiderare una vacanza
+     EN: Every day, you all want to desire a vacation
 
-232. [A] [passato prossimo] [lui]
-     IT: Nel frattempo, ha suonato il pianoforte qui
-     EN: Meanwhile, he played the piano here
-
-233. [B] [present] [loro]
-     IT: Sinceramente, devono imparare la differenza
-     EN: Sincerely, they must learn the difference
+233. [E] [present] [tu]
+     IT: Stranamente, puoi sapere la situazione?
+     EN: Strangely, can you know the situation?
 
 234. [F] [present] [tu]
      IT: Ogni giorno, lo insegni
@@ -939,7 +939,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 235. [H] [imperfect] [lui]
      IT: Dove mangiava mio figlio la pasta?
-     EN: Where did my son eat the pasta?
+     EN: Where was my son eating the pasta?
 
 236. [B] [present] [tu]
      IT: Secondo me, devi unire sua sorella
@@ -950,1054 +950,1054 @@ NONSENSE AUDIT — 500 Generated Sentences
      EN: I resided every day
 
 238. [H] [imperfect] [noi]
-     IT: Cosa aiutavamo bene?
-     EN: What did we help well?
+     IT: Come aiutavamo gli studenti?
+     EN: How were we helping the students?
 
-239. [I] [passato prossimo] [loro]
-     IT: Di solito, i fratelli si sono allontanati
-     EN: Usually, the brothers moved away
+239. [C] [present] [lei]
+     IT: A volte, vuole spedire il libro
+     EN: Sometimes, she wants to send the book
 
-240. [F] [present] [lei]
-     IT: In ogni caso, mi lascia oggi
-     EN: In any case, she leaves behind to me today
+240. [G] [present] [lui]
+     IT: Mio marito diventa solo dietro
+     EN: my husband becomes alone behind
 
-241. [A] [imperfect] [loro]
-     IT: A volte, sentivano il podcast
-     EN: Sometimes, they used to hear the podcast
+241. [G] [passato prossimo] [lei]
+     IT: In realtà, la moglie è restata pronta ieri
+     EN: In reality, the wife remained ready yesterday
 
-242. [A] [imperfect] [tu]
-     IT: Tutto sommato, spiegavi il problema male
-     EN: All things considered, you used to explain the problem badly
+242. [A] [present] [lui]
+     IT: Finalmente, sale a Roma male
+     EN: Finally, he goes up to Rome badly
 
-243. [A] [imperfect] [io]
-     IT: Sinceramente, parlavo insieme
-     EN: Sincerely, I used to speak together
+243. [H] [imperfect] [lei]
+     IT: A chi raccontava la cugina stamattina?
+     EN: To whom was the cousin (f) recounting this morning?
 
-244. [B] [passato prossimo] [voi]
-     IT: In realtà, avete potuto mandare il regalo
-     EN: In reality, you all were able to send the gift
+244. [F] [present] [tu]
+     IT: Naturalmente, li scrivi poco
+     EN: Naturally, you write them (m) a little
 
-245. [B] [future] [loro]
-     IT: Vorranno scendere lungo la strada
-     EN: they will want to go down along the road
+245. [H] [present] [lei]
+     IT: Perché presta la moglie il giornale?
+     EN: Why does the wife lend the newspaper?
 
-246. [I] [future] [voi]
-     IT: Secondo lei, vi dovrete arrabbiare bene
-     EN: In her opinion, you all will have to get angry well
+246. [B] [passato prossimo] [io]
+     IT: Ovviamente, ho potuto chiamare un amico
+     EN: Obviously, I was able to call a friend
 
 247. [A] [imperfect] [loro]
-     IT: In ogni caso, insegnavano mio fratello la settimana scorsa
-     EN: In any case, they used to teach my brother last week
+     IT: A volte, avevano il regalo
+     EN: Sometimes, they used to have the gift
 
-248. [E] [passato prossimo] [tu]
-     IT: Infatti, puoi cantare?
-     EN: In fact, can you sing?
+248. [I] [imperfect] [lei]
+     IT: Sinceramente, mia moglie si fermava
+     EN: Sincerely, my wife used to stop
 
-249. [A] [present] [lei]
-     IT: Di solito, finisce il libro
-     EN: Usually, she finishes the book
+249. [B] [future] [io]
+     IT: Potrò cadere all'università
+     EN: I will be able to fall to the university
 
-250. [A] [present] [tu]
-     IT: Di solito, cambi il vestito
-     EN: Usually, you change the outfit
+250. [E] [future] [tu]
+     IT: Finalmente, puoi avere il telefono?
+     EN: Finally, can you have the phone?
 
-251. [B] [imperfect] [loro]
-     IT: Prima di tutto, potevano costruire la finestra
-     EN: First of all, they used to be able to build the window
+251. [A] [present] [noi]
+     IT: Di solito, prestiamo il regalo
+     EN: Usually, we lend the gift
 
-252. [H] [present] [tu]
-     IT: Per quanto tempo resti?
-     EN: For how long do you remain?
+252. [A] [imperfect] [lui]
+     IT: Purtroppo, aveva il telefono ieri
+     EN: Unfortunately, he used to have the phone yesterday
 
-253. [K] [present] [tu]
-     IT: Che cosa ne pensi?
-     EN: what do you think about it?
+253. [A] [imperfect] [voi]
+     IT: Per me, viaggiavate al cinema male
+     EN: For me, you all used to travel to the cinema badly
 
-254. [A] [imperfect] [voi]
-     IT: Ballavate ogni giorno
-     EN: you all used to dance every day
+254. [J] [imperfect] [lui]
+     IT: Spesso, ve la scriveva
+     EN: Often, he used to write it (f) to you all (Hint: combine the indirect and direct pronouns)
 
-255. [B] [present] [tu]
-     IT: A mio parere, vuoi correre in biblioteca
-     EN: In my view, you want to run to the library
+255. [G] [passato prossimo] [lei]
+     IT: Ogni giorno, la figlia è restata felice dietro l'angolo
+     EN: Every day, the daughter remained glad around the corner
 
-256. [A] [present] [tu]
-     IT: Proponi un'idea ogni giorno
-     EN: you propose an idea every day
+256. [A] [present] [io]
+     IT: Fortunatamente, amo la natura ora
+     EN: Fortunately, I am loving nature now
 
-257. [K] [imperfect] [lui]
-     IT: Non ce la faceva
-     EN: he couldn't manage it (habitual)
+257. [A] [present] [voi]
+     IT: Di solito, spegnete la televisione
+     EN: Usually, you all turn off the television
 
-258. [H] [present] [lei]
-     IT: Quando scrive il libro?
-     EN: When does she write the book?
+258. [J] [imperfect] [lei]
+     IT: Di solito, te li chiedeva
+     EN: Usually, she used to ask for them (m) to you (Hint: combine the indirect and direct pronouns)
 
-259. [K] [conditional] [io]
-     IT: Non ci crederei
-     EN: I wouldn't believe it
-
-260. [K] [present] [loro]
+259. [K] [present] [loro]
      IT: Non ci credono
      EN: they don't believe it
 
-261. [K] [present] [io]
+260. [K] [present] [io]
      IT: Non ce la faccio
      EN: I can't manage it
 
-262. [B] [present] [noi]
+261. [B] [present] [noi]
      IT: Di solito, dobbiamo proporre una soluzione
      EN: Usually, we must propose a solution
 
-263. [F] [present] [lui]
+262. [F] [present] [lui]
      IT: A volte, la può raccontare
      EN: Sometimes, he can recount it (f) (Hint: pronoun goes before the modal verb)
 
-264. [H] [imperfect] [lui]
-     IT: Come conosceva mio fratello?
-     EN: How did he be acquainted with my brother?
+263. [H] [imperfect] [lui]
+     IT: Perché conosceva mio fratello?
+     EN: Why was he acquainted with my brother?
 
-265. [A] [imperfect] [lui]
+264. [A] [imperfect] [lui]
      IT: Secondo me, amava la cucina italiana qui
      EN: In my opinion, he used to love Italian cuisine here
 
-266. [D] [present] [voi]
+265. [D] [present] [voi]
      IT: Infatti, forse cantate
      EN: In fact, maybe you all sing
 
-267. [I] [passato prossimo] [lei]
+266. [I] [passato prossimo] [lei]
      IT: Secondo me, la suocera si è sentita ieri
      EN: In my opinion, the mother-in-law felt yesterday
 
-268. [I] [passato prossimo] [io]
+267. [I] [passato prossimo] [io]
      IT: A volte, mi sono seduto
      EN: Sometimes, I sat down
 
-269. [G] [passato prossimo] [lei]
+268. [G] [passato prossimo] [lei]
      IT: In ogni caso, la figlia è restata sicura subito
      EN: In any case, the daughter remained sure right away
 
-270. [H] [present] [lui]
+269. [H] [present] [lui]
      IT: Chi scopre bene?
      EN: Who discovers well?
 
-271. [G] [passato prossimo] [lui]
+270. [G] [passato prossimo] [lui]
      IT: Secondo me, il vicino è stato felice molto
      EN: In my opinion, the neighbor (m) stayed glad a lot
 
-272. [H] [imperfect] [loro]
-     IT: Da dove partivano al ristorante?
-     EN: From where did they depart to the restaurant?
+271. [H] [imperfect] [loro]
+     IT: A che ora dormivano?
+     EN: At what time were they sleeping?
 
-273. [A] [present] [loro]
-     IT: Propongono una soluzione sempre
-     EN: they propose a solution always
+272. [A] [present] [loro]
+     IT: Vedono il programma sempre
+     EN: they see the program always
 
-274. [F] [present] [io]
+273. [F] [present] [io]
      IT: Di solito, vi devo portare
      EN: Usually, I must bring to you all (Hint: pronoun goes before the modal verb)
 
-275. [K] [present] [voi]
+274. [K] [present] [voi]
      IT: Che cosa ne pensate?
      EN: what do you all think about it?
 
-276. [E] [imperfect] [tu]
+275. [E] [imperfect] [tu]
      IT: Onestamente, puoi arrivare al lavoro?
-     EN: Honestly, can you arrive to work?
+     EN: Honestly, can you arrive at work?
 
-277. [G] [passato prossimo] [lei]
+276. [G] [passato prossimo] [lei]
      IT: Mia nonna è rimasta pronta molto
      EN: my grandmother remained ready a lot
 
-278. [A] [present] [lei]
+277. [A] [present] [lei]
      IT: Secondo lei, sa il futuro subito
      EN: In her opinion, she knows the future right away
 
-279. [A] [future] [io]
+278. [A] [future] [io]
      IT: Naturalmente, pagherò i biglietti qui
      EN: Naturally, I will pay the tickets here
 
-280. [H] [passato prossimo] [lui]
+279. [H] [passato prossimo] [lui]
      IT: Come ha unito il cugino un amico?
      EN: How did the cousin (m) unite a friend?
 
-281. [K] [present] [tu]
+280. [K] [present] [tu]
      IT: Non ci credi
      EN: you don't believe it
 
-282. [B] [present] [noi]
+281. [B] [present] [noi]
      IT: Ogni giorno, possiamo venire al lavoro
      EN: Every day, we can come to work
 
-283. [I] [passato prossimo] [lui]
+282. [I] [passato prossimo] [lui]
      IT: D'altra parte, il suocero si è chiamato
      EN: On the other hand, the father-in-law was called
 
-284. [I] [passato prossimo] [lei]
+283. [I] [passato prossimo] [lei]
      IT: Di solito, si è fermata
      EN: Usually, she stopped
 
-285. [J] [conditional] [lei]
+284. [J] [conditional] [lei]
      IT: Secondo mia madre, me la leggerebbe
      EN: According to my mother, she would read it (f) to me (Hint: combine the indirect and direct pronouns)
 
-286. [F] [present] [loro]
+285. [F] [present] [loro]
      IT: Di solito, la spiegano
      EN: Usually, they explain it (f)
 
-287. [B] [present] [tu]
+286. [B] [present] [tu]
      IT: Purtroppo, devi desiderare il successo
      EN: Unfortunately, you must desire success
 
-288. [H] [passato prossimo] [lui]
-     IT: Chi ha guarito?
-     EN: Who recovered?
+287. [H] [passato prossimo] [lui]
+     IT: Dove ha guarito mio fratello?
+     EN: Where did my brother recover?
 
-289. [A] [present] [io]
-     IT: Di solito, perdo il ristorante
-     EN: Usually, I lose the restaurant
+288. [F] [passato prossimo] [loro]
+     IT: Raramente, vi hanno potuto insegnare
+     EN: Rarely, they were able to teach to you all (Hint: pronoun goes before the modal verb)
 
-290. [K] [present] [tu]
-     IT: Non ne hai idea
-     EN: you have no idea
+289. [A] [passato prossimo] [lui]
+     IT: Purtroppo, ha vissuto poco
+     EN: Unfortunately, he lived a little
 
-291. [D] [present] [lui]
-     IT: Fortunatamente, forse ricorda il nome
-     EN: Fortunately, maybe he remembers the name
+290. [J] [imperfect] [tu]
+     IT: Fortunatamente, gliele mostravi
+     EN: Fortunately, you used to show them (f) to him (Hint: combine the indirect and direct pronouns)
 
-292. [B] [present] [loro]
-     IT: Tutto sommato, devono cambiare la strategia
-     EN: All things considered, they must change the strategy
+291. [G] [future] [loro]
+     IT: Le sorelle staranno preparate molto
+     EN: the sisters will stay prepared a lot
 
-293. [K] [passato prossimo] [noi]
-     IT: Ce ne siamo andati
-     EN: we left / went away
+292. [G] [present] [lui]
+     IT: Il cognato diventa malato poco
+     EN: the brother-in-law becomes sick a little
 
-294. [H] [conditional] [lei]
-     IT: Quante ore dormirebbe la nonna?
-     EN: How many hours would the grandmother sleep?
-
-295. [E] [present] [tu]
-     IT: Tutto sommato, puoi spegnere la televisione?
-     EN: All things considered, can you turn off the television?
-
-296. [C] [present] [loro]
+293. [C] [present] [loro]
      IT: Stranamente, vogliono arrivare al cinema
-     EN: Strangely, they want to arrive to the cinema
+     EN: Strangely, they want to arrive at the cinema
 
-297. [E] [passato prossimo] [tu]
+294. [E] [passato prossimo] [tu]
      IT: Infatti, puoi arrivare al cinema?
-     EN: In fact, can you arrive to the cinema?
+     EN: In fact, can you arrive at the cinema?
 
-298. [B] [passato prossimo] [lei]
+295. [B] [passato prossimo] [lei]
      IT: Ha dovuto studiare la poesia
      EN: she had to study the poem
 
-299. [G] [passato prossimo] [lei]
+296. [G] [passato prossimo] [lei]
      IT: La nonna è arrivata arrabbiata bene
      EN: the grandmother arrived angry well
 
-300. [K] [conditional] [tu]
+297. [K] [conditional] [tu]
      IT: Ci penseresti su
      EN: you would think about it
 
-301. [C] [imperfect] [noi]
+298. [C] [imperfect] [noi]
      IT: Secondo lei, volevamo amare il mare
      EN: In her opinion, we used to want to love the sea
 
-302. [I] [present] [voi]
+299. [I] [present] [voi]
      IT: Vi parlate male
      EN: you all talk to each other badly
 
-303. [F] [present] [io]
+300. [F] [present] [io]
      IT: A volte, mi compro
      EN: Sometimes, I buy to me
 
-304. [H] [present] [lei]
+301. [H] [present] [lei]
      IT: Dove gioca la cugina?
      EN: Where does the cousin (f) play?
 
-305. [I] [conditional] [voi]
+302. [I] [conditional] [voi]
      IT: Nel frattempo, vi dovreste alzare alle sei
      EN: Meanwhile, you all would have to get up at six
 
-306. [C] [future] [io]
+303. [C] [future] [io]
      IT: Di solito, vorrò tornare vicino alla scuola
      EN: Usually, I will want to return near the school
 
-307. [A] [present] [tu]
+304. [A] [present] [tu]
      IT: A volte, racconti il problema
      EN: Sometimes, you recount the problem
 
-308. [A] [present] [noi]
+305. [A] [present] [noi]
      IT: Facciamo un favore lì
      EN: we do a favor there
 
-309. [G] [passato prossimo] [loro]
+306. [G] [passato prossimo] [loro]
      IT: I nonni sono arrivati stanchi qua
      EN: the grandparents arrived tired here
 
-310. [H] [future] [lui]
+307. [H] [future] [lui]
      IT: Dove viaggerà il cognato al supermercato?
      EN: Where will the brother-in-law travel to the supermarket?
 
-311. [A] [future] [loro]
+308. [A] [future] [loro]
      IT: Raramente, manderanno il telefono
      EN: Rarely, they will send the phone
 
-312. [C] [passato prossimo] [lei]
+309. [C] [passato prossimo] [lei]
      IT: Secondo lei, ha voluto partire a Roma
-     EN: In her opinion, she wanted to depart to Rome
+     EN: In her opinion, she wanted to depart for Rome
 
-313. [I] [present] [lei]
+310. [I] [present] [lei]
      IT: La compagna si veste
      EN: the partner (f) gets dressed
 
-314. [A] [present] [loro]
+311. [A] [present] [loro]
      IT: Lasciano la casa spesso
      EN: they leave behind the house often
 
-315. [H] [present] [lei]
+312. [H] [present] [lei]
      IT: Dove prepara la ragazza la lezione?
      EN: Where does the girlfriend prepare the lesson?
 
-316. [K] [conditional] [voi]
+313. [K] [conditional] [voi]
      IT: Che cosa ne pensereste?
      EN: what would you all think about it?
 
-317. [A] [present] [loro]
+314. [A] [present] [loro]
      IT: Di solito, tengono il libro
      EN: Usually, they hold the book
 
-318. [J] [present] [io]
+315. [J] [present] [io]
      IT: Secondo lei, ce la restituisco
      EN: In her opinion, I return it (f) to us (Hint: combine the indirect and direct pronouns)
 
-319. [B] [present] [voi]
+316. [B] [present] [voi]
      IT: Francamente, potete dormire
      EN: Frankly, you all can sleep
 
-320. [G] [passato prossimo] [lei]
+317. [G] [passato prossimo] [lei]
      IT: Secondo me, la nuora è rimasta malata ieri
      EN: In my opinion, the daughter-in-law remained sick yesterday
 
-321. [A] [future] [tu]
+318. [A] [future] [tu]
      IT: Francamente, sentirai il podcast subito
      EN: Frankly, you will hear the podcast right away
 
-322. [I] [present] [voi]
+319. [I] [present] [voi]
      IT: Stranamente, vi incontrate in centro
      EN: Strangely, you all meet each other downtown
 
-323. [I] [present] [voi]
+320. [I] [present] [voi]
      IT: Secondo me, vi annoiate ora
      EN: In my opinion, you all get bored now
 
-324. [B] [present] [lui]
+321. [B] [present] [lui]
      IT: Di solito, deve lasciare la casa
      EN: Usually, he must leave behind the house
 
-325. [H] [present] [lei]
+322. [H] [present] [lei]
      IT: Cosa conosce la madre?
-     EN: What does the mother be acquainted with?
+     EN: What is the mother acquainted with?
 
-326. [A] [conditional] [lei]
+323. [A] [conditional] [lei]
      IT: Spiegherebbe il problema ogni giorno
      EN: she would explain the problem every day
 
-327. [A] [passato prossimo] [voi]
+324. [A] [passato prossimo] [voi]
      IT: Avete lasciato un messaggio ieri
      EN: you all left behind a message yesterday
 
-328. [A] [imperfect] [loro]
+325. [A] [imperfect] [loro]
      IT: Mettevano il rubinetto subito
      EN: they used to put the faucet right away
 
-329. [A] [present] [tu]
+326. [A] [present] [tu]
      IT: Purtroppo, parti all'università qui
-     EN: Unfortunately, you depart to the university here
+     EN: Unfortunately, you depart for the university here
 
-330. [H] [conditional] [lei]
-     IT: Quale film preparerebbe?
-     EN: Which film would she prepare?
+327. [H] [conditional] [lei]
+     IT: A chi chiederebbe poco?
+     EN: To whom would she ask a little?
 
-331. [G] [passato prossimo] [lui]
+328. [G] [passato prossimo] [lui]
      IT: Tutto sommato, il medico è restato triste la settimana scorsa
      EN: All things considered, the doctor remained sad last week
 
-332. [A] [passato prossimo] [io]
+329. [A] [passato prossimo] [io]
      IT: Di solito, ho restituito il telefono
      EN: Usually, I returned the phone
 
-333. [B] [imperfect] [voi]
+330. [B] [imperfect] [voi]
      IT: Prima di tutto, dovevate dare la macchina
      EN: First of all, you all used to have to give the car
 
-334. [H] [present] [loro]
-     IT: Quale treno preparano le sorelle ora?
-     EN: Which train do the sisters prepare now?
+331. [H] [present] [lui]
+     IT: Con chi cammina il ragazzo?
+     EN: With whom does the boyfriend walk?
 
-335. [A] [present] [noi]
+332. [A] [present] [noi]
      IT: Purtroppo, diamo i biglietti poco
      EN: Unfortunately, we give the tickets a little
 
-336. [A] [present] [lei]
+333. [A] [present] [lei]
      IT: Di solito, apre la porta
      EN: Usually, she opens the door
 
-337. [A] [present] [tu]
+334. [A] [present] [tu]
      IT: Secondo me, guardi il film poco
      EN: In my opinion, you watch the film a little
 
-338. [K] [present] [voi]
+335. [K] [present] [voi]
      IT: Che cosa ne pensate?
      EN: what do you all think about it?
 
-339. [F] [present] [tu]
+336. [F] [present] [tu]
      IT: Francamente, mi compri molto
      EN: Frankly, you buy to me a lot
 
-340. [K] [imperfect] [io]
+337. [K] [imperfect] [io]
      IT: Non ne avevo idea
      EN: I had no idea (habitual)
 
-341. [H] [passato prossimo] [lui]
-     IT: Chi ha capito?
-     EN: Who understood?
+338. [H] [passato prossimo] [lui]
+     IT: Cosa ha capito?
+     EN: What did he understand?
 
-342. [I] [present] [noi]
-     IT: In realtà, ci vediamo male
-     EN: In reality, we see each other badly
+339. [F] [passato prossimo] [loro]
+     IT: A volte, li hanno dovuto vendere
+     EN: Sometimes, they had to sell them (m) (Hint: pronoun goes before the modal verb)
 
-343. [J] [conditional] [tu]
-     IT: Finalmente, ce le manderesti
-     EN: Finally, you would send them (f) to us (Hint: combine the indirect and direct pronouns)
+340. [B] [passato prossimo] [voi]
+     IT: Secondo me, avete dovuto sapere la situazione
+     EN: In my opinion, you all had to know the situation
 
-344. [H] [imperfect] [loro]
-     IT: Dove costruivano gli amici la porta?
-     EN: Where did the friends build the door?
+341. [I] [passato prossimo] [lui]
+     IT: Ogni giorno, il capo si è rilassato
+     EN: Every day, the boss relaxed
 
-345. [B] [present] [io]
-     IT: A volte, posso ballare
-     EN: Sometimes, I can dance
+342. [I] [present] [lei]
+     IT: Purtroppo, si allontana lì
+     EN: Unfortunately, she moves away there
 
-346. [D] [passato prossimo] [io]
-     IT: Naturalmente, forse ho risposto
-     EN: Naturally, maybe I replied
+343. [A] [conditional] [noi]
+     IT: Incredibilmente, finiremmo la lezione male
+     EN: Incredibly, we would finish the lesson badly
 
-347. [E] [conditional] [tu]
-     IT: In ogni caso, potresti uscire a casa?
-     EN: In any case, could you go out home?
+344. [E] [conditional] [tu]
+     IT: In ogni caso, potresti correre a casa?
+     EN: In any case, could you run home?
 
-348. [C] [present] [noi]
+345. [C] [present] [noi]
      IT: In realtà, vogliamo leggere la lettera
      EN: In reality, we want to read the letter
 
-349. [G] [passato prossimo] [lui]
+346. [G] [passato prossimo] [lui]
      IT: Il suocero è arrivato nervoso lungo la costa
      EN: the father-in-law arrived nervous along the coast
 
-350. [A] [present] [tu]
+347. [A] [present] [tu]
      IT: Comunque, torni al supermercato molto
      EN: Anyway, you return to the supermarket a lot
 
-351. [H] [passato prossimo] [lui]
+348. [H] [passato prossimo] [lui]
      IT: Chi ha ascoltato male?
      EN: Who listened to badly?
 
-352. [G] [passato prossimo] [lei]
+349. [G] [passato prossimo] [lei]
      IT: L'amica è restata sola in fondo alla strada
      EN: the friend (f) remained alone at the end of the street
 
-353. [A] [future] [lei]
+350. [A] [future] [lei]
      IT: Secondo me, tornerà nel parco
      EN: In my opinion, she will return in the park
 
-354. [H] [present] [lei]
+351. [H] [present] [lei]
      IT: Cosa regala la cognata ora?
-     EN: What does the sister-in-law give as a gift now?
+     EN: What is the sister-in-law giving as a gift now?
 
-355. [B] [passato prossimo] [noi]
+352. [B] [passato prossimo] [noi]
      IT: Abbiamo potuto partire in ospedale
-     EN: we were able to depart to the hospital
+     EN: we were able to depart for the hospital
 
-356. [G] [passato prossimo] [loro]
+353. [G] [passato prossimo] [loro]
      IT: Di solito, i fratelli sono diventati arrabbiati dietro al negozio
      EN: Usually, the brothers became angry behind the shop
 
-357. [A] [present] [noi]
+354. [A] [present] [noi]
      IT: A volte, prestiamo il telefono
      EN: Sometimes, we lend the phone
 
-358. [A] [imperfect] [tu]
+355. [A] [imperfect] [tu]
      IT: Sceglievi la strada a volte
      EN: you used to choose the road sometimes
 
-359. [E] [present] [tu]
+356. [E] [present] [tu]
      IT: Spesso, puoi prestare il libro?
      EN: Often, can you lend the book?
 
-360. [K] [conditional] [noi]
+357. [K] [conditional] [noi]
      IT: Ci penseremmo su
      EN: we would think about it
 
-361. [B] [present] [lei]
+358. [B] [present] [lei]
      IT: A volte, deve offrire la pizza
      EN: Sometimes, she must offer the pizza
 
-362. [I] [future] [lei]
+359. [I] [future] [lei]
      IT: Comunque, l'amica si alzerà presto
      EN: Anyway, the friend (f) will get up early
 
-363. [I] [conditional] [loro]
+360. [I] [conditional] [loro]
      IT: Ovviamente, i nonni si vedrebbero
      EN: Obviously, the grandparents would see each other
 
-364. [A] [present] [tu]
+361. [A] [present] [tu]
      IT: Nel frattempo, insegni sua sorella poco
      EN: Meanwhile, you teach his sister a little
 
-365. [B] [passato prossimo] [loro]
+362. [B] [passato prossimo] [loro]
      IT: Hanno dovuto chiudere la finestra
      EN: they had to close the window
 
-366. [G] [passato prossimo] [lei]
+363. [G] [passato prossimo] [lei]
      IT: In ogni caso, la madre è rimasta stanca ieri
      EN: In any case, the mother remained tired yesterday
 
-367. [A] [conditional] [noi]
+364. [A] [conditional] [noi]
      IT: D'altra parte, preferiremmo il risultato domani
      EN: On the other hand, we would prefer the result tomorrow
 
-368. [F] [passato prossimo] [loro]
+365. [F] [passato prossimo] [loro]
      IT: A mio parere, glielo hanno potuto mettere molto
      EN: In my view, they were able to put it (m) to her a lot (Hint: pronoun goes before the modal verb)
 
-369. [B] [imperfect] [voi]
+366. [B] [imperfect] [voi]
      IT: Dovevate correggere il programma
      EN: you all used to have to correct the plan
 
-370. [E] [imperfect] [tu]
+367. [E] [imperfect] [tu]
      IT: Infatti, puoi cadere in centro?
      EN: In fact, can you fall downtown?
 
-371. [K] [passato prossimo] [lei]
+368. [K] [passato prossimo] [lei]
      IT: Non ci ha creduto
      EN: she didn't believe it
 
-372. [F] [present] [lui]
+369. [F] [present] [lui]
      IT: A volte, gliela offre
      EN: Sometimes, he offers it (f) to them
 
-373. [B] [future] [noi]
+370. [B] [future] [noi]
      IT: Di solito, vorremo mangiare il pranzo
      EN: Usually, we will want to eat the lunch
 
-374. [I] [present] [loro]
+371. [I] [present] [loro]
      IT: Di solito, si vedono
      EN: Usually, they see each other
 
-375. [A] [conditional] [noi]
+372. [A] [conditional] [noi]
      IT: Sinceramente, mostreremmo il regalo insieme
      EN: Sincerely, we would show the gift together
 
-376. [A] [passato prossimo] [tu]
+373. [A] [passato prossimo] [tu]
      IT: Francamente, hai creduto la notizia stamattina
      EN: Frankly, you believed the news this morning
 
-377. [A] [conditional] [noi]
+374. [A] [conditional] [noi]
      IT: In ogni caso, chiuderemmo il computer insieme
      EN: In any case, we would close the computer together
 
-378. [K] [conditional] [voi]
+375. [K] [conditional] [voi]
      IT: Che cosa ne pensereste?
      EN: what would you all think about it?
 
-379. [J] [passato prossimo] [lei]
+376. [J] [passato prossimo] [lei]
      IT: Per me, gliela ha restituita la settimana scorsa
      EN: For me, she returned it (f) to him last week (Hint: combine the indirect and direct pronouns)
 
-380. [A] [future] [noi]
+377. [A] [future] [noi]
      IT: A volte, morremo
      EN: Sometimes, we will die
 
-381. [F] [conditional] [tu]
+378. [F] [conditional] [tu]
      IT: Di solito, ci dovresti insegnare
      EN: Usually, you would have to teach to us (Hint: pronoun goes before the modal verb)
 
-382. [A] [present] [voi]
+379. [A] [present] [voi]
      IT: Preferite la situazione molto
      EN: you all prefer the situation a lot
 
-383. [K] [conditional] [io]
+380. [K] [conditional] [io]
      IT: Non ce la farei
      EN: I wouldn't be able to manage it
 
-384. [F] [conditional] [lui]
+381. [F] [conditional] [lui]
      IT: Li dovrebbe vendere a volte
      EN: he would have to sell them (m) sometimes (Hint: pronoun goes before the modal verb)
 
-385. [J] [future] [lei]
+382. [J] [future] [lei]
      IT: Francamente, ve la restituirà
      EN: Frankly, she will return it (f) to you all (Hint: combine the indirect and direct pronouns)
 
-386. [G] [passato prossimo] [lui]
+383. [G] [passato prossimo] [lui]
      IT: Ogni giorno, il nonno è restato preoccupato
      EN: Every day, the grandfather remained worried
 
-387. [J] [imperfect] [lui]
+384. [J] [imperfect] [lui]
      IT: Incredibilmente, ce li restituiva stamattina
      EN: Incredibly, he used to return them (m) to us this morning (Hint: combine the indirect and direct pronouns)
 
-388. [E] [conditional] [tu]
+385. [E] [conditional] [tu]
      IT: Purtroppo, potresti preferire una soluzione?
      EN: Unfortunately, could you prefer a solution?
 
-389. [G] [passato prossimo] [lui]
+386. [G] [passato prossimo] [lui]
      IT: Il nonno è tornato triste spesso
      EN: the grandfather returned sad often
 
-390. [A] [present] [voi]
+387. [A] [present] [voi]
      IT: Onestamente, spiegate la storia qui
      EN: Honestly, you all explain the story here
 
-391. [K] [passato prossimo] [lui]
+388. [K] [passato prossimo] [lui]
      IT: Se ne è andato
      EN: he left / went away
 
-392. [C] [passato prossimo] [noi]
+389. [C] [passato prossimo] [noi]
      IT: Di solito, abbiamo voluto restare
      EN: Usually, we wanted to remain
 
-393. [A] [present] [io]
+390. [A] [present] [io]
      IT: A volte, compro la macchina
      EN: Sometimes, I buy the car
 
-394. [I] [conditional] [loro]
+391. [I] [conditional] [loro]
      IT: Secondo mio padre, i figli si rilasserebbero a casa
      EN: According to my father, the children would relax at home
 
-395. [G] [passato prossimo] [lei]
+392. [G] [passato prossimo] [lei]
      IT: Ogni giorno, la professoressa è stata contenta
      EN: Every day, the professor (f) was happy
 
-396. [B] [imperfect] [voi]
+393. [B] [imperfect] [voi]
      IT: Raramente, dovevate trovare la casa
      EN: Rarely, you all used to have to find the house
 
-397. [I] [present] [noi]
+394. [I] [present] [noi]
      IT: Ci dimentichiamo bene
      EN: we forget well
 
-398. [H] [imperfect] [lui]
+395. [H] [imperfect] [lui]
      IT: Chi rimaneva?
      EN: Who used to remain?
 
-399. [I] [passato prossimo] [tu]
+396. [I] [passato prossimo] [tu]
      IT: Di solito, ti sei annoiata
      EN: Usually, you got bored
 
-400. [B] [present] [lei]
+397. [B] [present] [lei]
      IT: Secondo mio padre, vuole ricevere la poesia
      EN: According to my father, she wants to receive the poem
 
-401. [B] [imperfect] [lei]
+398. [B] [imperfect] [lei]
      IT: Infatti, poteva nuotare lassù
      EN: In fact, she used to be able to swim up there
 
-402. [A] [imperfect] [io]
+399. [A] [imperfect] [io]
      IT: A volte, offrivo il pranzo
      EN: Sometimes, I used to offer the lunch
 
-403. [H] [imperfect] [lei]
+400. [H] [imperfect] [lei]
      IT: Dove faceva la cugina una passeggiata?
-     EN: Where did the cousin (f) do a walk?
+     EN: Where was the cousin (f) doing a walk?
 
-404. [I] [imperfect] [lui]
+401. [I] [imperfect] [lui]
      IT: Mio nonno si addormentava tardi
      EN: my grandfather used to fall asleep late
 
-405. [K] [present] [voi]
+402. [K] [present] [voi]
      IT: Non ci credete
      EN: you all don't believe it
 
-406. [K] [future] [voi]
+403. [K] [future] [voi]
      IT: Ve ne andrete
      EN: you all will leave / go away
 
-407. [J] [imperfect] [io]
+404. [J] [imperfect] [io]
      IT: A volte, te la mostravo
      EN: Sometimes, I used to show it (f) to you (Hint: combine the indirect and direct pronouns)
 
-408. [G] [passato prossimo] [loro]
+405. [G] [passato prossimo] [loro]
      IT: Spesso, i vicini sono restati arrabbiati lì
      EN: Often, the neighbors remained angry there
 
-409. [D] [passato prossimo] [io]
+406. [D] [passato prossimo] [io]
      IT: Finalmente, forse ho creduto la situazione
      EN: Finally, maybe I believed the situation
 
-410. [H] [present] [lui]
-     IT: A chi insegna?
-     EN: To whom does he teach?
+407. [H] [present] [lui]
+     IT: Da dove parte in biblioteca?
+     EN: From where does he depart for the library?
 
-411. [F] [passato prossimo] [lui]
-     IT: A volte, la ha venduta
-     EN: Sometimes, he sold it (f)
+408. [F] [future] [voi]
+     IT: Secondo me, glieli comprerete poco
+     EN: In my opinion, you all will buy them (m) to him a little
 
-412. [G] [present] [lei]
+409. [G] [present] [lei]
      IT: Secondo me, la professoressa è pronta adesso
      EN: In my opinion, the professor (f) is ready now
 
-413. [I] [present] [loro]
+410. [I] [present] [loro]
      IT: Si parlano
      EN: they talk to each other
 
-414. [K] [present] [loro]
+411. [K] [present] [loro]
      IT: Se ne vanno
      EN: they leave / go away
 
-415. [I] [present] [loro]
+412. [I] [present] [loro]
      IT: Si parlano
      EN: they talk to each other
 
-416. [H] [present] [lui]
+413. [H] [present] [lui]
      IT: Chi ha?
      EN: Who has?
 
-417. [H] [conditional] [lei]
+414. [H] [conditional] [lei]
      IT: Dove viaggerebbe la madre in biblioteca lì?
      EN: Where would the mother travel to the library there?
 
-418. [H] [present] [loro]
-     IT: A che ora dormono?
-     EN: At what time do they sleep?
+415. [H] [present] [loro]
+     IT: Quante volte leggono?
+     EN: How many times do they read?
 
-419. [A] [future] [noi]
+416. [A] [future] [noi]
      IT: Purtroppo, resteremo dietro l'angolo
      EN: Unfortunately, we will remain around the corner
 
-420. [G] [passato prossimo] [lei]
+417. [G] [passato prossimo] [lei]
      IT: Sinceramente, mia nonna è stata stanca vicino alla stazione
      EN: Sincerely, my grandmother stayed tired near the station
 
-421. [A] [passato prossimo] [noi]
+418. [A] [passato prossimo] [noi]
      IT: Secondo me, abbiamo fatto i compiti bene
      EN: In my opinion, we did the homework well
 
-422. [C] [imperfect] [loro]
+419. [C] [imperfect] [loro]
      IT: Spesso, volevano amare la cucina italiana
      EN: Often, they used to want to love Italian cuisine
 
-423. [F] [conditional] [tu]
+420. [F] [conditional] [tu]
      IT: In realtà, me li spiegheresti presto
      EN: In reality, you would explain them (m) to me soon
 
-424. [F] [passato prossimo] [lei]
+421. [F] [passato prossimo] [lei]
      IT: Nel frattempo, ve lo ha mandato lì
      EN: Meanwhile, she sent it (m) to you all there
 
-425. [B] [imperfect] [voi]
+422. [B] [imperfect] [voi]
      IT: Secondo me, dovevate dare le scarpe
      EN: In my opinion, you all used to have to give the shoes
 
-426. [A] [present] [lei]
+423. [A] [present] [lei]
      IT: Spiega la verità qui
      EN: she explains the truth here
 
-427. [I] [future] [tu]
+424. [I] [future] [tu]
      IT: Secondo mio padre, ti riposerai un po'
      EN: According to my father, you will rest a bit
 
-428. [K] [present] [voi]
+425. [K] [present] [voi]
      IT: Ci pensate su
      EN: you all think about it
 
-429. [C] [present] [loro]
+426. [C] [present] [loro]
      IT: Stranamente, vogliono abitare
      EN: Strangely, they want to reside
 
-430. [E] [imperfect] [tu]
+427. [E] [imperfect] [tu]
      IT: Spesso, puoi tenere il segreto?
      EN: Often, can you hold the secret?
 
-431. [F] [imperfect] [lei]
+428. [F] [imperfect] [lei]
      IT: Te la preparava molto
      EN: she used to prepare it (f) to you a lot
 
-432. [F] [conditional] [voi]
+429. [F] [conditional] [voi]
      IT: Secondo mio padre, li comprereste presto
      EN: According to my father, you all would buy them (m) soon
 
-433. [E] [present] [tu]
+430. [E] [present] [tu]
      IT: Ovviamente, puoi cercare il lavoro?
      EN: Obviously, can you search for the work?
 
-434. [I] [present] [lui]
+431. [I] [present] [lui]
      IT: In realtà, lo zio si dimentica
      EN: In reality, the uncle forgets
 
-435. [A] [passato prossimo] [voi]
+432. [A] [passato prossimo] [voi]
      IT: Onestamente, avete regalato il regalo qui
      EN: Honestly, you all gave as a gift the gift here
 
-436. [A] [present] [loro]
+433. [A] [present] [loro]
      IT: Francamente, amano il mare poco
      EN: Frankly, they love the sea a little
 
-437. [I] [present] [lei]
+434. [I] [present] [lei]
      IT: A volte, la cognata si siede
      EN: Sometimes, the sister-in-law sits down
 
-438. [K] [passato prossimo] [io]
+435. [K] [passato prossimo] [io]
      IT: Me ne sono andata
      EN: I left / went away
 
-439. [I] [present] [lei]
+436. [I] [present] [lei]
      IT: Ogni giorno, si allontana
      EN: Every day, she moves away
 
-440. [A] [present] [tu]
+437. [A] [present] [tu]
      IT: Offri il pranzo molto
      EN: you offer the lunch a lot
 
-441. [H] [present] [tu]
-     IT: Dove vendi le scarpe?
-     EN: Where do you sell the shoes?
+438. [H] [present] [tu]
+     IT: Quando vendi le scarpe?
+     EN: When do you sell the shoes?
 
-442. [A] [present] [tu]
+439. [A] [present] [tu]
      IT: Guardi il programma sempre
      EN: you watch the program always
 
-443. [J] [passato prossimo] [lei]
+440. [J] [passato prossimo] [lei]
      IT: Glielo ha letto
      EN: she read it (m) to them (Hint: combine the indirect and direct pronouns)
 
-444. [G] [conditional] [lui]
+441. [G] [conditional] [lui]
      IT: Sinceramente, il genero diventerebbe sicuro subito
      EN: Sincerely, the son-in-law would become sure right away
 
-445. [B] [passato prossimo] [noi]
+442. [B] [passato prossimo] [noi]
      IT: Abbiamo dovuto lasciare un messaggio
      EN: we had to leave behind a message
 
-446. [I] [present] [lei]
+443. [I] [present] [lei]
      IT: In realtà, si spoglia
      EN: In reality, she gets undressed
 
-447. [K] [present] [lei]
+444. [K] [present] [lei]
      IT: Se ne va
      EN: she leaves / goes away
 
-448. [J] [present] [tu]
+445. [J] [present] [tu]
      IT: Sinceramente, ve lo spieghi
      EN: Sincerely, you explain it (m) to you all (Hint: combine the indirect and direct pronouns)
 
-449. [F] [present] [io]
+446. [F] [present] [io]
      IT: Secondo me, mi compro qui
      EN: In my opinion, I buy to me here
 
-450. [H] [present] [lui]
+447. [H] [present] [lui]
      IT: Chi vende?
      EN: Who sells?
 
-451. [A] [present] [tu]
+448. [A] [present] [tu]
      IT: Visiti il museo molto
      EN: you visit the museum a lot
 
-452. [B] [future] [lei]
+449. [B] [future] [lei]
      IT: Vorrà lasciare un messaggio
      EN: she will want to leave behind a message
 
-453. [I] [present] [tu]
+450. [I] [present] [tu]
      IT: Finalmente, ti devi addormentare sul divano
      EN: Finally, you must fall asleep on the couch
 
-454. [F] [imperfect] [io]
+451. [F] [imperfect] [io]
      IT: Ce li compravo bene
      EN: I used to buy them (m) to us well
 
-455. [A] [passato prossimo] [lui]
+452. [A] [passato prossimo] [lui]
      IT: Ha lasciato il lavoro subito
      EN: he left behind the job right away
 
-456. [J] [imperfect] [voi]
+453. [J] [imperfect] [voi]
      IT: Ce lo chiedevate male
      EN: you all used to ask for it (m) to us badly (Hint: combine the indirect and direct pronouns)
 
-457. [C] [future] [voi]
+454. [C] [future] [voi]
      IT: In ogni caso, vorrete sentire il podcast
      EN: In any case, you all will want to hear the podcast
 
-458. [H] [passato prossimo] [lei]
-     IT: Con chi ha viaggiato bene?
-     EN: With whom did she travel well?
+455. [H] [passato prossimo] [lei]
+     IT: Da dove è arrivata a casa subito?
+     EN: From where did she arrive home right away?
 
-459. [F] [imperfect] [lui]
-     IT: Lo scriveva subito
-     EN: he used to write it (m) right away
+456. [A] [future] [lui]
+     IT: A volte, seguirà mia madre
+     EN: Sometimes, he will follow my mother
 
-460. [F] [passato prossimo] [voi]
-     IT: Infatti, gliela avete potuto dire ieri
-     EN: In fact, you all were able to say it (f) to her yesterday (Hint: pronoun goes before the modal verb)
+457. [F] [imperfect] [lui]
+     IT: Li dava sempre
+     EN: he used to give them (m) always
 
-461. [C] [passato prossimo] [noi]
+458. [I] [passato prossimo] [lei]
+     IT: Onestamente, si è vestita
+     EN: Honestly, she got dressed
+
+459. [C] [passato prossimo] [noi]
      IT: Abbiamo voluto diventare
      EN: we wanted to become
 
-462. [C] [passato prossimo] [tu]
+460. [C] [passato prossimo] [tu]
      IT: Secondo lei, hai voluto fare una passeggiata
      EN: In her opinion, you wanted to do a walk
 
-463. [I] [future] [lei]
+461. [I] [future] [lei]
      IT: Fortunatamente, la zia si preoccuperà
      EN: Fortunately, the aunt will worry
 
-464. [A] [present] [loro]
+462. [A] [present] [loro]
      IT: Ogni giorno, ricordano la password
      EN: Every day, they remember the password
 
-465. [K] [conditional] [tu]
+463. [K] [conditional] [tu]
      IT: Che cosa ne penseresti?
      EN: what would you think about it?
 
-466. [H] [present] [voi]
+464. [H] [present] [voi]
      IT: Dove salite in ospedale?
      EN: Where do you all go up to the hospital?
 
-467. [G] [passato prossimo] [lui]
+465. [G] [passato prossimo] [lui]
      IT: Incredibilmente, mio cugino è arrivato preoccupato lassù
      EN: Incredibly, my cousin (m) arrived worried up there
 
-468. [A] [conditional] [io]
+466. [A] [conditional] [io]
      IT: A volte, risponderei
      EN: Sometimes, I would reply
 
-469. [K] [present] [tu]
+467. [K] [present] [tu]
      IT: Non ci credi
      EN: you don't believe it
 
-470. [B] [future] [io]
+468. [B] [future] [io]
      IT: Vorrò credere la situazione
      EN: I will want to believe the situation
 
-471. [G] [present] [lui]
+469. [G] [present] [lui]
      IT: Naturalmente, il nipote diventa preoccupato oggi
      EN: Naturally, the nephew becomes worried today
 
-472. [B] [present] [loro]
+470. [B] [present] [loro]
      IT: Devono mostrare il giornale
      EN: they must show the newspaper
 
-473. [B] [future] [noi]
+471. [B] [future] [noi]
      IT: Ogni giorno, vorremo vedere lo spettacolo
      EN: Every day, we will want to see the show
 
-474. [A] [passato prossimo] [io]
+472. [A] [passato prossimo] [io]
      IT: Per me, ho guardato il programma male
      EN: For me, I watched the program badly
 
-475. [F] [future] [lui]
+473. [F] [future] [lui]
      IT: Te le prenderà bene
      EN: he will take them (f) to you well
 
-476. [G] [present] [lui]
+474. [G] [present] [lui]
      IT: A mio parere, l'amico diventa malato adesso
      EN: In my view, the friend (m) becomes sick now
 
-477. [A] [imperfect] [lei]
+475. [A] [imperfect] [lei]
      IT: Viveva qua
      EN: she used to live here
 
-478. [I] [present] [lui]
+476. [I] [present] [lui]
      IT: Di solito, il figlio si chiama
      EN: Usually, the son is called
 
-479. [I] [present] [lei]
+477. [I] [present] [lei]
      IT: Secondo me, si prepara
      EN: In my opinion, she gets ready
 
-480. [K] [conditional] [voi]
+478. [K] [conditional] [voi]
      IT: Non ne avreste idea
      EN: you all would have no idea
 
-481. [A] [present] [io]
+479. [A] [present] [io]
      IT: Ricevo la poesia subito
      EN: I receive the poem right away
 
-482. [G] [conditional] [lui]
+480. [G] [conditional] [lui]
      IT: Il marito sarebbe arrabbiato davanti alla chiesa
      EN: the husband would be angry in front of the church
 
-483. [G] [passato prossimo] [loro]
+481. [G] [passato prossimo] [loro]
      IT: Naturalmente, i nonni sono diventati felici davanti alla chiesa
      EN: Naturally, the grandparents became glad in front of the church
 
-484. [K] [passato prossimo] [io]
+482. [K] [passato prossimo] [io]
      IT: Non mi sono ricordata più
      EN: I didn't remember anymore
 
-485. [H] [present] [lei]
-     IT: A che ora comincia la suocera il lavoro ora?
-     EN: At what time does the mother-in-law begin the work now?
+483. [H] [present] [tu]
+     IT: Quante volte viaggi?
+     EN: How many times do you travel?
 
-486. [G] [passato prossimo] [loro]
-     IT: Francamente, le sorelle sono rimaste preparate dentro
-     EN: Frankly, the sisters remained prepared inside
+484. [I] [future] [voi]
+     IT: Vi vedrete
+     EN: you all will see each other
 
-487. [H] [present] [lui]
-     IT: Chi pulisce?
-     EN: Who cleans?
+485. [H] [imperfect] [lei]
+     IT: Dove viaggiava la moglie al cinema?
+     EN: Where was the wife traveling to the cinema?
 
-488. [C] [present] [loro]
-     IT: Vogliono dire la notizia
-     EN: they want to say the news
+486. [A] [present] [noi]
+     IT: Scegliamo la soluzione molto
+     EN: we choose the solution a lot
 
-489. [K] [present] [lui]
-     IT: Non ce la fa
-     EN: he can't manage it
+487. [G] [passato prossimo] [loro]
+     IT: Le sorelle sono arrivate arrabbiate nella piazza
+     EN: the sisters arrived angry in the square
 
-490. [K] [future] [loro]
-     IT: Se ne andranno
-     EN: they will leave / go away
+488. [G] [passato prossimo] [lei]
+     IT: La cugina è tornata pronta in cima alla collina
+     EN: the cousin (f) returned ready at the top of the hill
 
-491. [H] [future] [loro]
-     IT: Quando crederanno la verità?
-     EN: When will they believe the truth?
+489. [H] [future] [lei]
+     IT: Dove mostrerà la nonna il giornale?
+     EN: Where will the grandmother show the newspaper?
 
-492. [K] [present] [lei]
-     IT: Non ci crede
-     EN: she doesn't believe it
+490. [F] [present] [tu]
+     IT: A volte, li lasci
+     EN: Sometimes, you leave behind them (m)
 
-493. [K] [present] [lei]
-     IT: Non ce la fa
-     EN: she can't manage it
-
-494. [F] [present] [loro]
+491. [F] [present] [loro]
      IT: Secondo lei, gli scrivono poco
      EN: In her opinion, they write to him a little
 
-495. [I] [passato prossimo] [lei]
+492. [I] [passato prossimo] [lei]
      IT: Sinceramente, la nuora si è seduta male
      EN: Sincerely, the daughter-in-law sat down badly
 
-496. [B] [conditional] [lui]
+493. [B] [conditional] [lui]
      IT: Sinceramente, dovrebbe avere il libro
      EN: Sincerely, he would have to have the book
 
-497. [I] [future] [lui]
+494. [I] [future] [lui]
      IT: Fortunatamente, si raderà
      EN: Fortunately, he will shave
 
-498. [B] [present] [io]
+495. [B] [present] [io]
      IT: Di solito, voglio portare il regalo
      EN: Usually, I want to bring the gift
 
-499. [G] [passato prossimo] [lui]
+496. [G] [passato prossimo] [lui]
      IT: Il figlio è arrivato triste male
      EN: the son arrived sad badly
 
-500. [A] [conditional] [io]
+497. [A] [conditional] [io]
      IT: Sentirei la radio molto
      EN: I would hear the radio a lot
+
+498. [G] [passato prossimo] [lui]
+     IT: L'insegnante è stato nervoso la settimana scorsa
+     EN: the teacher stayed nervous last week
+
+499. [I] [future] [noi]
+     IT: Ci laveremo poco
+     EN: we will wash ourselves a little
+
+500. [F] [imperfect] [loro]
+     IT: Secondo lui, lo preparavano poco
+     EN: In his opinion, they used to prepare it (m) a little
 

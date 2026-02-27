@@ -1241,6 +1241,14 @@ QUESTION_WORDS: List[Dict[str, Any]] = [
     {"it": "a che ora", "en": "at what time", "weight": 5, "needs_subj": True,
      "verb_filter": ["arrivare", "partire", "tornare", "uscire", "cominciare",
                       "finire", "mangiare", "dormire"]},
+    {"it": "da quanto tempo", "en": "how long", "weight": 3, "needs_subj": True,
+     "verb_filter": ["lavorare", "studiare", "vivere", "aspettare",
+                      "restare", "rimanere", "dormire"]},
+    {"it": "da quando", "en": "since when", "weight": 3, "needs_subj": True,
+     "verb_filter": ["lavorare", "studiare", "vivere", "aspettare", "abitare"]},
+    {"it": "quante volte", "en": "how many times", "weight": 3, "needs_subj": True,
+     "verb_filter": ["andare", "venire", "visitare", "leggere", "mangiare",
+                      "comprare", "viaggiare"]},
 ]
 
 # Nouns for "quale" questions
@@ -1806,6 +1814,15 @@ def english_conjugation(
     }
 
     if tense == "presente":
+        # When the adverb is "now", use present continuous
+        # ("she is reading now" rather than "she reads now")
+        # but NOT for state verbs (be, have, know, can, must)
+        _STATE_BARE = {"be", "have", "know", "be able to", "have to",
+                       "be acquainted with"}
+        if adv_en in ("now",) and bare not in _STATE_BARE:
+            be = _is_are(subject)
+            ing = _present_participle(bare)
+            return f"{subj} {be} {ing}{obj_part}{adv_part}"
         if bare in ("be",):
             forms = {"io": "am", "tu": "are", "lui": "is", "lei": "is",
                      "noi": "are", "voi": "are", "loro": "are"}
@@ -2090,6 +2107,81 @@ def _needs_object(verb: str) -> bool:
 
 def _is_modal(verb: str) -> bool:
     return verb in ("potere", "volere", "dovere")
+
+
+# Verbs that double the final consonant before -ing
+_DOUBLE_FINAL_ING: Dict[str, str] = {
+    "run": "running", "swim": "swimming", "put": "putting",
+    "get": "getting", "sit": "sitting", "stop": "stopping",
+    "begin": "beginning", "forget": "forgetting", "prefer": "preferring",
+    "die": "dying", "lie": "lying", "cut": "cutting", "hit": "hitting",
+    "plan": "planning", "drop": "dropping", "shop": "shopping",
+    "admit": "admitting", "occur": "occurring", "refer": "referring",
+}
+
+
+def _present_participle(bare: str) -> str:
+    """Generate the English present participle (-ing form).
+
+    Handles multi-word verbs by transforming the first word:
+    'listen to' → 'listening to', 'go out' → 'going out'.
+    """
+    words = bare.split()
+    v = words[0]
+    if v in _DOUBLE_FINAL_ING:
+        words[0] = _DOUBLE_FINAL_ING[v]
+    elif v.endswith("ee"):
+        words[0] = v + "ing"       # see → seeing
+    elif v.endswith("e"):
+        words[0] = v[:-1] + "ing"  # live → living, come → coming
+    else:
+        words[0] = v + "ing"       # work → working, play → playing
+    return " ".join(words)
+
+
+def _have_has(subject: str) -> str:
+    """Return 'has' for 3rd person singular, 'have' otherwise."""
+    return "has" if subject in ("lui", "lei") else "have"
+
+
+def _is_are(subject: str) -> str:
+    """Return correct present 'be' form for subject."""
+    if subject == "io":
+        return "am"
+    if subject in ("lui", "lei"):
+        return "is"
+    return "are"
+
+
+# English past participles that DIFFER from simple past.
+# Verbs not listed here: past participle = simple past (e.g., "bought"/"bought").
+_EN_PAST_PARTICIPLE: Dict[str, str] = {
+    "come": "come", "go": "gone", "see": "seen", "give": "given",
+    "take": "taken", "write": "written", "eat": "eaten", "drink": "drunk",
+    "run": "run", "swim": "swum", "begin": "begun", "choose": "chosen",
+    "fall": "fallen", "speak": "spoken", "know": "known", "do": "done",
+    "sing": "sung", "forget": "forgotten", "read": "read",
+    "put": "put", "cut": "cut", "hit": "hit", "be": "been",
+    "become": "become",
+}
+
+
+def _en_past_participle(bare: str) -> str:
+    """Return the English past participle form for present perfect constructions."""
+    # Handle multi-word verbs: "go out" → first word "go"
+    words = bare.split()
+    v = words[0]
+    if v in _EN_PAST_PARTICIPLE:
+        words[0] = _EN_PAST_PARTICIPLE[v]
+        return " ".join(words)
+    # Fall back to simple past form (works for regular verbs and many irregulars)
+    if v.endswith("e"):
+        words[0] = v + "d"
+    elif v.endswith("y") and len(v) > 1 and v[-2] not in "aeiou":
+        words[0] = v[:-1] + "ied"
+    else:
+        words[0] = v + "ed"
+    return " ".join(words)
 
 
 def _modal_plus_infinitive_en(modal: str, modal_en: str, bare_inf: str) -> str:
@@ -2524,32 +2616,149 @@ class SentenceSpec:
                     subj_en = self.gendered_subject["en"]
                 else:
                     subj_en = SUBJECT_EN[self.subject]
-                # Build the auxiliary / tense portion
-                if qw["it"] == "chi":
-                    # "chi" is the subject — use 3rd person statement form
-                    verb_en_h = english_conjugation(verb_info, self.tense, "lui", obj_en, adv_en)
-                    # Strip "he " prefix
-                    if verb_en_h.startswith("he "):
-                        verb_en_h = verb_en_h[3:]
-                    s = f"{qw_en} {verb_en_h}?"
-                else:
-                    # "does/did/will + subject + bare verb" question form
-                    extras = ""
-                    if obj_en:
-                        extras += f" {obj_en}"
-                    if adv_en:
-                        extras += f" {adv_en}"
+
+                # Collect non-subject extras (object + adverb)
+                extras = ""
+                if obj_en:
+                    extras += f" {obj_en}"
+                if adv_en:
+                    extras += f" {adv_en}"
+
+                # --- Duration questions need perfect / continuous tenses ---
+                # Helper: strip trailing preposition for objectless contexts
+                # "waiting for" → "waiting", "wait for" → "wait"
+                _TRAIL_PREPS = {"for", "to", "with", "at", "on", "about"}
+
+                def _bare_no_trail(b: str) -> str:
+                    w = b.split()
+                    if len(w) > 1 and w[-1] in _TRAIL_PREPS:
+                        return " ".join(w[:-1])
+                    return b
+
+                def _ing_no_trail(b: str) -> str:
+                    f = _present_participle(b)
+                    w = f.split()
+                    if len(w) > 1 and w[-1] in _TRAIL_PREPS:
+                        return " ".join(w[:-1])
+                    return f
+
+                _DURATION_QW = {"per quanto tempo", "da quanto tempo", "quante ore"}
+                if qw["it"] in _DURATION_QW:
+                    ing = _ing_no_trail(bare)
+                    bare_d = _bare_no_trail(bare)
                     if self.tense == "presente":
+                        # Present perfect continuous: "How long have they been working?"
+                        hh = _have_has(self.subject)
+                        s = f"{qw_en} {hh} {subj_en} been {ing}{extras}?"
+                    elif self.tense == "imperfetto":
+                        # Past perfect continuous: "How long had they been working?"
+                        s = f"{qw_en} had {subj_en} been {ing}{extras}?"
+                    elif self.tense == "passato_prossimo":
+                        s = f"{qw_en} did {subj_en} {bare_d}{extras}?"
+                    elif self.tense == "futuro":
+                        s = f"{qw_en} will {subj_en} {bare_d}{extras}?"
+                    elif self.tense == "condizionale":
+                        s = f"{qw_en} would {subj_en} {bare_d}{extras}?"
+                    else:
+                        s = f"{qw_en} did {subj_en} {bare_d}{extras}?"
+
+                elif qw["it"] == "da quando":
+                    # "Since when" — present/imperfetto/passato use perfect continuous;
+                    # futuro/condizionale are rare with "da quando" in any language,
+                    # use "from when" to stay natural.
+                    ing = _ing_no_trail(bare)
+                    bare_d = _bare_no_trail(bare)
+                    if self.tense == "presente":
+                        hh = _have_has(self.subject)
+                        s = f"{qw_en} {hh} {subj_en} been {ing}{extras}?"
+                    elif self.tense == "imperfetto":
+                        s = f"{qw_en} had {subj_en} been {ing}{extras}?"
+                    elif self.tense == "passato_prossimo":
+                        hh = _have_has(self.subject)
+                        s = f"{qw_en} {hh} {subj_en} been {ing}{extras}?"
+                    elif self.tense == "futuro":
+                        s = f"From when will {subj_en} {bare_d}{extras}?"
+                    elif self.tense == "condizionale":
+                        s = f"From when would {subj_en} {bare_d}{extras}?"
+                    else:
+                        hh = _have_has(self.subject)
+                        s = f"{qw_en} {hh} {subj_en} been {ing}{extras}?"
+
+                elif qw["it"] == "quante volte":
+                    # "How many times" — present perfect for passato prossimo
+                    if self.tense == "passato_prossimo":
+                        hh = _have_has(self.subject)
+                        pp = _en_past_participle(bare)
+                        s = f"{qw_en} {hh} {subj_en} {pp}{extras}?"
+                    elif self.tense == "presente":
                         aux = "does" if self.subject in ("lui", "lei") else "do"
                         s = f"{qw_en} {aux} {subj_en} {bare}{extras}?"
-                    elif self.tense in ("passato_prossimo", "imperfetto"):
+                    elif self.tense == "imperfetto":
                         s = f"{qw_en} did {subj_en} {bare}{extras}?"
                     elif self.tense == "futuro":
                         s = f"{qw_en} will {subj_en} {bare}{extras}?"
                     elif self.tense == "condizionale":
                         s = f"{qw_en} would {subj_en} {bare}{extras}?"
                     else:
-                        s = f"{qw_en} does {subj_en} {bare}{extras}?"
+                        aux = "does" if self.subject in ("lui", "lei") else "do"
+                        s = f"{qw_en} {aux} {subj_en} {bare}{extras}?"
+
+                elif qw["it"] == "chi":
+                    # "chi" is the subject — use 3rd person statement form
+                    verb_en_h = english_conjugation(verb_info, self.tense, "lui", obj_en, adv_en)
+                    # Strip "he " prefix
+                    if verb_en_h.startswith("he "):
+                        verb_en_h = verb_en_h[3:]
+                    s = f"{qw_en} {verb_en_h}?"
+
+                else:
+                    # Standard questions: dove, quando, come, perché, cosa, etc.
+                    # Check if adverb is "now" → use present continuous question
+                    _adv_is_now = adv_en in ("now",)
+                    if self.tense == "presente":
+                        if _adv_is_now:
+                            be = _is_are(self.subject)
+                            ing = _present_participle(bare)
+                            s = f"{qw_en} {be} {subj_en} {ing}{extras}?"
+                        elif bare == "be" or bare.startswith("be "):
+                            # "When are they acquainted with...?" not "When do they be..."
+                            be = _is_are(self.subject)
+                            remainder = bare[3:] if bare.startswith("be ") else ""
+                            r_part = f" {remainder}" if remainder else ""
+                            s = f"{qw_en} {be} {subj_en}{r_part}{extras}?"
+                        elif bare in ("have",):
+                            hv = "has" if self.subject in ("lui", "lei") else "have"
+                            s = f"{qw_en} {hv} {subj_en}{extras}?"
+                        else:
+                            aux = "does" if self.subject in ("lui", "lei") else "do"
+                            s = f"{qw_en} {aux} {subj_en} {bare}{extras}?"
+                    elif self.tense == "passato_prossimo":
+                        if bare == "be" or bare.startswith("be "):
+                            # "Where was the father born?" not "Where did he be born?"
+                            was = "was" if self.subject in ("io", "lui", "lei") else "were"
+                            remainder = bare[3:] if bare.startswith("be ") else ""
+                            r_part = f" {remainder}" if remainder else ""
+                            s = f"{qw_en} {was} {subj_en}{r_part}{extras}?"
+                        else:
+                            s = f"{qw_en} did {subj_en} {bare}{extras}?"
+                    elif self.tense == "imperfetto":
+                        if bare == "be" or bare.startswith("be "):
+                            # "Where was the child?" not "Where was he being?"
+                            was = "was" if self.subject in ("io", "lui", "lei") else "were"
+                            remainder = bare[3:] if bare.startswith("be ") else ""
+                            r_part = f" {remainder}" if remainder else ""
+                            s = f"{qw_en} {was} {subj_en}{r_part}{extras}?"
+                        else:
+                            was = "was" if self.subject in ("io", "lui", "lei") else "were"
+                            ing = _present_participle(bare)
+                            s = f"{qw_en} {was} {subj_en} {ing}{extras}?"
+                    elif self.tense == "futuro":
+                        s = f"{qw_en} will {subj_en} {bare}{extras}?"
+                    elif self.tense == "condizionale":
+                        s = f"{qw_en} would {subj_en} {bare}{extras}?"
+                    else:
+                        aux = "does" if self.subject in ("lui", "lei") else "do"
+                        s = f"{qw_en} {aux} {subj_en} {bare}{extras}?"
                 parts.append(s)
 
         elif self.template == "I":
@@ -2732,7 +2941,13 @@ class SentenceSpec:
                     self.idiomatic_id, self.subject, self.tense
                 )
 
-        return " ".join(parts)
+        result = " ".join(parts)
+        # Fix English verb+preposition mismatches caused by location data
+        # using "to" (correct for most movement verbs but not arrive/enter/depart)
+        result = re.sub(r'\b(arriv\w*) to\b', r'\1 at', result)
+        result = re.sub(r'\b(enter\w*) to\b', r'\1', result)
+        result = re.sub(r'\b(depart\w*) to\b', r'\1 for', result)
+        return result
 
 
 def _generate_template_f(
@@ -2866,7 +3081,9 @@ def _generate_template_h(
     # Object for transitive verbs
     obj = None
     # These question words replace the object role, so no separate object needed
-    if qw["it"] in ("chi", "cosa", "quale", "a chi", "quante ore", "per quanto tempo"):
+    if qw["it"] in ("chi", "cosa", "quale", "a chi", "quante ore",
+                     "per quanto tempo", "da quanto tempo", "da quando",
+                     "quante volte"):
         pass
     # con chi replaces the companion, not the object — but these verbs are intransitive
     elif qw["it"] in ("con chi",):
