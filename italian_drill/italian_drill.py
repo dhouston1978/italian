@@ -3239,7 +3239,7 @@ IDIOMATIC_PATTERNS: List[Dict[str, Any]] = [
     },
     {
         "id": "andarsene",
-        "en_base": "to leave / go away",
+        "en_base": "to leave",
         "subjects": SUBJECTS,
         "tenses": ["presente", "passato_prossimo", "futuro"],
         "verb_for_progress": "andare",
@@ -3352,7 +3352,7 @@ def _build_idiomatic_english(pattern_id: str, subject: str, tense: str) -> str:
             have = "has" if subject in ("lui", "lei") else "have"
             return f"{subj} {have} no idea"
         elif tense == "imperfetto":
-            return f"{subj} had no idea (habitual)"
+            return f"{subj} used to have no idea"
         elif tense == "passato_prossimo":
             return f"{subj} had no idea"
         elif tense == "condizionale":
@@ -3370,19 +3370,18 @@ def _build_idiomatic_english(pattern_id: str, subject: str, tense: str) -> str:
     elif pattern_id == "andarsene":
         if tense == "presente":
             v = "leaves" if subject in ("lui", "lei") else "leave"
-            g = "goes" if subject in ("lui", "lei") else "go"
-            return f"{subj} {v} / {g} away"
+            return f"{subj} {v}"
         elif tense == "passato_prossimo":
-            return f"{subj} left / went away"
+            return f"{subj} left"
         elif tense == "futuro":
-            return f"{subj} will leave / go away"
+            return f"{subj} will leave"
 
     elif pattern_id == "non_ci_credere":
         if tense == "presente":
             v = "doesn't" if subject in ("lui", "lei") else "don't"
             return f"{subj} {v} believe it"
         elif tense == "imperfetto":
-            return f"{subj} didn't believe it (habitual)"
+            return f"{subj} didn't use to believe it"
         elif tense == "passato_prossimo":
             return f"{subj} didn't believe it"
         elif tense == "condizionale":
@@ -3399,7 +3398,7 @@ def _build_idiomatic_english(pattern_id: str, subject: str, tense: str) -> str:
             v = "doesn't" if subject in ("lui", "lei") else "don't"
             return f"{subj} {v} remember anymore"
         elif tense == "imperfetto":
-            return f"{subj} didn't remember anymore (habitual)"
+            return f"{subj} didn't use to remember anymore"
         elif tense == "passato_prossimo":
             return f"{subj} didn't remember anymore"
 
@@ -3407,7 +3406,7 @@ def _build_idiomatic_english(pattern_id: str, subject: str, tense: str) -> str:
         if subject == "voi":
             return "how are you all?"
         elif subject == "lei":
-            return "how are you? (formal)"
+            return "how are you?"
         return "how are you?"
 
     elif pattern_id == "non_farcela":
@@ -3415,7 +3414,7 @@ def _build_idiomatic_english(pattern_id: str, subject: str, tense: str) -> str:
             v = "can't" if subject in ("lui", "lei", "io") else "can't"
             return f"{subj} {v} manage it"
         elif tense == "imperfetto":
-            return f"{subj} couldn't manage it (habitual)"
+            return f"{subj} couldn't ever manage it"
         elif tense == "condizionale":
             return f"{subj} wouldn't be able to manage it"
 

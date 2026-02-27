@@ -323,7 +323,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
  81. [K] [imperfect] [loro]
      IT: Non ce la facevano
-     EN: they couldn't manage it (habitual)
+     EN: they couldn't ever manage it
 
  82. [A] [present] [voi]
      IT: Cambiate la strategia molto
@@ -531,7 +531,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 133. [K] [imperfect] [io]
      IT: Non ce la facevo
-     EN: I couldn't manage it (habitual)
+     EN: I couldn't ever manage it
 
 134. [C] [imperfect] [lui]
      IT: Comunque, voleva unire mio fratello
@@ -635,7 +635,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 159. [K] [future] [tu]
      IT: Te ne andrai
-     EN: you will leave / go away
+     EN: you will leave
 
 160. [D] [future] [noi]
      IT: A volte, forse riceveremo il giornale
@@ -659,7 +659,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 165. [K] [present] [lei]
      IT: Se ne va
-     EN: she leaves / goes away
+     EN: she leaves
 
 166. [A] [present] [lui]
      IT: Scopre la verità spesso
@@ -771,11 +771,11 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 193. [K] [imperfect] [io]
      IT: Non ce la facevo
-     EN: I couldn't manage it (habitual)
+     EN: I couldn't ever manage it
 
 194. [K] [present] [tu]
      IT: Te ne vai
-     EN: you leave / go away
+     EN: you leave
 
 195. [F] [imperfect] [lei]
      IT: Secondo lei, vi mandava la settimana scorsa
@@ -1347,7 +1347,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 337. [K] [imperfect] [io]
      IT: Non ne avevo idea
-     EN: I had no idea (habitual)
+     EN: I used to have no idea
 
 338. [H] [passato prossimo] [lui]
      IT: Cosa ha capito?
@@ -1551,7 +1551,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 388. [K] [passato prossimo] [lui]
      IT: Se ne è andato
-     EN: he left / went away
+     EN: he left
 
 389. [C] [passato prossimo] [noi]
      IT: Di solito, abbiamo voluto restare
@@ -1611,7 +1611,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 403. [K] [future] [voi]
      IT: Ve ne andrete
-     EN: you all will leave / go away
+     EN: you all will leave
 
 404. [J] [imperfect] [io]
      IT: A volte, te la mostravo
@@ -1643,7 +1643,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 411. [K] [present] [loro]
      IT: Se ne vanno
-     EN: they leave / go away
+     EN: they leave
 
 412. [I] [present] [loro]
      IT: Si parlano
@@ -1739,7 +1739,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 435. [K] [passato prossimo] [io]
      IT: Me ne sono andata
-     EN: I left / went away
+     EN: I left
 
 436. [I] [present] [lei]
      IT: Ogni giorno, si allontana
@@ -1775,7 +1775,7 @@ NONSENSE AUDIT — 500 Generated Sentences
 
 444. [K] [present] [lei]
      IT: Se ne va
-     EN: she leaves / goes away
+     EN: she leaves
 
 445. [J] [present] [tu]
      IT: Sinceramente, ve lo spieghi
