@@ -1749,7 +1749,7 @@ def english_conjugation(
     en = verb_info["en"]
     # Strip "to " prefix
     bare = en[3:] if en.startswith("to ") else en
-    # Handle "to do/make" → "do/make"
+    # Strip "to " prefix to get bare infinitive
     subj = SUBJECT_EN[subject]
 
     # Simple helper for 3rd person singular — add -s to the FIRST word only
@@ -2576,7 +2576,6 @@ class SentenceSpec:
                 if adv_en_f:
                     s += f" {adv_en_f}"
                 parts.append(s)
-                parts.append("(Hint: pronoun goes before the modal verb)")
             else:
                 verb_en = english_conjugation(verb_info, self.tense, self.subject)
                 s = f"{verb_en} {pron_en}"
@@ -2932,7 +2931,6 @@ class SentenceSpec:
                 if self.adv:
                     s += f" {self.adv['en']}"
                 parts.append(s)
-                parts.append("(Hint: combine the indirect and direct pronouns)")
 
         elif self.template == "K":
             # Idiomatic expression — fully built by helper
